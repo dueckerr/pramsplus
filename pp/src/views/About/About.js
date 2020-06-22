@@ -21,8 +21,6 @@ import ProductSection from "./Sections/ProductSection.js";
 import TeamSection from "./Sections/TeamSection.js";
 import WorkSection from "./Sections/WorkSection.js";
 
-const dashboardRoutes = [];
-
 const useStyles = makeStyles(styles);
 
 export default function LandingPage(props) {
@@ -31,11 +29,9 @@ export default function LandingPage(props) {
   return (
     <div>
       <Header
-        color="transparent"
-        routes={dashboardRoutes}
         brand="PRAMS Plus"
+        link="/"
         rightLinks={<HeaderLinks />}
-        to
         fixed
         changeColorOnScroll={{
           height: 400,
@@ -43,32 +39,25 @@ export default function LandingPage(props) {
         }}
         {...rest}
       />
-      <Parallax filter image={require("assets/img/landing-bg.jpg")}>
+      <Parallax image={require("assets/img/grey.png")}>
         <div className={classes.container}>
           <GridContainer>
-            <GridItem xs={12} sm={12} md={6}>
-              <h1 className={classes.title}>About Us.</h1>
-              <h4>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industrys standard dummy text
-                ever since the 1500s, when an unknown printer took a galley of
-                type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets
-                containing Lorem Ipsum passages, and more recently with desktop
-                publishing software like Aldus PageMaker including versions of
-                Lorem Ipsum.
-              </h4>
-              <br />
+            <GridItem>
+              <div className={classes.brand}>
+                <h1 className={classes.title}>PRAMS Plus</h1>
+                <h3 className={classes.subtitle}>More for Less</h3>
+              </div>
             </GridItem>
           </GridContainer>
         </div>
       </Parallax>
+
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
           <ProductSection />
+          <hr />
           <TeamSection />
+          <hr />
           <WorkSection />
         </div>
       </div>

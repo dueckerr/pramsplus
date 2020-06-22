@@ -12,11 +12,12 @@ import GridItem from "components/Grid/GridItem.js";
 import Parallax from "components/Parallax/Parallax.js";
 // sections for this page
 import HeaderLinks from "components/Header/HeaderLinks.js";
-import SectionProductionAccounting from "./Sections/SectionProductionAccounting.js";
-import SectionAutomation from "./Sections/SectionAutomation.js";
-import SectionRegulatory from "./Sections/SectionRegulatory.js";
-import SectionFieldDataCapture from "./Sections/SectionFieldDataCapture.js";
-import SectionDataReporting from "./Sections/SectionDataReporting.js";
+
+import FieldDataCapture from "./Sections/FieldDataCapture.js";
+import ProductionAccounting from "./Sections/ProductionAccounting.js";
+import RegulatoryReporting from "./Sections/RegulatoryReporting.js";
+import PushReporting from "./Sections/PushReporting.js";
+import Outsourcing from "./Sections/Outsourcing.js";
 
 import WorkSection from "../About/Sections/WorkSection";
 
@@ -34,14 +35,13 @@ export default function Components(props) {
         link="/"
         rightLinks={<HeaderLinks />}
         fixed
-        color="transparent"
         changeColorOnScroll={{
           height: 400,
           color: "white",
         }}
         {...rest}
       />
-      <Parallax image={require("assets/img/bg2.jpg")}>
+      <Parallax image={require("assets/img/grey.png")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem>
@@ -55,11 +55,11 @@ export default function Components(props) {
       </Parallax>
 
       <div className={classNames(classes.main, classes.mainRaised)}>
-        <SectionAutomation />
-        <SectionProductionAccounting />
-        <SectionRegulatory />
-        <SectionFieldDataCapture />
-        <SectionDataReporting />
+        <FieldDataCapture />
+        <ProductionAccounting />
+        <PushReporting />
+        <RegulatoryReporting />
+        <Outsourcing />
         <WorkSection />
       </div>
       <Footer />

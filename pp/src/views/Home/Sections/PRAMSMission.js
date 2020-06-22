@@ -11,14 +11,14 @@ import styles from "assets/jss/material-kit-react/views/componentsSections/compl
 
 const useStyles = makeStyles(styles);
 
-export default function SectionCompletedExamples() {
+export default function PRAMSMission() {
   const classes = useStyles();
   return (
     <div className={classes.section}>
       <div className={classes.container}>
         <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={8}>
-            <h2>3 Windows Based Programs</h2>
+            <h2>What Sets PRAMS Apart</h2>
             <h4>
               Lucas ipsum dolor sit amet jango amidala dagobah qui-gon yoda
               sebulba dagobah dooku darth darth. Hutt jabba kenobi calamari.

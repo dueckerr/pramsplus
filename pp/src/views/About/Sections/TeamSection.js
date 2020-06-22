@@ -14,9 +14,7 @@ import CardBody from "components/Card/CardBody.js";
 
 import styles from "assets/jss/material-kit-react/views/landingPageSections/teamStyle.js";
 
-import team1 from "assets/img/faces/christian.jpg";
-import team2 from "assets/img/faces/christian.jpg";
-import team3 from "assets/img/faces/christian.jpg";
+import team1 from "assets/img/apple-icon.png";
 
 const useStyles = makeStyles(styles);
 
@@ -54,7 +52,7 @@ export default function TeamSection() {
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                <img src={team2} alt="..." className={imageClasses} />
+                <img src={team1} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
                 Rick Hornock
@@ -73,13 +71,13 @@ export default function TeamSection() {
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                <img src={team3} alt="..." className={imageClasses} />
+                <img src={team1} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
                 Cody Gallagher
                 <br />
                 <small className={classes.smallTitle}>
-                  Director of Customer Engagement
+                  Customer Engagement
                 </small>
               </h4>
               <CardBody>
@@ -95,13 +93,13 @@ export default function TeamSection() {
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                <img src={team3} alt="..." className={imageClasses} />
+                <img src={team1} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
                 Jesse Caple
                 <br />
                 <small className={classes.smallTitle}>
-                  Director of Software Development
+                  Software Development
                 </small>
               </h4>
               <CardBody>
@@ -116,13 +114,13 @@ export default function TeamSection() {
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                <img src={team3} alt="..." className={imageClasses} />
+                <img src={team1} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
                 Reagan Duecker
                 <br />
                 <small className={classes.smallTitle}>
-                  Director of Business Development
+                  Business Development
                 </small>
               </h4>
               <CardBody>

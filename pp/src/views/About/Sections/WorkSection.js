@@ -19,7 +19,7 @@ export default function WorkSection() {
   return (
     <div className={classes.section}>
       <GridContainer justify="center">
-        <GridItem cs={12} sm={12} md={8}>
+        <GridItem cs={11} sm={11} md={8}>
           <h2 className={classes.title}>Work with us</h2>
           <h4 className={classes.description}>
             Imagine How A Digital Workflow Can Impact Your Business To schedule

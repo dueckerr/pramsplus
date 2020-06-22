@@ -12,14 +12,12 @@ import GridItem from "components/Grid/GridItem.js";
 import Parallax from "components/Parallax/Parallax.js";
 // sections for this page
 import HeaderLinks from "components/Header/HeaderLinks.js";
-import SectionTabs from "./Sections/SectionTabs.js";
-import SectionPills from "./Sections/SectionPills.js";
-import SectionNotifications from "./Sections/SectionNotifications.js";
-import SectionCarousel from "./Sections/SectionCarousel.js";
-import SectionCompletedExamples from "./Sections/SectionCompletedExamples.js";
-import SectionExamples from "./Sections/SectionExamples.js";
+import PramsStatement from "./Sections/PramsStatement.js";
+import PRAMSMission from "./Sections/PRAMSMission.js";
+import Software from "./Sections/Software.js";
 import SectionWorked from "./Sections/SectionWorked.js";
 import WorkSection from "../About/Sections/WorkSection";
+import Pricing from "./Sections/Pricing.js";
 
 import styles from "assets/jss/material-kit-react/views/components.js";
 
@@ -35,14 +33,13 @@ export default function Components(props) {
         link="/"
         rightLinks={<HeaderLinks />}
         fixed
-        color="transparent"
         changeColorOnScroll={{
           height: 400,
           color: "white",
         }}
         {...rest}
       />
-      <Parallax image={require("assets/img/bg2.jpg")}>
+      <Parallax image={require("assets/img/grey.png")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem>
@@ -56,13 +53,11 @@ export default function Components(props) {
       </Parallax>
 
       <div className={classNames(classes.main, classes.mainRaised)}>
-        <SectionNotifications />
+        <PramsStatement />
+        <PRAMSMission />
         <SectionWorked />
-        {/* <SectionPills /> */}
-        <SectionCarousel />
-        <SectionTabs />
-        <SectionCompletedExamples />
-        <SectionExamples />
+        <Software />
+        <Pricing />
         <WorkSection />
       </div>
       <Footer />

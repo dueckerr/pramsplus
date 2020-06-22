@@ -15,7 +15,7 @@ import styles from "assets/jss/material-kit-react/views/componentsSections/examp
 
 const useStyles = makeStyles(styles);
 
-export default function SectionExamples() {
+export default function Software() {
   const classes = useStyles();
   return (
     <div className={classes.section}>

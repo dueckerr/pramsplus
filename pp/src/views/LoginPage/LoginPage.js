@@ -20,6 +20,7 @@ import CustomInput from "components/CustomInput/CustomInput.js";
 
 import styles from "assets/jss/material-kit-react/views/loginPage.js";
 
+// import image from "assets/img/grey.png";
 import image from "assets/img/bg7.jpg";
 
 const useStyles = makeStyles(styles);
@@ -34,10 +35,14 @@ export default function LoginPage(props) {
   return (
     <div>
       <Header
-        absolute
-        color="transparent"
         brand="PRAMS Plus"
+        link="/"
         rightLinks={<HeaderLinks />}
+        fixed
+        changeColorOnScroll={{
+          height: 400,
+          color: "white",
+        }}
         {...rest}
       />
       <div
@@ -56,7 +61,6 @@ export default function LoginPage(props) {
                   <CardHeader color="info" className={classes.cardHeader}>
                     <h4>PRAMS Web Portal</h4>
                   </CardHeader>
-                  <p className={classes.divider}>Or Be Classical</p>
                   <CardBody>
                     <CustomInput
                       labelText="Username..."

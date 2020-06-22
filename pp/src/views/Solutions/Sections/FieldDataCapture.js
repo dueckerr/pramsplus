@@ -1,0 +1,182 @@
+import React from "react";
+// @material-ui/core components
+import { makeStyles } from "@material-ui/core/styles";
+// core components
+import classNames from "classnames";
+import Grid from "@material-ui/core/Grid";
+import Tabs from "@material-ui/core/Tabs";
+import Tab from "@material-ui/core/Tab";
+import CustomTabs from "components/CustomTabs/CustomTabs.js";
+
+import logo from "assets/img/logo.png";
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+    backgroundColor: theme.palette.background.paper,
+  },
+  label: {
+    color: "#FFF000",
+  },
+  indicator: {
+    backgroundColor: "#FFF",
+  },
+  paper: {
+    padding: theme.spacing(2),
+    textAlign: "center",
+  },
+  text: {
+    padding: "10px",
+    color: "black",
+    textAlign: "center",
+    border: 0,
+    borderRadius: 3,
+  },
+  block: {
+    padding: "10px",
+    color: "white",
+    textAlign: "center",
+    backgroundColor: "white",
+    border: 0,
+    borderRadius: 3,
+  },
+}));
+
+export default function FieldDataCapture() {
+  const classes = useStyles();
+  const imageClasses = classNames(classes.imgFluid);
+
+  return (
+    <div className={classes.block}>
+      <Grid className={classes.block} container spacing={3}>
+        <Grid item xs={12} sm={12} md={6} lg={4}>
+          <img src={logo} alt="..." className={imageClasses} />
+        </Grid>
+        <Grid xs={12} sm={12} md={8}>
+          <h3>
+            <small className={classes.text}>Field Data Caputre</small>
+          </h3>
+          <CustomTabs
+            xs={12}
+            sm={12}
+            md={4}
+            plainTabs
+            headerColor="info"
+            tabs={[
+              {
+                tabName: "SCADA Integration",
+                tabContent: (
+                  <p className={classes.text}>
+                    I think that’s a responsibility that I have, to push
+                    possibilities, to show people, this is the level that things
+                    could be at. So when you get something that has the name
+                    Kanye West on it, it’s supposed to be pushing the furthest
+                    possibilities. I will be the leader of a company that ends
+                    up being worth billions of dollars, because I got the
+                    answers. I understand culture. I am the nucleus.
+                  </p>
+                ),
+              },
+              {
+                tabName: "Right Tickets - Cant remember name",
+                tabContent: (
+                  <p className={classes.text}>
+                    I think that’s a responsibility that I have, to push
+                    possibilities, to show people, this is the level that things
+                    could be at. I will be the leader of a company that ends up
+                    being worth billions of dollars, because I got the answers.
+                    I understand culture. I am the nucleus. I think that’s a
+                    responsibility that I have, to push possibilities, to show
+                    people, this is the level that things could be at. I think
+                    that’s a responsibility that I have, to push possibilities,
+                    to show people, this is the level that things could be at. I
+                    will be the leader of a company that ends up being worth
+                    billions of dollars, because I got the answers. I understand
+                    culture. I am the nucleus. I think that’s a responsibility
+                    that I have, to push possibilities, to show people, this is
+                    the level that things could be at. I think that’s a
+                    responsibility that I have, to push possibilities, to show
+                    people, this is the level that things could be at. I will be
+                    the leader of a company that ends up being worth billions of
+                    dollars, because I got the answers. I understand culture. I
+                    am the nucleus. I think that’s a responsibility that I have,
+                    to push possibilities, to show people, this is the level
+                    that things could be at.
+                  </p>
+                ),
+              },
+              {
+                tabName: "Automated Push Reports",
+                tabContent: (
+                  <p className={classes.text}>
+                    think that’s a responsibility that I have, to push
+                    possibilities, to show people, this is the level that things
+                    could be at. So when you get something that has the name
+                    Kanye West on it, it’s supposed to be pushing the furthest
+                    possibilities. I will be the leader of a company that ends
+                    up being worth billions of dollars, because I got the
+                    answers. I understand culture. I am the nucleus.
+                  </p>
+                ),
+              },
+            ]}
+          />
+          {/* <Tabs
+            indicatorColor="primary"
+            classes={classes.indicator}
+            xs={12}
+            sm={12}
+            md={4}
+            plainTabs
+          >
+            <Tab classes={{ label: classes.label }} label="Item " />
+            <p className={classes.text}>
+              I think that’s a responsibility that I have, to push
+              possibilities, to show people, this is the level that things could
+              be at. So when you get something that has the name Kanye West on
+              it, it’s supposed to be pushing the furthest possibilities. I will
+              be the leader of a company that ends up being worth billions of
+              dollars, because I got the answers. I understand culture. I am the
+              nucleus.
+            </p>
+            <Tab classes={{ label: classes.label }} label="Item Two" />
+            <Tab classes={{ label: classes.label }} label="Item Three" />
+          </Tabs>
+          {
+            <p className={classes.text}>
+              I think that’s a responsibility that I have, to push
+              possibilities, to show people, this is the level that things could
+              be at. I will be the leader of a company that ends up being worth
+              billions of dollars, because I got the answers. I understand
+              culture. I am the nucleus. I think that’s a responsibility that I
+              have, to push possibilities, to show people, this is the level
+              that things could be at. I think that’s a responsibility that I
+              have, to push possibilities, to show people, this is the level
+              that things could be at. I will be the leader of a company that
+              ends up being worth billions of dollars, because I got the
+              answers. I understand culture. I am the nucleus. I think that’s a
+              responsibility that I have, to push possibilities, to show people,
+              this is the level that things could be at. I think that’s a
+              responsibility that I have, to push possibilities, to show people,
+              this is the level that things could be at. I will be the leader of
+              a company that ends up being worth billions of dollars, because I
+              got the answers. I understand culture. I am the nucleus. I think
+              that’s a responsibility that I have, to push possibilities, to
+              show people, this is the level that things could be at.
+            </p>
+          }
+          {
+            <p className={classes.text}>
+              think that’s a responsibility that I have, to push possibilities,
+              to show people, this is the level that things could be at. So when
+              you get something that has the name Kanye West on it, it’s
+              supposed to be pushing the furthest possibilities. I will be the
+              leader of a company that ends up being worth billions of dollars,
+              because I got the answers. I understand culture. I am the nucleus.
+            </p>
+          } */}
+        </Grid>
+      </Grid>
+    </div>
+  );
+}

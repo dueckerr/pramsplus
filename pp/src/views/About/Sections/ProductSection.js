@@ -2,18 +2,34 @@ import React from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
-// @material-ui/icons
-import Chat from "@material-ui/icons/Chat";
-import VerifiedUser from "@material-ui/icons/VerifiedUser";
-import Fingerprint from "@material-ui/icons/Fingerprint";
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
-import InfoArea from "components/InfoArea/InfoArea.js";
 
-import styles from "assets/jss/material-kit-react/views/landingPageSections/productStyle.js";
-
-const useStyles = makeStyles(styles);
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+  },
+  paper: {
+    padding: theme.spacing(2),
+    textAlign: "center",
+  },
+  text: {
+    padding: "10px",
+    color: "black",
+    textAlign: "center",
+    border: 0,
+    borderRadius: 3,
+  },
+  block: {
+    padding: "10px",
+    color: "white",
+    textAlign: "center",
+    backgroundColor: "white",
+    border: 0,
+    borderRadius: 3,
+  },
+}));
 
 export default function ProductSection() {
   const classes = useStyles();
@@ -21,8 +37,8 @@ export default function ProductSection() {
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={8}>
-          <h2 className={classes.title}></h2>
-          <h5 className={classes.description}>
+          <h2 className={classes.text}>The PRAMS Story</h2>
+          <h5 className={classes.text}>
             This is the paragraph where you can write more details about your
             product. Keep you user engaged by providing meaningful information.
             Remember that by this time, the user is curious, otherwise he wouldn
@@ -31,34 +47,38 @@ export default function ProductSection() {
           </h5>
         </GridItem>
       </GridContainer>
+      <br></br>
       <div>
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
-            <InfoArea
-              title="Free Chat"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={Chat}
-              iconColor="info"
-              vertical
-            />
+            <p className={classes.text}>
+              This is the paragraph where you can write more details about your
+              product. Keep you user engaged by providing meaningful
+              information. Remember that by this time, the user is curious,
+              otherwise he wouldn
+              {"'"}t scroll to get here. Add a button if you want the user to
+              see more.
+            </p>
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
-            <InfoArea
-              title="Verified Users"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={VerifiedUser}
-              iconColor="success"
-              vertical
-            />
+            <p className={classes.text}>
+              This is the paragraph where you can write more details about your
+              product. Keep you user engaged by providing meaningful
+              information. Remember that by this time, the user is curious,
+              otherwise he wouldn
+              {"'"}t scroll to get here. Add a button if you want the user to
+              see more.
+            </p>
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
-            <InfoArea
-              title="Fingerprint"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={Fingerprint}
-              iconColor="danger"
-              vertical
-            />
+            <p className={classes.text}>
+              This is the paragraph where you can write more details about your
+              product. Keep you user engaged by providing meaningful
+              information. Remember that by this time, the user is curious,
+              otherwise he wouldn
+              {"'"}t scroll to get here. Add a button if you want the user to
+              see more.
+            </p>
           </GridItem>
         </GridContainer>
       </div>
