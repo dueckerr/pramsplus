@@ -2,6 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
+import logo from "assets/img/logo.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -18,6 +19,13 @@ const useStyles = makeStyles((theme) => ({
     border: 0,
     borderRadius: 3,
   },
+  text: {
+    color: "black",
+    textAlign: "center",
+    border: 0,
+    borderRadius: 3,
+    fontSize: "18px",
+  },
 }));
 
 export default function PRAMSMission() {
@@ -25,20 +33,20 @@ export default function PRAMSMission() {
 
   return (
     <div className={classes.block}>
-      <div className={classes.title}>
-        <h2>20 Years of Proven Success</h2>
-      </div>
-      <Grid className={classes.paper} container spacing={3}>
-        <Grid item xs={12} sm={4} md={4} lg={4}>
-          <Paper className={classes.paper}>+1 Million BOE Allocated</Paper>
+      <Grid className={classes.block} container spacing={2}>
+        <Grid item xs={12} sm={12} md={6} lg={4}>
+          <img src={logo} alt="..." />
         </Grid>
-        <Grid item xs={12} sm={4} md={4} lg={4}>
-          <Paper className={classes.paper}>Over 100,000 Wells Manged</Paper>
-        </Grid>
-        <Grid item xs={12} sm={4} md={4} lg={4}>
-          <Paper className={classes.paper}>
-            1,000{"'"}s Regulatory Reports Filed
-          </Paper>
+        <Grid item xs={12} sm={12} md={6} lg={7}>
+          <p className={classes.text}>
+          PramsX2 is an end-to-end oil and gas production management software designed to conquer the complex data-management challenges facing today’s oil and gas operators. The ability to rapidly and accurately capture, analyze, and manage production data is vital to the success of every oil and gas operator. At PRAMS we empower our clients with the ability to swiftly capture, analyze, and distribute information with confidence and consistency.
+          </p>
+          <p className={classes.text}>
+          Operators frequently overlook product-management efficiency and revert to unorganized and time-consuming spreadsheets, a factor that too often erodes the operator’s profitability. By simplifying field data capture through single-point data entry, we equip pumpers, engineers, analysts, and operators with the ability to effectively manage what they measure.
+          </p>
+          <p className={classes.text}>
+          The use of an integrated production system simplifies data acquisition and allows everyone in the organization to utilize the production information they need to do their jobs. Anyone can easily see, review and export daily and historical production data using flexible and customizable processes.
+          </p>
         </Grid>
       </Grid>
     </div>
