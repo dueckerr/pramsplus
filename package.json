@@ -1,5 +1,5 @@
 {
-  "homepage": "http://{dueckerr}.github.io{pramsplus}",
+  "homepage": "http://{dueckerr}.github.io{pramsplus}/",
   "name": "material-kit-react",
   "version": "1.9.0",
   "description": "PRAMS Plus",
@@ -44,7 +44,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "react-scripts build && gulp licenses",
+    "build": "react-scripts build && gulp licenses && react-scripts start",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "lint:check": "eslint . --ext=js,jsx;",
