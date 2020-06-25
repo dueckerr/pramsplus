@@ -17,12 +17,20 @@ var hist = createBrowserHistory();
 ReactDOM.render(
   <Router history={hist}>
     <Switch>
+      <Route path="/" component={Home} />
       <Route path="/about" component={About} />
       <Route path="/solutions" component={Solutions} />
       <Route path="/content" component={Blog} />
       <Route path="/login-page" component={LoginPage} />
-      <Route path="/" component={Home} />
     </Switch>
   </Router>,
   document.getElementById("root")
 );
+
+
+
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+// import App from './App';
+
+// ReactDOM.render(<App />, document.getElementById('root'));
