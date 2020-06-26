@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f931910c9889d27d7469fa4c02315e06",
+    "revision": "58f81836b87d34d179b8ebce4a3552eb",
     "url": "/pramsplus/index.html"
   },
   {
-    "revision": "9825e7ebdf47e6f88fe4",
-    "url": "/pramsplus/static/css/main.126c14d6.chunk.css"
+    "revision": "7f6e331031bda2225b36",
+    "url": "/pramsplus/static/css/main.d373da39.chunk.css"
   },
   {
-    "revision": "161b6495b8a06f9481df",
-    "url": "/pramsplus/static/js/2.e492a1e9.chunk.js"
+    "revision": "93d0a26c940b0bdbb9d3",
+    "url": "/pramsplus/static/js/2.cfdc29ab.chunk.js"
   },
   {
     "revision": "5e9b6f5c16b720e8a86875f97734673e",
-    "url": "/pramsplus/static/js/2.e492a1e9.chunk.js.LICENSE.txt"
+    "url": "/pramsplus/static/js/2.cfdc29ab.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9825e7ebdf47e6f88fe4",
-    "url": "/pramsplus/static/js/main.28855256.chunk.js"
+    "revision": "7f6e331031bda2225b36",
+    "url": "/pramsplus/static/js/main.83c06534.chunk.js"
   },
   {
     "revision": "5781477d7fb3c0fdb270",
