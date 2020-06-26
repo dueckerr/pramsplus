@@ -1,7 +1,8 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
+import { HashRouter, Route, Switch } from 'react-router-dom';
+
 import ReactDOM from "react-dom";
 import { createBrowserHistory } from "history";
-import { Router, Route, Switch } from "react-router-dom";
 
 import "assets/scss/material-kit-react.scss?v=1.9.0";
 
@@ -12,23 +13,24 @@ import Blog from "views/Content/Blog.js";
 import About from "views/About/About.js";
 import LoginPage from "views/LoginPage/LoginPage.js";
 
-var hist = createBrowserHistory();
+const loading = () => <div className="animated fadeIn pt-3 text-center">Loading...</div>;
 
 
 class App extends Component {
 
     render() {
       return (
-  <Router history={hist}>
-    <Switch>
-      <Route path="/about" component={About} />
-      <Route path="/solutions" component={Solutions} />
-      <Route path="/content" component={Blog} />
-      <Route path="/login-page" component={LoginPage} />
-      <Route path="/" component={Home} />
-    </Switch>
-  </Router>
-    );
+        <HashRouter>
+            <React.Suspense fallback={loading()}>
+                <Switch>
+                    <Route path="/about" component={About} />
+                    <Route path="/solutions" component={Solutions} />
+                    <Route path="/content" component={Blog} />
+                    <Route path="/login-page" component={LoginPage} />
+                    <Route path="/" component={Home} />
+                </Switch>
+            </React.Suspense>
+      </HashRouter>    );
 }
 }
 
