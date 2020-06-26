@@ -17,6 +17,7 @@ import CardBody from "components/Card/CardBody.js";
 import CardHeader from "components/Card/CardHeader.js";
 import CardFooter from "components/Card/CardFooter.js";
 import CustomInput from "components/CustomInput/CustomInput.js";
+import { Link } from "react-router-dom";
 
 import styles from "assets/jss/material-kit-react/views/loginPage.js";
 
@@ -96,8 +97,7 @@ export default function LoginPage(props) {
                     />
                   </CardBody>
                   <CardFooter className={classes.cardFooter}>
-                    <Button color="info" size="lg">
-                      Login
+                    <Button color="info" size="lg" target='_blank' href="https://dueckerr.github.io/ReactAdminSpitBall/">Login
                     </Button>
                   </CardFooter>
                 </form>
