@@ -1,28 +1,31 @@
 {
   "files": {
     "main.css": "/pramsplus/static/css/main.d373da39.chunk.css",
-    "main.js": "/pramsplus/static/js/main.83c06534.chunk.js",
-    "main.js.map": "/pramsplus/static/js/main.83c06534.chunk.js.map",
+    "main.js": "/pramsplus/static/js/main.026aca35.chunk.js",
+    "main.js.map": "/pramsplus/static/js/main.026aca35.chunk.js.map",
     "runtime-main.js": "/pramsplus/static/js/runtime-main.d363cbd6.js",
     "runtime-main.js.map": "/pramsplus/static/js/runtime-main.d363cbd6.js.map",
-    "static/js/2.cfdc29ab.chunk.js": "/pramsplus/static/js/2.cfdc29ab.chunk.js",
-    "static/js/2.cfdc29ab.chunk.js.map": "/pramsplus/static/js/2.cfdc29ab.chunk.js.map",
+    "static/js/2.ca09e492.chunk.js": "/pramsplus/static/js/2.ca09e492.chunk.js",
+    "static/js/2.ca09e492.chunk.js.map": "/pramsplus/static/js/2.ca09e492.chunk.js.map",
     "index.html": "/pramsplus/index.html",
-    "precache-manifest.21af3a5772fc756ac6c6cda94800c8d6.js": "/pramsplus/precache-manifest.21af3a5772fc756ac6c6cda94800c8d6.js",
+    "precache-manifest.236e2b12c9a75968fa12090b0942bc19.js": "/pramsplus/precache-manifest.236e2b12c9a75968fa12090b0942bc19.js",
     "service-worker.js": "/pramsplus/service-worker.js",
     "static/css/main.d373da39.chunk.css.map": "/pramsplus/static/css/main.d373da39.chunk.css.map",
-    "static/js/2.cfdc29ab.chunk.js.LICENSE.txt": "/pramsplus/static/js/2.cfdc29ab.chunk.js.LICENSE.txt",
+    "static/js/2.ca09e492.chunk.js.LICENSE.txt": "/pramsplus/static/js/2.ca09e492.chunk.js.LICENSE.txt",
+    "static/media/HomePage.png": "/pramsplus/static/media/HomePage.770b6e75.png",
     "static/media/apple-icon.png": "/pramsplus/static/media/apple-icon.7e768577.png",
     "static/media/bbl.png": "/pramsplus/static/media/bbl.df2fc999.png",
     "static/media/chart.png": "/pramsplus/static/media/chart.6a543449.png",
+    "static/media/dailyPumperX2.png": "/pramsplus/static/media/dailyPumperX2.e2975ccc.png",
     "static/media/grey.png": "/pramsplus/static/media/grey.88c9dd1d.png",
     "static/media/logo.png": "/pramsplus/static/media/logo.fd81f917.png",
-    "static/media/pump.png": "/pramsplus/static/media/pump.4bef13a2.png"
+    "static/media/pump.png": "/pramsplus/static/media/pump.4bef13a2.png",
+    "static/media/pushReport.png": "/pramsplus/static/media/pushReport.a236156f.png"
   },
   "entrypoints": [
     "static/js/runtime-main.d363cbd6.js",
-    "static/js/2.cfdc29ab.chunk.js",
+    "static/js/2.ca09e492.chunk.js",
     "static/css/main.d373da39.chunk.css",
-    "static/js/main.83c06534.chunk.js"
+    "static/js/main.026aca35.chunk.js"
   ]
 }
