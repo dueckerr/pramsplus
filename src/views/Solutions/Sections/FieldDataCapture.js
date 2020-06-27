@@ -1,60 +1,31 @@
 import React from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
+import styles from "assets/jss/material-kit-react/views/solutionsWhiteBack";
 // core components
 import classNames from "classnames";
+
 import Grid from "@material-ui/core/Grid";
-import Tabs from "@material-ui/core/Tabs";
-import Tab from "@material-ui/core/Tab";
 import CustomTabs from "components/CustomTabs/CustomTabs.js";
 
-import logo from "assets/img/logo.png";
+import dataCharts from "assets/img/dailyPumperX2.png";
+// import dataChart from "assets/img/";
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-    backgroundColor: theme.palette.background.paper,
-  },
-  label: {
-    color: "#FFF000",
-  },
-  indicator: {
-    backgroundColor: "#FFF",
-  },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: "center",
-  },
-  text: {
-    padding: "10px",
-    color: "black",
-    textAlign: "center",
-    border: 0,
-    borderRadius: 3,
-  },
-  block: {
-    padding: "10px",
-    color: "white",
-    textAlign: "center",
-    backgroundColor: "white",
-    border: 0,
-    borderRadius: 3,
-  },
-}));
+const useStyles = makeStyles(styles);
+
 
 export default function FieldDataCapture() {
   const classes = useStyles();
-  const imageClasses = classNames(classes.imgFluid);
 
   return (
     <div className={classes.block}>
       <Grid className={classes.block} container spacing={3}>
         <Grid item xs={12} sm={12} md={6} lg={6}>
-          <img src={logo} alt="..." className={imageClasses} />
+          <img src={dataCharts} alt="..." className={classes.image} />
         </Grid>
         <Grid xs={12} sm={12} md={6}>
           <h3>
-            <small className={classes.text}>Field Data Caputre</small>
+            <small className={classes.socials}>Field Data Caputre</small>
           </h3>
           <CustomTabs
             xs={12}
@@ -67,14 +38,8 @@ export default function FieldDataCapture() {
                 tabName: "Overview",
                 tabContent: (
                   <p className={classes.text}>
-                    I think that’s a responsibility that I have, to push
-                    possibilities, to show people, this is the level that things
-                    could be at. So when you get something that has the name
-                    Kanye West on it, it’s supposed to be pushing the furthest
-                    possibilities. I will be the leader of a company that ends
-                    up being worth billions of dollars, because I got the
-                    answers. I understand culture. I am the nucleus.
-                  </p>
+                      Oil and Gas operators capture and record production data in various ways. At PRAMS we understand that it is important for organizations to implement a recording process that best fits the operating environment. This is why PumperX2 allows for data to be recorded in the field, home office, or imported from SCADA systems. Consistent and accurate daily information is the foundation for precise monthly reconciliation and true-up. Once daily information is recorded it is utilized throughout all aspects of PramsX2, completely eliminating the need for repetitive data entry. Using our Template Manager in AnalystX2 you have the ability to customize exactly what you want to capture for each well in the order that is best suited for each pumper.
+                      </p>
                 ),
               },
               {
@@ -82,9 +47,8 @@ export default function FieldDataCapture() {
                 tabContent: (
                   <div className={classes.block}>
                     <Grid className={classes.block} container spacing={3}>
-                      <Grid tem xs={12} sm={12} md={6} lg={4}>
-                        <ul className={classes.text}>
-                          <li>Automatic Volume Calculations</li>
+                      <Grid tem xs={12} sm={12} md={6} lg={6}>
+                        <ul className={classes.featuresText}>
                           <li>Flexible Gas Volume Data Entry</li>
                           <li>Corrected Run Ticket Entry</li>
                           <li>Multi-tiered Daily Data Allocation</li>
@@ -94,8 +58,8 @@ export default function FieldDataCapture() {
                           <li>Remote “Offline” Laptop Data Entry</li>
                         </ul>
                       </Grid>
-                      <Grid tem xs={12} sm={12} md={6} lg={4}>
-                        <ul className={classes.text}>
+                      <Grid tem xs={12} sm={12} md={6} lg={6}>
+                        <ul className={classes.featuresText}>
                           <li>3rd Party Import Capabilities—SCADA systems included</li>
                           <li>Ability to Capture/Calculate Oil/Water Gauges (color cut)</li>
                           <li>Capture equipement information</li>

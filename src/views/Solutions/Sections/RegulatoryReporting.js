@@ -1,6 +1,7 @@
 import React from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
+import styles from "assets/jss/material-kit-react/views/solutionsBlueBack";
 // core components
 import classNames from "classnames";
 import CustomTabs from "components/CustomTabs/CustomTabs.js";
@@ -8,40 +9,17 @@ import Grid from "@material-ui/core/Grid";
 
 import logo from "assets/img/logo.png";
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: "center",
-  },
-  text: {
-    padding: "10px",
-    color: "white",
-    textAlign: "center",
-    border: 0,
-    borderRadius: 3,
-  },
-  block: {
-    padding: "20px",
-    color: "white",
-    textAlign: "center",
-    backgroundColor: "rgb(2, 46, 105)",
-    border: 0,
-    borderRadius: 3,
-  },
-}));
+const useStyles = makeStyles(styles);
+
 
 export default function RegulatoryReporting() {
   const classes = useStyles();
-  const imageClasses = classNames(classes.imgFluid);
   return (
     <div className={classes.block}>
       <Grid className={classes.block} container spacing={3}>
-        <Grid xs={12} sm={12} md={8}>
+        <Grid xs={12} sm={12} md={6}>
           <h3>
-            <small className={classes.text}>
+            <small className={classes.socials}>
               Production & Regulatory Reporting
             </small>
           </h3>
@@ -53,16 +31,11 @@ export default function RegulatoryReporting() {
             className={classes.text}
             tabs={[
               {
-                tabName: "SCADA Integration",
+                tabName: "Overview",
                 tabContent: (
                   <p className={classes.text}>
-                    I think that’s a responsibility that I have, to push
-                    possibilities, to show people, this is the level that things
-                    could be at. So when you get something that has the name
-                    Kanye West on it, it’s supposed to be pushing the furthest
-                    possibilities. I will be the leader of a company that ends
-                    up being worth billions of dollars, because I got the
-                    answers. I understand culture. I am the nucleus.
+                    Unique and complex regulatory requirements hinder production reporting for every operator. Over the years our clients have consistently requested a friendly and accurate regulatory reporting interface—a request that is brilliantly delivered within the PramsX2 suite. Regulatory reporting setup is swift, and our software development team constantly monitors agencies for regulatory changes and implements timely updates at no additional cost.
+                    Committed to developing a complete end-to-end solution for any oil and gas operator, at PRAMS we have developed regulatory reporting for eleven agencies and continue to expand our capabilities with five additional agency reports being developed.
                   </p>
                 ),
               },
@@ -71,7 +44,7 @@ export default function RegulatoryReporting() {
                 tabContent: (
                   <div className={classes.block}>
                     <Grid className={classes.block} container spacing={3}>
-                      <Grid tem xs={12} sm={12} md={6} lg={4}>
+                      <Grid tem xs={12} sm={12} md={6} lg={6}>
                         <ul className={classes.text}>
                           <li>Automatic Volume Calculations</li>
                           <li>Flexible Gas Volume Data Entry</li>
@@ -83,8 +56,8 @@ export default function RegulatoryReporting() {
                           <li>Remote “Offline” Laptop Data Entry</li>
                         </ul>
                       </Grid>
-                      <Grid tem xs={12} sm={12} md={6} lg={4}>
-                        <ul className={classes.text}>
+                      <Grid tem xs={12} sm={12} md={6} lg={6}>
+                        <ul className={classes.featuresText}>
                           <li>3rd Party Import Capabilities—SCADA systems included</li>
                           <li>Ability to Capture/Calculate Oil/Water Gauges (color cut)</li>
                           <li>Capture equipement information</li>
@@ -101,7 +74,7 @@ export default function RegulatoryReporting() {
           />
         </Grid>
         <Grid item xs={12} sm={12} md={6} lg={4}>
-          <img src={logo} alt="..." className={imageClasses} />
+          <img src={logo} alt="..." className={classes.image} />
         </Grid>
       </Grid>
     </div>
