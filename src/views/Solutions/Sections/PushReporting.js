@@ -45,15 +45,11 @@ export default function PushReporting() {
                 tabContent: (
                   <div className={classes.block}>
                     <Grid className={classes.block} container spacing={3}>
-                      <Grid tem xs={12} sm={12} md={6} lg={6}>
+                      <Grid tem xs={12} sm={12} md={12} lg={12}>
                         <ul className={classes.featuresText}>
                           <li>Pinpoint, Extract, and Export Volume Data Automatically</li>
                           <li>Customizable Report Scheduling (Hourly, Weekly, Monthly, etc.)</li>
                           <li>Automated E-mail Reporting</li>
-                        </ul>
-                      </Grid>
-                      <Grid tem xs={12} sm={12} md={6} lg={6}>
-                        <ul className={classes.featuresText}>
                           <li>Define specific well lists for partner reporting</li>
                           <li>All reports available in both XLSX and PDF format</li>
                           <li>Use our email server or yours to simplify setup </li>

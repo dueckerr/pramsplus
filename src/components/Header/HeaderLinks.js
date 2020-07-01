@@ -65,7 +65,13 @@ export default function HeaderLinks(props) {
           <Link className={classes.link} to="/login-page">Login</Link>
         </Button>
       </ListItem>
-
+      <ListItem className={classes.listItem}>
+        <Button>
+        < a href="https://www.gotomeeting.com/join" >< img src="https://weblibrary.cdn.getgo.com/embedMN/1.0.0/en/images/Small_120X60.png" width="120" height="60" border="0" >
+           </img>
+          </a >
+        </Button>
+      </ListItem>
     </List>
   );
 }

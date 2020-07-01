@@ -3,30 +3,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import logo from "assets/img/logo.png";
+import styles from "assets/jss/material-kit-react/views/HomeStyle/homeStyle.js";
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: "center",
-  },
-  block: {
-    padding: "10px",
-    color: "black",
-    textAlign: "center",
-    border: 0,
-    borderRadius: 3,
-  },
-  text: {
-    color: "black",
-    textAlign: "center",
-    border: 0,
-    borderRadius: 3,
-    fontSize: "18px",
-  },
-}));
+const useStyles = makeStyles(styles)
 
 export default function PRAMSMission() {
   const classes = useStyles();
@@ -35,7 +14,7 @@ export default function PRAMSMission() {
     <div className={classes.block}>
       <Grid className={classes.block} container spacing={2}>
         <Grid item xs={12} sm={12} md={6} lg={4}>
-          <img src={logo} alt="..." />
+        <img src={logo} alt="..." className={classes.image} />
         </Grid>
         <Grid item xs={12} sm={12} md={6} lg={7}>
           <p className={classes.text}>

@@ -50,7 +50,7 @@ const solutionsBlueBlack = {
     lineHeight: "41px",
     fontSize: "18px",
     color: "white",
-    textAlign: "center",
+    textAlign: "left",
   },
   image: {
     borderRadius: 3,

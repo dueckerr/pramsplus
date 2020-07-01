@@ -3,40 +3,66 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
 import classNames from "classnames";
-import styles from "assets/jss/material-kit-react/views/landingPageSections/teamStyle.js";
-
+import assetMgmt from "assets/img/assetMgmt.jpeg";
+import fieldDataCapture from "assets/img/fieldDataCapture.jpeg";
+import datacharts2 from "assets/img/datacharts2.png"
 // core components
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
-import Card from "components/Card/Card.js";
-import CardBody from "components/Card/CardBody.js";
+import Grid from "@material-ui/core/Grid";
 
-import analyst from "assets/img/bbl.png";
-import pumper from "assets/img/pump.png";
-import insight from "assets/img/chart.png";
-import cloud from "assets/img/cloud.jpeg";
-import outsourcing from "assets/img/outsourcing.jpeg";
+import styles from "assets/jss/material-kit-react/views/HomeStyle/homeBlueBack.js";
 
 const useStyles = makeStyles(styles);
 
 export default function Software() {
   const classes = useStyles();
-  const imageClasses = classNames(classes.imgRaised, classes.image);
+
   return (
-    <div className={classes.section}>
-      <h2 className={classes.title}>What we offer</h2>
-      <div>
-        <GridContainer>
-          <GridItem xs={12} sm={12} md={4}>
-            <Card plain>
-              <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                <img
-                  src={analyst}
-                  alt="Field Data Capture"
-                  className={imageClasses}
-                />
-              </GridItem>
-              <h4 className={classes.cardTitle}>
+    <div className={classes.block}>
+      <div className={classes.title}>
+        <h3 className={classes.headerTextBlue}>What we offer</h3>
+      </div>
+      <Grid className={classes.paper} container spacing={3}>
+        <Grid item xs={12} sm={12} md={6} lg={6}>
+          <img src={fieldDataCapture} alt="..." className={classes.image} />
+        </Grid>
+        <Grid item xs={12} sm={12} md={6} lg={6}>
+          <p className={classes.lowerHeaderText}>Field Data Capture </p>
+          <p className={classes.blueText}>The most vital part of a Production Accounting software is the data entry process.  It must be intuitive and easily understandable as users enter the data. Over the past 15 years PRAMS has refined this process and has created the perfect gauge-sheet style interface data entry proceess.</p>
+        </Grid>
+        <Grid item xs={12} sm={12} md={6} lg={6}>
+          <p className={classes.lowerHeaderText}>Asset Management </p>
+          <p className={classes.blueText}>Meters, valves, site inspections, and production data just a few parts of the puzzle </p>
+        </Grid>
+        <Grid item xs={12} sm={12} md={6} lg={6}>
+        <img src={assetMgmt} alt="..." className={classes.image} />
+        </Grid>
+        <Grid item xs={12} sm={12} md={6} lg={6}>
+        <img src={datacharts2} alt="..." className={classes.image} />
+        </Grid>
+        <Grid item xs={12} sm={12} md={6} lg={6}>
+          <p className={classes.lowerHeaderText}>Data Visualization </p>
+          <p className={classes.blueText}>img </p>
+        </Grid>
+
+        {/* Additonal services section Server Structure and BPO */}
+        
+        </Grid>
+        <div className={classes.title}>
+          <h3 className={classes.headerTextBlue}>Additional Services</h3>
+        </div>
+        <Grid className={classes.paper} container spacing={3}>
+        <Grid item xs={12} sm={12} md={4} lg={6}>
+          <p className={classes.blueText}>Server Infastructure </p>
+        </Grid>
+        <Grid item xs={12} sm={12} md={4} lg={6}>
+          <p className={classes.blueText}>BPO </p>
+        </Grid>
+      </Grid>
+    </div>
+  );
+}
+
+              {/* <h4 className={classes.cardTitle}>
                 AnaylstX2
                 <br />
                 <small className={classes.smallTitle}>Field Data Capture</small>
@@ -48,14 +74,10 @@ export default function Software() {
               </CardBody>
             </Card>
           </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
-            <Card plain>
-              <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                <img
-                  src={insight}
-                  alt="Well Production Data Visualization"
-                  className={imageClasses}
-                />
+          <GridItem xs={12} sm={12} md={6}>
+            <Card >
+              <GridItem xs={12} sm={12} md={6}>
+
               </GridItem>
               <h4 className={classes.cardTitle}>
                 InsightX2
@@ -70,14 +92,9 @@ export default function Software() {
               </CardBody>
             </Card>
           </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
+          <GridItem xs={12} sm={12} md={6}>
             <Card plain>
-              <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                <img
-                  src={pumper}
-                  alt="Field Data Capture Tool"
-                  className={imageClasses}
-                />
+              <GridItem xs={12} sm={12} md={6}>        
               </GridItem>
               <h4 className={classes.cardTitle}>
                 PumperX2
@@ -93,53 +110,25 @@ export default function Software() {
               </CardBody>
             </Card>
           </GridItem>
+
           <GridItem xs={12} sm={12} md={6}>
             <Card plain>
-              <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                <img
-                  src={cloud}
-                  alt="Hosted & On-Premises Options"
-                  className={imageClasses}
-                />
+              <GridItem xs={12} sm={12} md={6}>
+         
               </GridItem>
               <h4 className={classes.cardTitle}>
-                Server Infrastructure
+                Business Process Outsourcing
                 <br />
                 <small className={classes.smallTitle}>
-                Hosted & On-Premises Options
+                Allocation & Reporting 
                 </small>
               </h4>
               <CardBody>
                 <p className={classes.description}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed tempus urna et pharetra pharetra massa massa. Odio tempor orci dapibus ultrices in iaculis nunc sed. Morbi blandit cursus risus at ultrices mi tempus imperdiet nulla. Odio ut enim blandit volutpat maecenas volutpat. Viverra aliquet eget sit amet tellus cras adipiscing enim. Nulla at volutpat diam ut venenatis tellus in metus vulputate. Aliquam purus sit amet luctus venenatis lectus magna fringilla urna. Massa sed elementum tempus egestas sed sed risus pretium. Tristique senectus et netus et malesuada fames.
-                </p>
+                PRAMS can fulfill your monthly allocation and reporting roles. As companies, especially smaller operators, look to better manage their operating costs, some of our clients have opted to outsource their reporting to PRAMS.  We will review your production at the end of each month and file the appropriate reports to any state and complete the allocation process.  Our goal is to take some of the tedious work off you plate, to allow operators to focus on more vital and revenue generating work. 
+               </p>
+
               </CardBody>
             </Card>
           </GridItem>
-          <GridItem xs={12} sm={12} md={6}>
-            <Card plain>
-              <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                <img
-                  src={outsourcing}
-                  alt="Production accounting outsourcing"
-                  className={imageClasses}
-                />
-              </GridItem>
-              <h4 className={classes.cardTitle}>
-                Allocation & Reporting Outsourcing
-                <br />
-                <small className={classes.smallTitle}>
-                  Analyst and Regulatory Role 
-                </small>
-              </h4>
-              <CardBody>
-                <p className={classes.description}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed tempus urna et pharetra pharetra massa massa. Odio tempor orci dapibus ultrices in iaculis nunc sed. Morbi blandit cursus risus at ultrices mi tempus imperdiet nulla. Odio ut enim blandit volutpat maecenas volutpat. Viverra aliquet eget sit amet tellus cras adipiscing enim. Nulla at volutpat diam ut venenatis tellus in metus vulputate. Aliquam purus sit amet luctus venenatis lectus magna fringilla urna. Massa sed elementum tempus egestas sed sed risus pretium. Tristique senectus et netus et malesuada fames.
-                </p>
-              </CardBody>
-            </Card>
-          </GridItem>
-        </GridContainer>
-      </div>
-    </div>
-  );
-}
+        </GridContainer> */}

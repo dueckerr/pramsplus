@@ -10,7 +10,12 @@ const componentsStyle = {
     fontSize: "4.2rem",
     fontWeight: "600",
     display: "inline-block",
-    position: "relative"
+    color: "black",
+    margin: "-60px 30px 0px",
+    position: "absolute",
+    top: -260,
+    left: 40,
+    zIndex: "tooltip"
   },
   subtitle: {
     fontSize: "1.313rem",

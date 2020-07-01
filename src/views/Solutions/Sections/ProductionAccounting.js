@@ -18,7 +18,7 @@ export default function ProductionAccounting() {
   return (
     <div className={classes.block}>
       <Grid className={classes.block} container spacing={3}>
-        <Grid xs={12} sm={12} md={8}>
+        <Grid xs={12} sm={12} md={7}>
           <h3>
             <small className={classes.socials}>Monthly Production Accounting & Reporting</small>
           </h3>

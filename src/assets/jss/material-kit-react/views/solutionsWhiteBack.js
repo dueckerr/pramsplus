@@ -51,7 +51,8 @@ section: {
     lineHeight: "41px",
     fontSize: "18px",
     color: "black",
-    textAlign: "center",
+    textAlign: "left",
+    
   },
   image: {
     borderRadius: 3,
@@ -62,6 +63,7 @@ section: {
     paddingBottom: "10px",
     paddingRight: "10px",
     justifyContent: "center",
+    border: '5px'
 },
   margin5: {
     margin: "5px"

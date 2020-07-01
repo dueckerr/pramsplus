@@ -39,13 +39,12 @@ export default function Components(props) {
         }}
         {...rest}
       />
-      <Parallax image={require("assets/img/grey.png")}>
+      <Parallax image={require("assets/img/refinery.jpeg")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem>
               <div className={classes.brand}>
                 <h1 className={classes.title}>PRAMS Plus</h1>
-                <h3 className={classes.subtitle}>More for Less</h3>
               </div>
             </GridItem>
           </GridContainer>
@@ -54,9 +53,9 @@ export default function Components(props) {
 
       <div className={classNames(classes.main, classes.mainRaised)}>
         <PramsStatement />
-        <PRAMSMission />
-        <SectionWorked />
         <Software />
+        <SectionWorked />
+        <PRAMSMission />
         <Pricing />
         <WorkSection />
       </div>

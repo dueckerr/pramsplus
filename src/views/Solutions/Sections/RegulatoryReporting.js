@@ -17,7 +17,7 @@ export default function RegulatoryReporting() {
   return (
     <div className={classes.block}>
       <Grid className={classes.block} container spacing={3}>
-        <Grid xs={12} sm={12} md={6}>
+        <Grid xs={12} sm={12} md={7}>
           <h3>
             <small className={classes.socials}>
               Production & Regulatory Reporting
@@ -45,7 +45,7 @@ export default function RegulatoryReporting() {
                   <div className={classes.block}>
                     <Grid className={classes.block} container spacing={3}>
                       <Grid tem xs={12} sm={12} md={6} lg={6}>
-                        <ul className={classes.text}>
+                        <ul className={classes.featuresText}>
                           <li>Automatic Volume Calculations</li>
                           <li>Flexible Gas Volume Data Entry</li>
                           <li>Corrected Run Ticket Entry</li>
@@ -53,11 +53,11 @@ export default function RegulatoryReporting() {
                           <li>Downtime Production Accounting</li>
                           <li>Pressure Recording (casing, tubing, Bradenhead)</li>
                           <li>Route-Based Data Entry</li>
-                          <li>Remote “Offline” Laptop Data Entry</li>
                         </ul>
                       </Grid>
                       <Grid tem xs={12} sm={12} md={6} lg={6}>
                         <ul className={classes.featuresText}>
+                          <li>Remote “Offline” Laptop Data Entry</li>
                           <li>3rd Party Import Capabilities—SCADA systems included</li>
                           <li>Ability to Capture/Calculate Oil/Water Gauges (color cut)</li>
                           <li>Capture equipement information</li>
