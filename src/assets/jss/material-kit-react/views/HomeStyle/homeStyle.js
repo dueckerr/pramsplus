@@ -10,7 +10,7 @@ const homeStyle = {
         paddingBottom: "15px",
         paddingRight: "15px",
         lineHeight: "41px",
-        fontSize: "20px",
+        fontSize: "18px",
         color: "black",
         textAlign: "center",
         fontWeight: 400
@@ -69,7 +69,7 @@ const homeStyle = {
         textAlign: "center",
         border: 0,
         borderRadius: 3,
-        fontSize: "24px",
+        fontSize: "18px",
         lineHeight: "41px",
       },
       headerTextWhite: {

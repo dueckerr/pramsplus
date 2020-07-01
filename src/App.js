@@ -11,6 +11,7 @@ import Home from "views/Home/Home.js";
 import Solutions from "views/Solutions/Solutions.js";
 import Blog from "views/Content/Blog.js";
 import About from "views/About/About.js";
+import Download from "views/Download/Download.js";
 import LoginPage from "views/LoginPage/LoginPage.js";
 
 const loading = () => <div className="animated fadeIn pt-3 text-center">Loading...</div>;
@@ -27,6 +28,7 @@ class App extends Component {
                     <Route path="/solutions" component={Solutions} />
                     <Route path="/content" component={Blog} />
                     <Route path="/login-page" component={LoginPage} />
+                    <Route path="/download" component={Download} />
                     <Route path="/" component={Home} />
                 </Switch>
             </React.Suspense>
