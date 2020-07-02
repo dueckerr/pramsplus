@@ -14,6 +14,14 @@ const homeStyle = {
         color: "black",
         textAlign: "center",
         fontWeight: 400
+      },
+      paperBenefits: {
+        textAlign: "center",
+        paddingLeft: "150px",
+        paddingTop: "15px",
+        paddingBottom: "15px",
+        paddingRight: "150px",
+        lineHeight: "41px",
 
       },
       block: {
@@ -79,12 +87,12 @@ const homeStyle = {
       },
       blueText: {
         color: "rgb(2, 46, 105)",
-        padding: "10px",
-        textAlign: "center",
+        textAlign: "left",
         border: 0,
         borderRadius: 3,
-        fontSize: "16px",
-        lineHeight: "25px",
+        fontSize: "15px",
+        lineHeight: "20px",
+        fontWeight: 500
       },
       headerTextWhite: {
         linHeight: "41px",
@@ -92,22 +100,20 @@ const homeStyle = {
         color: "white",
         textAlign: "left",
         paddingLeft: "5px",
-        paddingTop: "5px",
-        paddingBottom: "5px",
         paddingRight: "5px",
-        fontWeight: 500
+        fontWeight: 250
 
       },
       lowerHeaderText: {
         color: "rgb(2, 46, 105)",
-        linHeight: "5px",
         fontSize: "28px",
         textAlign: "center",
-        paddingLeft: "5px",
+        fontWeight: 150,
+        display: 'flex',
+        flexWrap: 'wrap',
+        overflow: 'hidden',
         paddingTop: "5px",
-        paddingBottom: "5px",
-        paddingRight: "5px",
-        fontWeight: 150
+
       },
       image: {
         borderRadius: 3,
@@ -127,10 +133,21 @@ const homeStyle = {
         width: "auto",
         paddingLeft: "10px",
         paddingTop: "10px",
-        paddingBottom: "10px",
+        paddingBottom: "0px",
         paddingRight: "10px",
         justifyContent: "center",
         border: '5px',
+  },
+  imageSmall: {
+    borderRadius: 3,
+    height: "auto",
+    width: "15%",
+    border: '5px',
+    flexShrink: 10,
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: "center",
+    overflow: 'hidden',
   },
 };
 

@@ -71,7 +71,7 @@ export default function HeaderLinks(props) {
           target="_blank"
           className={classes.navLink}
         >
-          <Link className={classes.link} to="/login-page">Login</Link>
+          <Link className={classes.link} href="https://portal.pramsplus.com/Account/Login?ReturnUrl=%2F">Login</Link>
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
