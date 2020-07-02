@@ -69,22 +69,22 @@ const homeStyle = {
         textAlign: "left",
       },
       whiteText: {
-        padding: "10px",
         color: "white",
+        padding: "10px",
         textAlign: "center",
         border: 0,
         borderRadius: 3,
-        fontSize: "18px",
-        lineHeight: "41px",
+        fontSize: "16px",
+        lineHeight: "25px",
       },
       blueText: {
-        padding: "10px",
         color: "rgb(2, 46, 105)",
+        padding: "10px",
         textAlign: "center",
         border: 0,
         borderRadius: 3,
-        fontSize: "18px",
-        lineHeight: "41px",
+        fontSize: "16px",
+        lineHeight: "25px",
       },
       headerTextWhite: {
         linHeight: "41px",
@@ -99,15 +99,15 @@ const homeStyle = {
 
       },
       lowerHeaderText: {
-        linHeight: "41px",
-        fontSize: "34px",
         color: "rgb(2, 46, 105)",
+        linHeight: "5px",
+        fontSize: "28px",
         textAlign: "center",
         paddingLeft: "5px",
         paddingTop: "5px",
         paddingBottom: "5px",
         paddingRight: "5px",
-        fontWeight: 500
+        fontWeight: 150
       },
       image: {
         borderRadius: 3,

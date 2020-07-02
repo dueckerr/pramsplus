@@ -15,18 +15,26 @@ export default function PramsStatement() {
   React.useEffect(() => {});
   return (
     <div className={classes.blueBlock}>
-      <Grid className={classes.block} container spacing={3}>
-        <Grid item xs={12} sm={12} md={4} lg={6}>
-          <h3 className={classes.headerTextWhite}>Connecting Field to Office</h3>
-          <h3 className={classes.lowerHeaderText}>USER-DRIVEN DESIGN & DEVELOPMENT </h3>
-          <p className={classes.whiteText}>
-            Founded in 2005, PRAMS Plus mission is to provide quality solutions that deliver measurable value and ROI to production companies. Our flagship solftware, PRAMS X2, is used by a wide range of operators, operating anywhere from 10 wells to over 2,000 wells.  We truely are the solution for the small to mid-size operators.
-          </p>
+      <h3 className={classes.headerTextWhite}> Innovative Oil & Gas Production Software</h3>
+        <Grid className={classes.block} container spacing={3}>
+          <Grid item xs={12} sm={12} md={8} lg={4}>
+            <h3 className={classes.lowerHeaderText}>Complete Field Solution </h3>
+              <p className={classes.whiteText}>
+                PRAMS a complete field solution, through years of continuous development, PRAMS has created the most sophisticated gauge-sheet style data capturing platform. Color-cut tanks, site inspection, and unlimited meters all at the pumpers finger tips, are just a few features that vaults PRAMS past our competitors.
+              </p>
+          </Grid>
+          <Grid item xs={12} sm={12} md={8} lg={4}>
+            <h3 className={classes.lowerHeaderText}>Unmatched Analytic Capabilities</h3>
+              <p className={classes.whiteText}>
+                At PRAMS we understand that just capturing the data isn't enough.  Too often does important data and trends become distorted, having this information transformed into meaningful visualization tools that will help you gain insight into your assets and maximize your ROI, that is the PRAMS way.
+              </p>
+          </Grid>
+          <Grid item xs={12} sm={12} md={8} lg={4}>
+            <h3 className={classes.lowerHeaderText}>Asset Management & Integrations </h3>
+              <p className={classes.whiteText}>
+              Today every well or battery has countless meters and meters, it is becoming increasingly difficult to manage everything efficiently.  The PRAMS platform allows users to freely dynamically export all of your data, enabling our clients to customize how they choose to see their data, and effortlessly integrate with other software services.              </p>
+          </Grid>
         </Grid>
-        <Grid item xs={12} sm={12} md={8} lg={6}>
-        <img src={connectedOilField} alt="..." className={classes.imagePramsStatement} />
-        </Grid>
-      </Grid>
     </div>
   );
 }

@@ -13,7 +13,7 @@ const componentsStyle = {
     color: "black",
     margin: "-60px 30px 0px",
     position: "absolute",
-    top: -260,
+    top: -215,
     left: 40,
     zIndex: "tooltip"
   },

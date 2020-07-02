@@ -4,7 +4,6 @@ const homeStyle = {
         flexGrow: 1,
       },
       paper: {
-        textAlign: "center",
         paddingLeft: "15px",
         paddingTop: "15px",
         paddingBottom: "15px",
@@ -64,36 +63,35 @@ const homeStyle = {
         textAlign: "left",
       },
       whiteText: {
-        padding: "10px",
         color: "white",
+        padding: "10px",
         textAlign: "center",
         border: 0,
         borderRadius: 3,
-        fontSize: "18px",
-        lineHeight: "41px",
+        fontSize: "16px",
+        lineHeight: "25px",
       },
       headerTextWhite: {
         linHeight: "41px",
         fontSize: "40px",
         color: "white",
-        textAlign: "left",
+        textAlign: "center",
         paddingLeft: "5px",
-        paddingTop: "5px",
-        paddingBottom: "5px",
         paddingRight: "5px",
-        fontWeight: 500
+        paddingTop: "5px",
+        fontWeight: 400
 
       },
       lowerHeaderText: {
-        linHeight: "41px",
-        fontSize: "34px",
         color: "white",
+        linHeight: "41px",
+        fontSize: "28px",
         textAlign: "center",
         paddingLeft: "5px",
         paddingTop: "5px",
         paddingBottom: "5px",
         paddingRight: "5px",
-        fontWeight: 500
+        fontWeight: 150
       },
       image: {
         borderRadius: 3,
