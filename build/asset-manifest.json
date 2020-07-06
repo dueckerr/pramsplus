@@ -1,34 +1,37 @@
 {
   "files": {
     "main.css": "/pramsplus/static/css/main.d373da39.chunk.css",
-    "main.js": "/pramsplus/static/js/main.faa92302.chunk.js",
-    "main.js.map": "/pramsplus/static/js/main.faa92302.chunk.js.map",
+    "main.js": "/pramsplus/static/js/main.7d4061f6.chunk.js",
+    "main.js.map": "/pramsplus/static/js/main.7d4061f6.chunk.js.map",
     "runtime-main.js": "/pramsplus/static/js/runtime-main.d363cbd6.js",
     "runtime-main.js.map": "/pramsplus/static/js/runtime-main.d363cbd6.js.map",
-    "static/js/2.cc6eb9c8.chunk.js": "/pramsplus/static/js/2.cc6eb9c8.chunk.js",
-    "static/js/2.cc6eb9c8.chunk.js.map": "/pramsplus/static/js/2.cc6eb9c8.chunk.js.map",
+    "static/js/2.30a0e813.chunk.js": "/pramsplus/static/js/2.30a0e813.chunk.js",
+    "static/js/2.30a0e813.chunk.js.map": "/pramsplus/static/js/2.30a0e813.chunk.js.map",
     "index.html": "/pramsplus/index.html",
-    "precache-manifest.f76a72fa091887b544f82d43f8b24fc0.js": "/pramsplus/precache-manifest.f76a72fa091887b544f82d43f8b24fc0.js",
+    "precache-manifest.0e0cc5dede7072bf4e86afa0ddcd0835.js": "/pramsplus/precache-manifest.0e0cc5dede7072bf4e86afa0ddcd0835.js",
     "service-worker.js": "/pramsplus/service-worker.js",
     "static/css/main.d373da39.chunk.css.map": "/pramsplus/static/css/main.d373da39.chunk.css.map",
-    "static/js/2.cc6eb9c8.chunk.js.LICENSE.txt": "/pramsplus/static/js/2.cc6eb9c8.chunk.js.LICENSE.txt",
+    "static/js/2.30a0e813.chunk.js.LICENSE.txt": "/pramsplus/static/js/2.30a0e813.chunk.js.LICENSE.txt",
     "static/media/HomePage.png": "/pramsplus/static/media/HomePage.770b6e75.png",
     "static/media/apple-icon.png": "/pramsplus/static/media/apple-icon.7e768577.png",
     "static/media/assetMgmt.jpeg": "/pramsplus/static/media/assetMgmt.f1abb78f.jpeg",
     "static/media/connectedOilField.jpeg": "/pramsplus/static/media/connectedOilField.3241129b.jpeg",
     "static/media/dailyPumperX2.png": "/pramsplus/static/media/dailyPumperX2.e2975ccc.png",
-    "static/media/datacharts2.png": "/pramsplus/static/media/datacharts2.ddaf87a0.png",
     "static/media/fieldDataCapture.jpeg": "/pramsplus/static/media/fieldDataCapture.0e665ccf.jpeg",
     "static/media/grey.png": "/pramsplus/static/media/grey.88c9dd1d.png",
     "static/media/landingPumps.jpeg": "/pramsplus/static/media/landingPumps.99786ae4.jpeg",
     "static/media/logo.png": "/pramsplus/static/media/logo.fd81f917.png",
+    "static/media/marketing.jpg": "/pramsplus/static/media/marketing.f6d1684b.jpg",
+    "static/media/moneyJack.jpg": "/pramsplus/static/media/moneyJack.607c7845.jpg",
+    "static/media/operations.jpg": "/pramsplus/static/media/operations.df9d8f54.jpg",
     "static/media/pushReport.png": "/pramsplus/static/media/pushReport.a236156f.png",
-    "static/media/refinery.jpeg": "/pramsplus/static/media/refinery.8b120401.jpeg"
+    "static/media/refinery.jpeg": "/pramsplus/static/media/refinery.8b120401.jpeg",
+    "static/media/regulatory.jpg": "/pramsplus/static/media/regulatory.d2635ad9.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.d363cbd6.js",
-    "static/js/2.cc6eb9c8.chunk.js",
+    "static/js/2.30a0e813.chunk.js",
     "static/css/main.d373da39.chunk.css",
-    "static/js/main.faa92302.chunk.js"
+    "static/js/main.7d4061f6.chunk.js"
   ]
 }

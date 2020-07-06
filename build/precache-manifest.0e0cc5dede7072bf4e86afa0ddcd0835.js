@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "36d316301b6734409ed6d22a2ba00b97",
+    "revision": "e20857f250f34e4f48ce43783f2d7f28",
     "url": "/pramsplus/index.html"
   },
   {
-    "revision": "cc21cb0a28df281d675f",
+    "revision": "8ee8dd195633ae73845b",
     "url": "/pramsplus/static/css/main.d373da39.chunk.css"
   },
   {
-    "revision": "d6e567d87d1ec7c58e21",
-    "url": "/pramsplus/static/js/2.cc6eb9c8.chunk.js"
+    "revision": "8f585d0a38eda013f864",
+    "url": "/pramsplus/static/js/2.30a0e813.chunk.js"
   },
   {
     "revision": "5e9b6f5c16b720e8a86875f97734673e",
-    "url": "/pramsplus/static/js/2.cc6eb9c8.chunk.js.LICENSE.txt"
+    "url": "/pramsplus/static/js/2.30a0e813.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cc21cb0a28df281d675f",
-    "url": "/pramsplus/static/js/main.faa92302.chunk.js"
+    "revision": "8ee8dd195633ae73845b",
+    "url": "/pramsplus/static/js/main.7d4061f6.chunk.js"
   },
   {
     "revision": "5781477d7fb3c0fdb270",
@@ -44,10 +44,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pramsplus/static/media/dailyPumperX2.e2975ccc.png"
   },
   {
-    "revision": "ddaf87a0dbc012ce7ebb301859e3e438",
-    "url": "/pramsplus/static/media/datacharts2.ddaf87a0.png"
-  },
-  {
     "revision": "0e665ccfc447b0921f606002d3cae72f",
     "url": "/pramsplus/static/media/fieldDataCapture.0e665ccf.jpeg"
   },
@@ -64,11 +60,27 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pramsplus/static/media/logo.fd81f917.png"
   },
   {
+    "revision": "f6d1684bca2a0cb78a4fd0dcf5a8dee6",
+    "url": "/pramsplus/static/media/marketing.f6d1684b.jpg"
+  },
+  {
+    "revision": "607c784597596f45a7bad81b05006657",
+    "url": "/pramsplus/static/media/moneyJack.607c7845.jpg"
+  },
+  {
+    "revision": "df9d8f54d21402d66c8d98b05e364d18",
+    "url": "/pramsplus/static/media/operations.df9d8f54.jpg"
+  },
+  {
     "revision": "a236156fdf8da2adbac9491194e20ead",
     "url": "/pramsplus/static/media/pushReport.a236156f.png"
   },
   {
     "revision": "8b120401baffcef279179f2fd89ae652",
     "url": "/pramsplus/static/media/refinery.8b120401.jpeg"
+  },
+  {
+    "revision": "d2635ad92f27f25c20245781bbd11d71",
+    "url": "/pramsplus/static/media/regulatory.d2635ad9.jpg"
   }
 ]);
