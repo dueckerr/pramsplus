@@ -7,13 +7,20 @@ const landingPageStyle = {
     ...container
   },
   title: {
-    ...title,
+    fontSize: "4.2rem",
+    fontWeight: "600",
     display: "inline-block",
-    position: "relative",
-    marginTop: "30px",
-    minHeight: "32px",
-    color: "#FFFFFF",
-    textDecoration: "none"
+    color: "black",
+    margin: "-60px 30px 0px",
+    position: "absolute",
+    top: -215,
+    left: 40,
+    zIndex: "tooltip",
+    background: "rgb(102, 153, 153)",
+    padding: "0 18px",
+    boxShadow: '3px 3px 5px 2px rgb(2, 46, 105)',
+    fontFamily: "'Montserrat', sans-serif",
+
   },
   subtitle: {
     fontSize: "1.313rem",

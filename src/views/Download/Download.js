@@ -28,9 +28,10 @@ export default function Components(props) {
         rightLinks={<HeaderLinks />}
         {...rest}
       />
+      <br></br>
+      <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-        <Grid className={classes.block} container spacing={3}>
-           <Grid xs={12} sm={12} md={6}>
+          <Grid xs={12} sm={12} md={6}>
             <h3>
               <small className={classes.socials}>PRAMS Software Downloads</small>
             </h3>
@@ -40,8 +41,8 @@ export default function Components(props) {
               <li><Button className={classes.link} href="https://update.pramsplus.com/file/download?id=183">Pumper</Button></li>
               <li><Button className={classes.link} href="https://update.pramsplus.com/file/download?id=179">Server</Button></li>
             </ul>
-            </Grid>
           </Grid>
+        </div>
       </div>
       <Footer />
     </div>

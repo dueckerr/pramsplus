@@ -20,7 +20,7 @@ export default function PramsStatement() {
           <Grid item xs={12} sm={12} md={8} lg={4}>
             <h3 className={classes.lowerHeaderText}>Complete Field Solution </h3>
               <p className={classes.whiteText}>
-                PRAMS a complete field solution, through years of continuous development, PRAMS has created the most sophisticated gauge-sheet style data capturing platform. Color-cut tanks, site inspection, and unlimited meters all at the pumpers finger tips, are just a few features that vaults PRAMS past our competitors.
+                PRAMS is a complete field solution, built through years of continuous development, PRAMS has created the most sophisticated gauge-sheet style data capturing platform. Color-cut tanks, site inspection, and unlimited meters all at the pumpers finger tips, are just a few features that vaults PRAMS past our competitors.
               </p>
           </Grid>
           <Grid item xs={12} sm={12} md={8} lg={4}>
@@ -32,7 +32,7 @@ export default function PramsStatement() {
           <Grid item xs={12} sm={12} md={8} lg={4}>
             <h3 className={classes.lowerHeaderText}>Asset Management & Integrations </h3>
               <p className={classes.whiteText}>
-              Today every well or battery has countless meters and meters, it is becoming increasingly difficult to manage everything efficiently.  The PRAMS platform allows users to freely dynamically export all of your data, enabling our clients to customize how they choose to see their data, and effortlessly integrate with other software services.              </p>
+              Today, every well and battery are installed with countless meters and sensors, it is becoming increasingly difficult to manage everything efficiently.  The PRAMS platform allows users to freely dynamically export all of your data, enabling our clients to customize how they choose to see their data, and effortlessly integrate with other software services.</p>
           </Grid>
         </Grid>
     </div>

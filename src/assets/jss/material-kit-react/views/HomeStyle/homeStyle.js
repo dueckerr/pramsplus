@@ -13,9 +13,28 @@ const homeStyle = {
         color: "black",
         textAlign: "center",
         fontWeight: 400
+      },
+      paperPricing: {
+        padding: "15px",
+        lineHeight: "41px",
+        fontSize: "18px",
+        color: "black",
+        textAlign: "center",
+        fontWeight: 400,
+        display: "inline-block",
 
       },
       block: {
+        paddingLeft: "25px",
+        paddingTop: "25px",
+        paddingBottom: "25px",
+        paddingRight: "25px",
+        color: "black",
+        textAlign: "center",
+        border: 0,
+        borderRadius: 3,
+      },
+      blockPricing: {
         paddingLeft: "25px",
         paddingTop: "25px",
         paddingBottom: "25px",
@@ -35,6 +54,7 @@ const homeStyle = {
         border: 0,
         borderRadius: 3,
         backgroundColor: "rgb(2, 46, 105)",
+        
       },
       text: {
         lineHeight: "41px",

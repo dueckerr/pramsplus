@@ -17,7 +17,6 @@ const headerStyle = {
     display: "flex",
     border: "0",
     borderRadius: "3px",
-    padding: "0.625rem 0",
     marginBottom: "20px",
     color: "#555",
     width: "100%",
@@ -40,7 +39,6 @@ const headerStyle = {
     zIndex: "1100",
   },
   container: {
-    ...container,
     minHeight: "50px",
     flex: "1",
     alignItems: "center",
@@ -58,10 +56,9 @@ const headerStyle = {
     borderRadius: "3px",
     textTransform: "none",
     color: "inherit",
-    padding: "8px 16px",
     letterSpacing: "unset",
     "&:hover,&:focus": {
-      color: "inherit",
+      color: "black",
       background: "transparent",
     },
   },
@@ -107,7 +104,6 @@ const headerStyle = {
   transparent: {
     backgroundColor: "transparent !important",
     boxShadow: "none",
-    paddingTop: "25px",
     color: "#FFFFFF",
   },
   dark: {
@@ -118,7 +114,6 @@ const headerStyle = {
   },
   white: {
     border: "0",
-    padding: "0.625rem 0",
     marginBottom: "20px",
     color: "#555",
     backgroundColor: "#fff !important",
@@ -143,8 +138,6 @@ const headerStyle = {
     overflowY: "visible",
     borderTop: "none",
     textAlign: "left",
-    paddingRight: "0px",
-    paddingLeft: "0",
     ...transition,
   },
 };

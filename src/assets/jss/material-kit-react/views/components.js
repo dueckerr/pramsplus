@@ -15,7 +15,13 @@ const componentsStyle = {
     position: "absolute",
     top: -215,
     left: 40,
-    zIndex: "tooltip"
+    zIndex: "tooltip",
+    background: "rgb(102, 153, 153)",
+    padding: "0 18px",
+    boxShadow: '3px 3px 5px 2px rgb(2, 46, 105)',
+    fontFamily: "'Montserrat', sans-serif",
+
+
   },
   subtitle: {
     fontSize: "1.313rem",
@@ -38,6 +44,22 @@ const componentsStyle = {
   },
   textCenter: {
     textAlign: "center"
+  },
+  image: {
+    borderRadius: 3,
+    height: "auto",
+    width: "45%",
+    border: '5px',
+    flexShrink: 10,
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: "center",
+    overflow: 'hidden',
+    top: -285,
+    left: 40,
+    position: "absolute",
+    boxShadow: '5px 8px 7px 8px rgb(2, 46, 105)',
+
   }
 };
 

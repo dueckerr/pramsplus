@@ -12,7 +12,7 @@ import regulatory from "assets/img/regulatory.jpg"
 // core components
 import Grid from "@material-ui/core/Grid";
 
-import styles from "assets/jss/material-kit-react/views/HomeStyle/homeBlueBack.js";
+import styles from "assets/jss/material-kit-react/views/HomeStyle/homeSoftware.js";
 
 const useStyles = makeStyles(styles);
 

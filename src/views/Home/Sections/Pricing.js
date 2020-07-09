@@ -4,7 +4,7 @@ import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import Tab from "@material-ui/core/Tab";
 
-import styles from "assets/jss/material-kit-react/views/HomeStyle/homeStyle.js";
+import styles from "assets/jss/material-kit-react/views/HomeStyle/homeStylePricing.js";
 
 const useStyles = makeStyles(styles)
 
@@ -13,33 +13,41 @@ export default function Pricing() {
 
   return (
     <div className={classes.blueBlock}>
-      <div className={classes.title}>
-        <h2>PRAMS Pricing</h2>
-        <h3>We believe in customizing our services to fit our your needs.</h3>
-      </div>
-      <Grid className={classes.block} container spacing={3}>
-        <Grid item xs={12} sm={6} md={3} lg={3}>
-          <Paper className={classes.paper}>Price Per Well: Starting at $10 per well</Paper>
-          <p className={classes.whiteText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed tempus urna et pharetra pharetra massa massa. Odio tempor orci dapibus ultrices in iaculis nunc sed. Morbi blandit cursus risus at ultrices mi tempus imperdiet nulla. Odio ut enim blandit volutpat maecenas volutpat. Viverra aliquet eget sit amet tellus cras adipiscing enim.
-          </p>
-        </Grid>
-        <Grid item xs={12} sm={6} md={3} lg={3}>
-          <Paper className={classes.paper}>Hosting Option: Starting at $1 per well</Paper>
-          <p className={classes.whiteText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed tempus urna et pharetra pharetra massa massa. Odio tempor orci dapibus ultrices in iaculis nunc sed. Morbi blandit cursus risus at ultrices mi tempus imperdiet nulla. Odio ut enim blandit volutpat maecenas volutpat. Viverra aliquet eget sit amet tellus cras adipiscing enim.
-          </p>
-        </Grid>
-        <Grid item xs={12} sm={6} md={3} lg={3}>
-          <Paper className={classes.paper}>Outsourcing: Starting at $10 per well</Paper>
-          <p className={classes.whiteText}>PRAMS can fulfill 
-            your monthly allocation and reporting roles.
-            As companies, especially smaller operators, look to better manage their operating costs, some of our clients have opted to outsource their reporting to PRAMS.  We will review your production at the end of each month and file the appropriate reports to any state and complete the allocation process.  Our goal is to take some of the tedious work off you plate, to allow operators to focus on more vital and revenue generating work. </p>
 
+      <div>
+        <h3 className={classes.headerTextWhite}>PRAMS Pricing</h3>
+        <h3 className={classes.lowerHeaderText}> We believe in customizing our services to fit our your needs.</h3>
+      </div>
+
+      <Grid className={classes.block} container spacing={3}>
+        <Grid item xs={12} sm={12} md={12} lg={12}>
+          <h3 className={classes.paperPricing}>Price Per Well: $10/well per month</h3>
+          <p className={classes.whiteText}>The cost of PRAMS starts at $10/well for the first 100 wells. After the first 100 wells we work with our customers and provide a volume discount based on their need aand expected support.  This fee includes the full PRAMS Plus Accounting suite, unlimited users and customer support. </p>
+          <p className={classes.whiteText}>We believe in earning your business every month, and have done away with longterm contracts. Eliminating all of the hidden support fees, you will know what you pay each month. </p>
         </Grid>
-        <Grid item xs={12} sm={6} md={3} lg={3}>
-          <Paper className={classes.paper}>Unlimited Users</Paper>
-          <p className={classes.whiteText}>Unlike other production accounting software providers, we do not charge on a per user basis.  This removes the hassle of managing multiple users trying to use the same platform.  It's your data, and you should be able to access it whenever, regardless who else is on our platform</p>
+      </Grid>
+
+      <h3 className={classes.lowerHeaderText}>Additional Services: Contact us for pricing and more information</h3>
+
+      <Grid className={classes.block} container spacing={2}>
+        <Grid item xs={12} sm={12} md={4} lg={4}>
+          <h3 className={classes.paperPricing}>Business Process Outsourcings</h3>
+          <p className={classes.whiteText}>PRAMS can fulfill your monthly allocation and reporting roles. We will review your production at the end of each month and file the appropriate reports to any state and complete the allocation process.  Our goal is to take some of the tedious work off you plate, to allow operators to focus on more vital and revenue generating work. </p>
+        </Grid>
+        {/* <Grid item xs={12} sm={12} md={4} lg={4}>
+          <h3 className={classes.paperPricing}>Start Up Costs: Contact Us</h3>
+          <p className={classes.whiteText}>There is a one time fee for that covers data integration, training and user setup.  </p>
+        </Grid> */}
+        <Grid item xs={12} sm={12} md={4} lg={4}>
+          <h3 className={classes.paperPricing}>Data Migrations</h3>
+          <p className={classes.whiteText}>One of the biggest opsticals of implementing a new software platform is migrating </p>
+        </Grid>
+        <Grid item xs={12} sm={12} md={4} lg={4}>
+          <h3 className={classes.paperPricing}>Hosting Option</h3>
+          <p className={classes.whiteText}>Server infrastructure and IT support can quickly become an expensive overhead for smaller cap companies.  To help combat those expenses, PRAMS offers companies the option to host their data on one of PRAMS propirtary servers.  With seemless integration capabilites, we can remove the burden and costs of managing your own server and data.</p>
         </Grid>
       </Grid>
     </div>
   );
 }
+ß

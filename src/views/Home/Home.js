@@ -18,7 +18,7 @@ import Software from "./Sections/Software.js";
 import SectionWorked from "./Sections/SectionWorked.js";
 import WorkSection from "../About/Sections/WorkSection";
 import Pricing from "./Sections/Pricing.js";
-
+import logo from "assets/img/PPlogo.jpg";
 import styles from "assets/jss/material-kit-react/views/components.js";
 
 const useStyles = makeStyles(styles);
@@ -30,13 +30,8 @@ export default function Components(props) {
     <div>
       <Header
         brand="PRAMS Plus"
-        link="/"
         rightLinks={<HeaderLinks />}
         fixed
-        changeColorOnScroll={{
-          height: 400,
-          color: "white",
-        }}
         {...rest}
       />
       <Parallax image={require("assets/img/refinery.jpeg")}>
@@ -44,7 +39,7 @@ export default function Components(props) {
           <GridContainer>
             <GridItem>
               <div className={classes.brand}>
-                <h1 className={classes.title}>PRAMS Plus</h1>
+              <img src={logo} alt="..." className={classes.image} />
               </div>
             </GridItem>
           </GridContainer>

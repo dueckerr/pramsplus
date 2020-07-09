@@ -5,33 +5,30 @@ import tooltip from "assets/jss/material-kit-react/tooltipsStyle.js";
 const headerLinksStyle = (theme) => ({
   list: {
     ...defaultFont,
-    fontSize: "14px",
+    fontSize: "19px",
     margin: 0,
-    paddingLeft: "0",
-    listStyle: "none",
-    paddingTop: "0",
-    paddingBottom: "0",
-    color: "inherit",
+    paddingTop: "15px",
+    paddingBottom: "5px",
+    color: "rgb(2, 46, 105)",
   },
   link: {
-    textDecoration: "none",
-    color: "black",
+    color: "rgb(2, 46, 105)",
+    paddingLeft: "5px",
+    paddingRight: "5px",
   },
 
   listItem: {
     float: "left",
-    color: "black",
+    color: "rgb(2, 46, 105)",
     position: "relative",
     display: "block",
     width: "auto",
     margin: "0",
-    padding: "0",
-  },
-  listItemText: {
-    padding: "0 !important",
+    paddingLeft: "15px",
+    paddingRight: "15px",
   },
   navLink: {
-    color: "inherit",
+    color: "rgb(2, 46, 105)",
     position: "relative",
     padding: "0.9375rem",
     fontWeight: "400",
@@ -53,7 +50,7 @@ const headerLinksStyle = (theme) => ({
     },
   },
   notificationNavLink: {
-    color: "inherit",
+    color: "rgb(2, 46, 105)",
     padding: "0.9375rem",
     fontWeight: "400",
     fontSize: "12px",
@@ -76,7 +73,7 @@ const headerLinksStyle = (theme) => ({
     display: "inline-flex",
   },
   navLinkActive: {
-    color: "inherit",
+    color: "rgb(2, 46, 105)",
     backgroundColor: "rgba(255, 255, 255, 0.1)",
   },
   icons: {
@@ -90,12 +87,10 @@ const headerLinksStyle = (theme) => ({
     marginRight: "4px",
   },
   dropdownLink: {
-    "&,&:hover,&:focus": {
-      color: "inherit",
+      color: "rgb(2, 46, 105)",
       textDecoration: "none",
       display: "block",
       padding: "10px 20px",
-    },
   },
   ...tooltip,
   marginRight5: {

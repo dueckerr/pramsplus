@@ -14,7 +14,8 @@ import GridItem from "components/Grid/GridItem.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
 
-import styles from "assets/jss/material-kit-react/views/landingPage.js";
+import styles from "assets/jss/material-kit-react/views/components.js";
+import logo from "assets/img/PPlogo.jpg";
 
 // Sections for this page
 import ProductSection from "./Sections/ProductSection.js";
@@ -39,13 +40,12 @@ export default function LandingPage(props) {
         }}
         {...rest}
       />
-      <Parallax image={require("assets/img/grey.png")}>
+      <Parallax image={require("assets/img/valves.jpeg")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem>
               <div className={classes.brand}>
-                <h1 className={classes.title}>PRAMS Plus</h1>
-                <h3 className={classes.subtitle}>More for Less</h3>
+              <img src={logo} alt="..." className={classes.image} />
               </div>
             </GridItem>
           </GridContainer>

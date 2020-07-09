@@ -18,6 +18,7 @@ import ProductionAccounting from "./Sections/ProductionAccounting.js";
 import RegulatoryReporting from "./Sections/RegulatoryReporting.js";
 import PushReporting from "./Sections/PushReporting.js";
 import Outsourcing from "./Sections/Outsourcing.js";
+import logo from "assets/img/PPlogo.jpg";
 
 import WorkSection from "../About/Sections/WorkSection";
 
@@ -46,7 +47,7 @@ export default function Components(props) {
           <GridContainer>
             <GridItem>
               <div className={classes.brand}>
-                <h1 className={classes.title}>PRAMS Plus</h1>
+              <img src={logo} alt="..." className={classes.image} />
               </div>
             </GridItem>
           </GridContainer>

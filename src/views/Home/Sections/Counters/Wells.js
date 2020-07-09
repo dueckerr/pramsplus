@@ -8,7 +8,7 @@ export default function Wells() {
   const [focus, setFocus] = React.useState(false);
   return (
     <Box component="div">
-      <CountUp start={focus ? 0 : null} end={1000000} duration={50} redraw={true}>
+      <CountUp start={focus ? 0 : null} end={56000} duration={3} redraw={true}>
         {({ countUpRef }) => (
           <div>
             <span ref={countUpRef} />
@@ -20,7 +20,7 @@ export default function Wells() {
               }}
             >
               <a>+</a>
-            </VisibilitySensor> Wells Managed
+            </VisibilitySensor> Sites Managed
           </div>
         )}
       </CountUp>

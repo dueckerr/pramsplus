@@ -7,7 +7,7 @@ import React from "react";
       const [focus, setFocus] = React.useState(false);
       return (
         <Box component="div">
-          <CountUp start={focus ? 0 : null} end={1000000} duration={50} redraw={true}>
+          <CountUp start={focus ? 0 : null} end={850000} duration={3} redraw={true}>
             {({ countUpRef }) => (
               <div>
                 <span ref={countUpRef} />
