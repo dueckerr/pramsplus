@@ -31,14 +31,14 @@ const homeStyle = {
      },
       title: {
         lineHeight: "41px",
-        fontSize: "18px",
+        fontSize: "16px",
         color: "black",
         textAlign: "left",
       },
       blueText: {
         color: "rgb(2, 46, 105)",
         textAlign: "left",
-        fontSize: "15px",
+        fontSize: "16px",
         lineHeight: "30px",
         fontWeight: 500
       },

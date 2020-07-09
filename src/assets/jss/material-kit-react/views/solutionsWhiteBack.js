@@ -18,9 +18,8 @@ section: {
     textAlign: "left",
     border: 0,
     borderRadius: 3,
-    fontSize: "18px",
-    lineHeight: "41px",
-
+    fontSize: "16px",
+    lineHeight: "35px",
   },
   block: {
     padding: "20px",
@@ -37,8 +36,8 @@ section: {
     left: "0",
     top: "0",
     height: "100%",
-    lineHeight: "41px",
-    fontSize: "20px",
+    lineHeight: "35px",
+    fontSize: "16px",
     color: "black"
 },
   featuresText: {
@@ -48,16 +47,16 @@ section: {
     left: "0",
     top: "0",
     height: "100%",
-    lineHeight: "41px",
-    fontSize: "18px",
+    lineHeight: "35px",
+    fontSize: "16px",
     color: "black",
     textAlign: "left",
     
   },
   image: {
     borderRadius: 3,
-    height: "420px",
-    width: "620px",
+    height: "auto",
+    width: "100%",
     paddingLeft: "10px",
     paddingTop: "10px",
     paddingBottom: "10px",

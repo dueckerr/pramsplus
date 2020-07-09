@@ -22,9 +22,27 @@ export default function Pricing() {
       <Grid className={classes.block} container spacing={3}>
         <Grid item xs={12} sm={12} md={12} lg={12}>
           <h3 className={classes.paperPricing}>Price Per Well: $10/well per month</h3>
-          <p className={classes.whiteText}>The cost of PRAMS starts at $10/well for the first 100 wells. After the first 100 wells we work with our customers and provide a volume discount based on their need aand expected support.  This fee includes the full PRAMS Plus Accounting suite, unlimited users and customer support. </p>
-          <p className={classes.whiteText}>We believe in earning your business every month, and have done away with longterm contracts. Eliminating all of the hidden support fees, you will know what you pay each month. </p>
         </Grid>
+
+            <Grid item xs={12} sm={12} md={6} lg={6}>
+              <h3 className={classes.lowerHeaderText}> Overview</h3>
+              <hr></hr>
+              <p className={classes.whiteText}>PRAMS intent is to price our services at disruptive rate.</p>
+              <p className={classes.whiteText}>We earn your business every month, no year long contracts.</p>
+              <p className={classes.whiteText}>You will have access to the the full PRAMS suite: PumperX2, AnalystX2, InsightX2, and our PRAMS Portal.</p>
+            </Grid>
+            <Grid item xs={12} sm={12} md={6} lg={6}>
+                <h3 className={classes.lowerHeaderText}> What's Included</h3>
+                <hr></hr>
+                <ul className={classes.whiteTextBulletPoints}>
+                  <li>Complete access to the PRAMS Platform</li>
+                  <li>No Yearly Renewal Fees</li>
+                  <li>Unlimited Users</li>
+                  <li>Free Call Support</li>
+                  <li>Personalized Queries</li>
+                  <li>What else can we add??</li>
+                </ul> 
+             </Grid>
       </Grid>
 
       <h3 className={classes.lowerHeaderText}>Additional Services: Contact us for pricing and more information</h3>
@@ -34,13 +52,9 @@ export default function Pricing() {
           <h3 className={classes.paperPricing}>Business Process Outsourcings</h3>
           <p className={classes.whiteText}>PRAMS can fulfill your monthly allocation and reporting roles. We will review your production at the end of each month and file the appropriate reports to any state and complete the allocation process.  Our goal is to take some of the tedious work off you plate, to allow operators to focus on more vital and revenue generating work. </p>
         </Grid>
-        {/* <Grid item xs={12} sm={12} md={4} lg={4}>
-          <h3 className={classes.paperPricing}>Start Up Costs: Contact Us</h3>
-          <p className={classes.whiteText}>There is a one time fee for that covers data integration, training and user setup.  </p>
-        </Grid> */}
         <Grid item xs={12} sm={12} md={4} lg={4}>
           <h3 className={classes.paperPricing}>Data Migrations</h3>
-          <p className={classes.whiteText}>One of the biggest opsticals of implementing a new software platform is migrating </p>
+          <p className={classes.whiteText}>One of the biggest opsticals of implementing a new software platform is migrating old data into the new database.  The good news is that so many other company's have grown feed up with their previous software providers and switched to PRAMS that we have imports designed to bring data in the PRAMS platform from nearly every other provider.  </p>
         </Grid>
         <Grid item xs={12} sm={12} md={4} lg={4}>
           <h3 className={classes.paperPricing}>Hosting Option</h3>

@@ -55,8 +55,8 @@ const componentsStyle = {
     flexWrap: 'wrap',
     justifyContent: "center",
     overflow: 'hidden',
-    top: -285,
-    left: 40,
+    top: -265,
+    left: -215,
     position: "absolute",
     boxShadow: '5px 8px 7px 8px rgb(2, 46, 105)',
 

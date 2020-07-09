@@ -76,7 +76,7 @@ export default function WorkSection() {
                 }}
               />
               <GridItem xs={12} sm={12} md={4}>
-                <Button color="primary">Contact Us</Button>
+                <Button>Contact Us</Button>
               </GridItem>
             </GridContainer>
           </form>

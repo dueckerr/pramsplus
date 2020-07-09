@@ -9,7 +9,7 @@ const homeStyle = {
         paddingBottom: "15px",
         paddingRight: "15px",
         lineHeight: "41px",
-        fontSize: "18px",
+        fontSize: "16px",
         color: "black",
         textAlign: "center",
         fontWeight: 400
@@ -17,7 +17,7 @@ const homeStyle = {
       paperPricing: {
         padding: "15px",
         lineHeight: "41px",
-        fontSize: "18px",
+        fontSize: "16px",
         color: "black",
         textAlign: "center",
         fontWeight: 400,
@@ -58,13 +58,13 @@ const homeStyle = {
       },
       text: {
         lineHeight: "41px",
-        fontSize: "18px",
+        fontSize: "16px",
         color: "black",
         textAlign: "left",
       },
       textPricing: {
         lineHeight: "41px",
-        fontSize: "18px",
+        fontSize: "16px",
         color: "black",
         textAlign: "left",
         backgroundColor: "white",
@@ -72,13 +72,13 @@ const homeStyle = {
       },
       headerText: {
         lineHeight: "41px",
-        fontSize: "18px",
+        fontSize: "16px",
         color: "black",
         textAlign: "left",
       },
       title: {
         lineHeight: "41px",
-        fontSize: "18px",
+        fontSize: "16px",
         color: "black",
         textAlign: "left",
       },

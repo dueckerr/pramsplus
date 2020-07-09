@@ -45,17 +45,17 @@ export default function Software() {
             <img src={marketing} alt="..." className={classes.imageSmall} />
             <p className={classes.lowerHeaderText}> Marketing </p>
             <p className={classes.blueText}>Real-time monitoring of tank capacities allows our clients to accelerate revenue and maximize their potential oil sales.</p>
-            <p className={classes.blueText}> Monitoring daily gas flows to avoid imabalance penatlties. </p>
+            <p className={classes.blueText}> Monitor daily gas flows to avoid imbalance penatlties. </p>
         </Grid>
 
         <Grid item xs={12} sm={12} md={6} lg={6}>
             <img src={moneyJack} alt="..." className={classes.imageSmall} />
             <p className={classes.lowerHeaderText}>Land</p>
-            <p className={classes.blueText}>HBP status can have a serious impact on your assets and operational plan, using PRAMS monitoring well downti9me and watchlist to ensure you are always compliant of the agreement and avoid unnecessary lease terminations. </p>
+            <p className={classes.blueText}>HBP status can have a serious impact on your assets and operational plan, using PRAMS monitoring well downtime and watchlist to ensure you are always compliant of the agreement and avoid unnecessary lease terminations. </p>
         </Grid>
      
 
-        <Grid item xs={12} sm={12} md={4} lg={6}>
+        <Grid item xs={12} sm={12} md={6} lg={6}>
             <img src={regulatory} alt="..." className={classes.imageSmall} />
             <p className={classes.lowerHeaderText}>Reserves </p>
             <p className={classes.blueText}>Import forecasts from any other software, and enjoy a seamless transfer of internal production and operational data to reduce cycle times and reduce costs.</p>

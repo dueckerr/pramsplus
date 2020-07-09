@@ -2,17 +2,17 @@
 const homeStyle = {
       paperBenefits: {
         textAlign: "center",
-        paddingLeft: "150px",
+        paddingLeft: "20%",
         // paddingTop: "15px",
         // paddingBottom: "15px",
-        paddingRight: "150px",
+        paddingRight: "20%",
         lineHeight: "41px",
       },
       block: {
-        paddingLeft: "25px",
+        paddingLeft: "5%",
         paddingTop: "25px",
         paddingBottom: "25px",
-        paddingRight: "25px",
+        paddingRight: "5%",
         color: "black",
         textAlign: "center",
         border: 0,
@@ -31,14 +31,14 @@ const homeStyle = {
      },
       title: {
         lineHeight: "41px",
-        fontSize: "18px",
+        fontSize: "16px",
         color: "black",
         textAlign: "left",
       },
       blueText: {
         color: "rgb(2, 46, 105)",
         textAlign: "left",
-        fontSize: "15px",
+        fontSize: "16px",
         lineHeight: "30px",
         fontWeight: 500
       },
