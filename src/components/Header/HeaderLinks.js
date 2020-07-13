@@ -24,9 +24,9 @@ export default function HeaderLinks(props) {
       <ListItem className={classes.listItem}>
           <Link className={classes.link} to="/solutions">Solutions</Link>
       </ListItem>
-      <ListItem className={classes.listItem}>
+      {/* <ListItem className={classes.listItem}>
           <Link className={classes.link} to="/about">About</Link>
-      </ListItem>
+      </ListItem> */}
       <ListItem className={classes.listItem}>
           <Link className={classes.link} to="/download">Download</Link>
       </ListItem>
