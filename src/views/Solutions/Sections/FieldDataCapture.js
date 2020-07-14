@@ -25,7 +25,7 @@ export default function FieldDataCapture() {
         </Grid>
         <Grid xs={12} sm={12} md={7}>
             <small className={classes.socials}>Field Data Caputre</small>
-          <p className={classes.text}>Oil and Gas operators capture and record production data in various ways. At PRAMS we understand that it is important for organizations to implement a recording process that best fits the operating environment. This is why PumperX2 allows for data to be recorded in the field, home office, or imported from SCADA systems. Consistent and accurate daily information is the foundation for precise monthly reconciliation and true-up. Once daily information is recorded it is utilized throughout all aspects of PramsX2, completely eliminating the need for repetitive data entry. Using our Template Manager in AnalystX2 you have the ability to customize exactly what you want to capture for each well in the order that is best suited for each pumper.</p>
+          <p className={classes.text}>With the countless ways operators can capture and record production data, the organization needs to implement a recording process that best fits the operating environment. This is how PumperX2 was designed. It allows for data to be recorded in the field, office or imported from SCADA systems. Consistent and accurate daily information is the foundation for precise monthly reconciliation allocation and reporting. Once-daily information is recorded it is utilized throughout all aspects of PramsX2, eliminating the need for repetitive data entry. Using our Template Manager in AnalystX2, users can customize exactly what they want to capture for each well, as well as in the order that is best suited for each pumper.</p>
             <div className={classes.block}>
               <Grid className={classes.block} container spacing={3}>
               <small className={classes.socials}>Features</small>
@@ -42,7 +42,7 @@ export default function FieldDataCapture() {
                   <ul className={classes.featuresText}>
                     <li>3rd Party & SCADA Import</li>
                     <li>Corrected Run Ticket Entry</li>
-                    <li>Built in AVO Inspection</li>
+                    <li>Built-in Audio, Visual, Olfactory (AVO) Inspection</li>
                     <li>Customizable facility and APCE inspections</li>
                     <li>Customizable layouts for every well</li>
                   </ul>

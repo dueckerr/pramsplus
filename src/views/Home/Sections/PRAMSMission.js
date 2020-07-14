@@ -25,8 +25,7 @@ export default function PRAMSMission() {
           Operators frequently overlook product-management efficiency and revert to unorganized and time-consuming spreadsheets, a factor that too often erodes the operator’s profitability. By simplifying field data capture through single-point data entry, we equip pumpers, engineers, analysts, and operators with the ability to effectively manage what they measure.
           </p>
           <p className={classes.blueText}>
-          The use of an integrated production system simplifies data acquisition and allows everyone in the organization to utilize the production information they need to do their jobs. Anyone can easily see, review and export daily and historical production data using flexible and customizable processes.
-          </p>
+          The use of an integrated production system simplifies data acquisition and allows everyone in the organization to utilize the production information they need to do their jobs. Anyone can easily see, review, and export daily and historical production data using flexible and customizable processes.          </p>
         </Grid>
       </Grid>
     </div>
