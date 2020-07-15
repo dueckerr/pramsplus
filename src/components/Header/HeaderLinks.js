@@ -28,7 +28,7 @@ export default function HeaderLinks(props) {
           <Link className={classes.link} to="/about">About</Link>
       </ListItem> */}
       <ListItem className={classes.listItem}>
-          <Link className={classes.link} to="/download">Download</Link>
+          <Link className={classes.link} to="/download">Downloads</Link>
       </ListItem>
       <ListItem className={classes.listItem}>
           <a className={classes.link} href="https://portal.pramsplus.com/Account/Login?ReturnUrl=%2F">Login</a>
