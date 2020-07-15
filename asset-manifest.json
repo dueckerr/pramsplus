@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/pramsplus/static/css/main.d373da39.chunk.css",
-    "main.js": "/pramsplus/static/js/main.d6227f17.chunk.js",
-    "main.js.map": "/pramsplus/static/js/main.d6227f17.chunk.js.map",
+    "main.css": "/pramsplus/static/css/main.c4f6da22.chunk.css",
+    "main.js": "/pramsplus/static/js/main.c53c5c78.chunk.js",
+    "main.js.map": "/pramsplus/static/js/main.c53c5c78.chunk.js.map",
     "runtime-main.js": "/pramsplus/static/js/runtime-main.d363cbd6.js",
     "runtime-main.js.map": "/pramsplus/static/js/runtime-main.d363cbd6.js.map",
     "static/js/2.0817dbf2.chunk.js": "/pramsplus/static/js/2.0817dbf2.chunk.js",
     "static/js/2.0817dbf2.chunk.js.map": "/pramsplus/static/js/2.0817dbf2.chunk.js.map",
     "index.html": "/pramsplus/index.html",
-    "precache-manifest.ea24a18f9854d0f921700580db3e7630.js": "/pramsplus/precache-manifest.ea24a18f9854d0f921700580db3e7630.js",
+    "precache-manifest.79412847415e69e0f29f13351ceb6609.js": "/pramsplus/precache-manifest.79412847415e69e0f29f13351ceb6609.js",
     "service-worker.js": "/pramsplus/service-worker.js",
-    "static/css/main.d373da39.chunk.css.map": "/pramsplus/static/css/main.d373da39.chunk.css.map",
+    "static/css/main.c4f6da22.chunk.css.map": "/pramsplus/static/css/main.c4f6da22.chunk.css.map",
     "static/js/2.0817dbf2.chunk.js.LICENSE.txt": "/pramsplus/static/js/2.0817dbf2.chunk.js.LICENSE.txt",
     "static/media/PPlogo.jpg": "/pramsplus/static/media/PPlogo.ee988e9a.jpg",
     "static/media/apple-icon.png": "/pramsplus/static/media/apple-icon.7e768577.png",
@@ -34,7 +34,7 @@
   "entrypoints": [
     "static/js/runtime-main.d363cbd6.js",
     "static/js/2.0817dbf2.chunk.js",
-    "static/css/main.d373da39.chunk.css",
-    "static/js/main.d6227f17.chunk.js"
+    "static/css/main.c4f6da22.chunk.css",
+    "static/js/main.c53c5c78.chunk.js"
   ]
 }
