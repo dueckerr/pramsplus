@@ -20,14 +20,14 @@ export default function Pricing() {
           <div className={classes.blueBlock}>
               <Grid className={classes.blueBlock} container spacing={3}>
               <small className={classes.lowerHeaderText}>Highlights</small>
-                <Grid tem xs={12} sm={12} md={6} lg={6}>
+                <Grid item xs={12} sm={12} md={6} lg={6}>
                   <ul className={classes.whiteTextBulletPoints}>
                     <li>Hosted or On-premises</li>
                     <li>Month-to-month contract, we earn your business </li>
                     <li> Unlimited Users </li>
                   </ul>
                 </Grid>
-                <Grid tem xs={12} sm={12} md={6} lg={6}>
+                <Grid item xs={12} sm={12} md={6} lg={6}>
                   <ul className={classes.whiteTextBulletPoints}>
                     <li> Access to the entire PRAMS Platform</li>
                     <li> No Yearly Renewal Fees </li>

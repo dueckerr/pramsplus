@@ -32,26 +32,17 @@ export default function Components(props) {
   return (
     <div>
       <Header
-        brand="PRAMS Plus"
-        link="/"
+      brand
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
-          height: 400,
+          height: 300,
           color: "white",
         }}
         {...rest}
       />
-      <Parallax image={require("assets/img/oilFlow.jpg")}>
-        <div className={classes.container}>
-          <GridContainer>
-            <GridItem>
-              <div className={classes.brand}>
-              <img src={logo} alt="..." className={classes.image} />
-              </div>
-            </GridItem>
-          </GridContainer>
-        </div>
+      <Parallax image={require("assets/img/pumpsCharts.jpg")}>
+
       </Parallax>
 
       <div className={classNames(classes.main, classes.mainRaised)}>

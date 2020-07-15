@@ -1,74 +1,51 @@
-/*eslint-disable*/
-import React from "react";
-// nodejs library to set properties for components
-import PropTypes from "prop-types";
-// nodejs library that concatenates classes
-import classNames from "classnames";
-// material-ui core components
-import { List, ListItem } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
-import { Link } from "react-router-dom";
+import React from 'react';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import Typography from '@material-ui/core/Typography';
+import { makeStyles } from '@material-ui/core/styles';
+import Container from '@material-ui/core/Container';
+import Link from '@material-ui/core/Link';
 
-// @material-ui/icons
-import Favorite from "@material-ui/icons/Favorite";
-
-import styles from "assets/jss/material-kit-react/components/footerStyle.js";
-
-const useStyles = makeStyles(styles);
-
-export default function Footer(props) {
-  const classes = useStyles();
-  const { whiteFont } = props;
-  const footerClasses = classNames({
-    [classes.footer]: true,
-    [classes.footerWhiteFont]: whiteFont
-  });
-  const aClasses = classNames({
-    [classes.a]: true,
-    [classes.footerWhiteFont]: whiteFont
-  });
+function Copyright() {
   return (
-    <footer className={footerClasses}>
-      <div className={classes.container}>
-        <div className={classes.left}>
-          <List className={classes.list}>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                className={classes.block}
-                target="_blank"
-              >
-          <Link className={classes.link} to="/">Home</Link>
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                className={classes.block}
-                target="_blank"
-              >
-                About us
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                className={classes.block}
-                target="_blank"
-              >
-                Blog
-              </a>
-            </ListItem>
-          </List>
-        </div>
-        <div className={classes.right}>
-          <a
-            className={aClasses}
-            target="_blank"
-          />
-        </div>
-      </div>
-    </footer>
+    <Typography variant="body2" color="textSecondary">
+      {'Copyright © '}
+      <Link color="inherit" href="https://material-ui.com/">
+        Your Website
+      </Link>{' '}
+      {new Date().getFullYear()}
+      {'.'}
+    </Typography>
   );
 }
 
-Footer.propTypes = {
-  whiteFont: PropTypes.bool
-};
+const useStyles = makeStyles((theme) => ({
+  root: {
+    display: 'flex',
+    flexDirection: 'column',
+  },
+  main: {
+    marginTop: theme.spacing(8),
+    marginBottom: theme.spacing(2),
+  },
+  footer: {
+    padding: theme.spacing(3, 2),
+    marginTop: 'auto',
+    backgroundColor:
+      theme.palette.type === 'light' ? theme.palette.grey[200] : theme.palette.grey[800],
+  },
+}));
+
+export default function StickyFooter() {
+  const classes = useStyles();
+
+  return (
+    <div className={classes.root}>
+      <footer className={classes.footer}>
+        <Container maxWidth="sm">
+          <Typography variant="body1">My sticky footer can be found here.</Typography>
+          <Copyright />
+        </Container>
+      </footer>
+    </div>
+  );
+}

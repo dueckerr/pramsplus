@@ -140,6 +140,17 @@ const headerStyle = {
     textAlign: "left",
     ...transition,
   },
+  image: {
+    borderRadius: 3,
+    height: "auto",
+    width: "25%",
+    border: '5px',
+    flexShrink: 10,
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: "center",
+  }
+
 };
 
 export default headerStyle;

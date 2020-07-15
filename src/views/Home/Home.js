@@ -34,16 +34,8 @@ export default function Components(props) {
         fixed
         {...rest}
       />
-      <Parallax image={require("assets/img/oilLayout.jpg")}>
-        <div className={classes.container}>
-          <GridContainer>
-            <GridItem>
-              <div className={classes.brand}>
-              <img src={logo} alt="..." className={classes.image} />
-              </div>
-            </GridItem>
-          </GridContainer>
-        </div>
+      <Parallax image={require("assets/img/chartsPumpPipeline.jpg")}>
+
       </Parallax>
 
       <div className={classNames(classes.main, classes.mainRaised)}>

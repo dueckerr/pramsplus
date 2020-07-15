@@ -5,16 +5,18 @@ import tooltip from "assets/jss/material-kit-react/tooltipsStyle.js";
 const headerLinksStyle = (theme) => ({
   list: {
     ...defaultFont,
-    fontSize: "19px",
+    fontSize: "28px",
     margin: 0,
     paddingTop: "15px",
     paddingBottom: "5px",
     color: "rgb(2, 46, 105)",
+    fontWeight: 400
   },
   link: {
     color: "rgb(2, 46, 105)",
     paddingLeft: "5px",
     paddingRight: "5px",
+    paddingTop: "25px"
   },
 
   listItem: {
@@ -26,6 +28,7 @@ const headerLinksStyle = (theme) => ({
     margin: "0",
     paddingLeft: "15px",
     paddingRight: "15px",
+    
   },
   navLink: {
     color: "rgb(2, 46, 105)",

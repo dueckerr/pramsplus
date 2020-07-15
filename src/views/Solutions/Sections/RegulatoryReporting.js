@@ -17,13 +17,13 @@ export default function RegulatoryReporting() {
   return (
     <div className={classes.block}>
       <Grid className={classes.block} container spacing={3}>
-        <Grid xs={12} sm={12} md={7}>
+        <Grid item xs={12} sm={12} md={7}>
           <small className={classes.socials}>Production & Regulatory Reporting</small>
             <p className={classes.text}> Unique and complex regulatory requirements hinder production reporting for every operator. Over the years our clients have consistently requested a friendly and accurate regulatory reporting interface—a request that is brilliantly delivered within the PramsX2 suite. The regulatory reporting setup is swift, and our software development team constantly monitors agencies for regulatory changes and implements timely updates at no additional cost.</p>
             <div className={classes.block}>
               <Grid className={classes.block} container spacing={3}>
               <small className={classes.socials}>Reports Inlcuded</small>
-                <Grid tem xs={12} sm={12} md={3} lg={3}>
+                <Grid item xs={12} sm={12} md={3} lg={3}>
                   <ul className={classes.featuresText}>
                     <li>OGOR & ONRR</li>
                     <li>BLM Seal Reports</li>
@@ -31,7 +31,7 @@ export default function RegulatoryReporting() {
                     <li>Arkansas</li>
                   </ul>
                 </Grid>
-                <Grid tem xs={12} sm={12} md={3} lg={3}>
+                <Grid item xs={12} sm={12} md={3} lg={3}>
                   <ul className={classes.featuresText}>
                     <li>Colorado</li>
                     <li>Montana</li>
@@ -39,7 +39,7 @@ export default function RegulatoryReporting() {
                     <li>Louisiana</li>
                   </ul>
                 </Grid>
-                <Grid tem xs={12} sm={12} md={3} lg={3}>
+                <Grid item xs={12} sm={12} md={3} lg={3}>
                   <ul className={classes.featuresText}>
                     <li>Arkansas</li>
                     <li>Texas</li>
@@ -47,7 +47,7 @@ export default function RegulatoryReporting() {
                     <li>South Dakota</li>
                   </ul>
                 </Grid>
-                <Grid tem xs={12} sm={12} md={3} lg={3}>
+                <Grid item xs={12} sm={12} md={3} lg={3}>
                   <ul className={classes.featuresText}>
                     <li>Mississippi</li>
                     <li>North Dakota</li>
