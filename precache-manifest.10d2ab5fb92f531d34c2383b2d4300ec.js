@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fc0ccb67b9f874d7acae53b7988cdda9",
+    "revision": "d41056b90291dc73a7b7a507d6e64940",
     "url": "/pramsplus/index.html"
   },
   {
-    "revision": "dfb29183a8206ff839e7",
+    "revision": "a3c1ad65a140e5d7e6e4",
     "url": "/pramsplus/static/css/main.c4f6da22.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pramsplus/static/js/2.fb593695.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "dfb29183a8206ff839e7",
-    "url": "/pramsplus/static/js/main.f4f16971.chunk.js"
+    "revision": "a3c1ad65a140e5d7e6e4",
+    "url": "/pramsplus/static/js/main.7d40e129.chunk.js"
   },
   {
     "revision": "5781477d7fb3c0fdb270",
@@ -84,12 +84,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pramsplus/static/media/pushReport.a236156f.png"
   },
   {
-    "revision": "97d0b614c0f71f6ba6b0f128073952e9",
-    "url": "/pramsplus/static/media/regReporting.97d0b614.jpeg"
-  },
-  {
     "revision": "d2635ad92f27f25c20245781bbd11d71",
     "url": "/pramsplus/static/media/regulatory.d2635ad9.jpg"
+  },
+  {
+    "revision": "7dd9857bedf0273ea6815160a84ffc70",
+    "url": "/pramsplus/static/media/regulatoryCompliance.7dd9857b.jpg"
   },
   {
     "revision": "bcd5e4688f24640469aa5365f1c4bbfe",
