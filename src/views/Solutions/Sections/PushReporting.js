@@ -18,15 +18,16 @@ export default function PushReporting() {
   return (
     <div className={classes.block}>
       <Grid className={classes.block} container spacing={3}>
-        <Grid item xs={12} sm={12} md={6} lg={5}>
-          <img src={pushReport} alt="..." className={classes.image} />
-        </Grid>
-        <Grid item xs={12} sm={12} md={7}>
+        <Grid item xs={12} sm={12} md={12}>
           <small className={classes.socials}>Automated Push Reporting</small>
             <p className={classes.text}>Sharing production and operational data internally and with outside partners with automated reporting that is sent via email is easy with PramsX2. This client-driven aspect of PramsX2 consistently and automatically distributes necessary production data to any email address hourly, daily, weekly, monthly, or at a customized time-interval. Analysts and operators no longer need to remember which data report to share internally or with partnered stakeholders, nor do they need to remember when to share it. By eliminating tedious and repetitive reporting, PramsX2 increases operational efficiency by providing the capability to automate countless reporting tasks simultaneously.</p>
+        </Grid>
               <div className={classes.block}>
                 <Grid className={classes.block} container spacing={3}>
                 <small className={classes.socials}>Features</small>
+                <Grid item xs={12} sm={12} md={6}>
+                  <img src={pushReport} alt="..." className={classes.image} />
+                </Grid>
                   <Grid item xs={12} sm={12} md={6} lg={6}>
                     <ul className={classes.featuresText}>
                       <li>Pinpoint, Extract, and Export Volume Data Automatically</li>
@@ -50,7 +51,6 @@ export default function PushReporting() {
                 </Grid>
               </div>
         </Grid>
-      </Grid>
     </div>
   );
 }

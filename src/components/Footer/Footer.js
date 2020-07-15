@@ -9,8 +9,8 @@ function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary">
       {'Copyright © '}
-      <Link color="inherit" href="https://material-ui.com/">
-        Your Website
+      <Link color="inherit" href="https://pramsplus.com/">
+        PRAMS Plus LLC
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -42,7 +42,9 @@ export default function StickyFooter() {
     <div className={classes.root}>
       <footer className={classes.footer}>
         <Container maxWidth="sm">
-          <Typography variant="body1">My sticky footer can be found here.</Typography>
+        <Typography variant="body1">10288 W. Chatfield Ave., Suite 200, Littleton, CO 80127</Typography>
+        <Typography variant="body1">Phone: (303)-819-6304</Typography>
+        <Typography variant="body1">Email: sales@pramsplus.com</Typography>
           <Copyright />
         </Container>
       </footer>

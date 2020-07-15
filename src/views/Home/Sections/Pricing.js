@@ -21,7 +21,7 @@ export default function Pricing() {
               <Grid className={classes.blueBlock} container spacing={3}>
               <small className={classes.lowerHeaderText}>Highlights</small>
                 <Grid item xs={12} sm={12} md={6} lg={6}>
-                  <ul className={classes.whiteTextBulletPoints}>
+                  <ul className={classes.whiteTextBulletPointsLeft}>
                     <li>Hosted or On-premises</li>
                     <li>Month-to-month contract, we earn your business </li>
                     <li> Unlimited Users </li>

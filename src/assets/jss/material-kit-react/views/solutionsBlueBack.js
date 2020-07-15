@@ -20,6 +20,8 @@ const solutionsBlueBlack = {
     borderRadius: 3,
     fontSize: "16px",
     lineHeight: "35px",
+    paddingLeft: "15%",
+    paddingRight: "15%",
   },
   block: {
     padding: "20px",
@@ -30,6 +32,7 @@ const solutionsBlueBlack = {
     borderRadius: 30,
   },
   socials: {
+    color: "white",
     marginTop: "0",
     width: "100%",
     transform: "none",
@@ -38,7 +41,6 @@ const solutionsBlueBlack = {
     height: "100%",
     lineHeight: "35px",
     fontSize: "26px",
-    color: "white",
     fontWeight: 300
   },
   featuresText: {

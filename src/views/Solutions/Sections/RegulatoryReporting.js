@@ -7,7 +7,7 @@ import classNames from "classnames";
 import CustomTabs from "components/CustomTabs/CustomTabs.js";
 import Grid from "@material-ui/core/Grid";
 
-import logo from "assets/img/regReporting.jpeg";
+import logo from "assets/img/regulatoryCompliance.jpg";
 
 const useStyles = makeStyles(styles);
 

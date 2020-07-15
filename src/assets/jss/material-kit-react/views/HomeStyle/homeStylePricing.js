@@ -57,6 +57,18 @@ const homeStyle = {
         color: "white",
         textAlign: "left",
       },
+      whiteTextBulletPoints: {
+        marginTop: "0",
+        width: "100%",
+        transform: "none",
+        left: "0",
+        top: "0",
+        height: "100%",
+        lineHeight: "35px",
+        fontSize: "16px",
+        color: "white",
+        textAlign: "right",
+      },
       headerTextWhite: {
         linHeight: "41px",
         fontSize: "40px",
