@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "975bf7fb288eb75ad2e84461122d0cd0",
+    "revision": "1d41254e5502724eddd34c6fc567d24a",
     "url": "/pramsplus/index.html"
   },
   {
-    "revision": "90b1c5569a89c7e9920f",
+    "revision": "3e9ded07b0513394b5b6",
     "url": "/pramsplus/static/css/main.c4f6da22.chunk.css"
   },
   {
-    "revision": "6a2f7f8722f3660a33bd",
-    "url": "/pramsplus/static/js/2.0817dbf2.chunk.js"
+    "revision": "fe6bd2265642f884b1d4",
+    "url": "/pramsplus/static/js/2.fb593695.chunk.js"
   },
   {
     "revision": "5e9b6f5c16b720e8a86875f97734673e",
-    "url": "/pramsplus/static/js/2.0817dbf2.chunk.js.LICENSE.txt"
+    "url": "/pramsplus/static/js/2.fb593695.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "90b1c5569a89c7e9920f",
-    "url": "/pramsplus/static/js/main.c53c5c78.chunk.js"
+    "revision": "3e9ded07b0513394b5b6",
+    "url": "/pramsplus/static/js/main.1f450a58.chunk.js"
   },
   {
     "revision": "5781477d7fb3c0fdb270",
@@ -34,6 +34,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f1abb78f1626eee3b958f3635d9e3d2a",
     "url": "/pramsplus/static/media/assetMgmt.f1abb78f.jpeg"
+  },
+  {
+    "revision": "d5c5903d7c5440a20ddb8756092d525f",
+    "url": "/pramsplus/static/media/chartsPumpPipeline.d5c5903d.jpg"
   },
   {
     "revision": "3241129b3216522a9172e3edf08bf869",
@@ -64,20 +68,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pramsplus/static/media/moneyJack.607c7845.jpg"
   },
   {
-    "revision": "74eb03f0ae7c243101c06fdd5a0473a1",
-    "url": "/pramsplus/static/media/oilFlow.74eb03f0.jpg"
-  },
-  {
-    "revision": "f2716a6c425078c60a1a6fef1befd9ca",
-    "url": "/pramsplus/static/media/oilLayout.f2716a6c.jpg"
-  },
-  {
     "revision": "df9d8f54d21402d66c8d98b05e364d18",
     "url": "/pramsplus/static/media/operations.df9d8f54.jpg"
   },
   {
     "revision": "d00ef0c57e0fc31c95053a9efbdfca78",
     "url": "/pramsplus/static/media/outsourcing.d00ef0c5.jpeg"
+  },
+  {
+    "revision": "def7b1e98ba5e326366a6e870e4be6cc",
+    "url": "/pramsplus/static/media/pumpsCharts.def7b1e9.jpg"
   },
   {
     "revision": "a236156fdf8da2adbac9491194e20ead",
