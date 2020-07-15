@@ -19,13 +19,13 @@ export default function PRAMSMission() {
         </Grid>
         <Grid item xs={12} sm={12} md={6} lg={7}>
           <p className={classes.blueText}>
-          PramsX2 is an end-to-end oil and gas production management software designed to conquer the complex data-management challenges facing today’s oil and gas operators. The ability to rapidly and accurately capture, analyze, and manage production data is vital to the success of every oil and gas operator. At PRAMS we empower our clients with the ability to swiftly capture, analyze, and distribute information with confidence and consistency.
+          PramsX2 is an end-to-end oil and gas production management software designed to conquer the complex data-management challenges facing oil and gas operators. The ability to rapidly and accurately capture, analyze, and manage production data is vital to the success of every oil and gas operator. PRAMS enables operators to capture, analyze, and distribute information with confidence and consistency.
           </p>
           <p className={classes.blueText}>
-          Operators frequently overlook product-management efficiency and revert to unorganized and time-consuming spreadsheets, a factor that too often erodes the operator’s profitability. By simplifying field data capture through single-point data entry, we equip pumpers, engineers, analysts, and operators with the ability to effectively manage what they measure.
+          By simplifying field data capture through single-point data entry, we equip pumpers, foreman, engineers, analysts, and operators with the ability to effectively manage what they measure.
           </p>
           <p className={classes.blueText}>
-          The use of an integrated production system simplifies data acquisition and allows everyone in the organization to utilize the production information they need to do their jobs. Anyone can easily see, review, and export daily and historical production data using flexible and customizable processes.          </p>
+          The use of an integrated production system simplifies data acquisition and allows everyone in the organization to utilize the production information they need to do their jobs. Anyone can easily see, review and export daily and historical production data using flexible and customizable processes.          </p>
         </Grid>
       </Grid>
     </div>

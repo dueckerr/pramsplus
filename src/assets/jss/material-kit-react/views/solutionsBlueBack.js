@@ -27,7 +27,7 @@ const solutionsBlueBlack = {
     textAlign: "center",
     backgroundColor: "rgb(2, 46, 105)",
     border: 0,
-    borderRadius: 3,
+    borderRadius: 30,
   },
   socials: {
     marginTop: "0",
@@ -37,8 +37,9 @@ const solutionsBlueBlack = {
     top: "0",
     height: "100%",
     lineHeight: "35px",
-    fontSize: "16px",
-    color: "white"
+    fontSize: "26px",
+    color: "white",
+    fontWeight: 300
   },
   featuresText: {
     marginTop: "0",
@@ -53,7 +54,7 @@ const solutionsBlueBlack = {
     textAlign: "left",
   },
   image: {
-    borderRadius: 3,
+    borderRadius: 30,
     height: "auto",
     width: "100%",
     paddingLeft: "10px",

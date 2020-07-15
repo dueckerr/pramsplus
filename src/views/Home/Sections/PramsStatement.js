@@ -20,19 +20,18 @@ export default function PramsStatement() {
           <Grid item xs={12} sm={12} md={8} lg={4}>
             <h3 className={classes.lowerHeaderText}>Complete Field Solution </h3>
               <p className={classes.whiteText}>
-              PRAMS is a complete field solution, built through years of continuous development, PRAMS has created the most sophisticated gauge-sheet style data capturing platform. Color-cut tanks, site inspection, and unlimited meters, all at the pumper's fingertips, are just a few features that vault PRAMS past our competitors.
-              </p>
+              PRAMS is a complete field solution, built through years of continuous development, PRAMS has created the most dynamic gauge-sheet style data capture solution. Color-cut tanks, site inspections, unlimited meters, and equipment metrics all at the pumpers finger tips, are just a few features that vaults PRAMS past our competitors.              </p>
           </Grid>
           <Grid item xs={12} sm={12} md={8} lg={4}>
             <h3 className={classes.lowerHeaderText}>Unmatched Analytic Capabilities</h3>
               <p className={classes.whiteText}>
-              At PRAMS we understand that just capturing the data isn't enough. Too often important data and trends become distorted; having this information transformed into important visualization tools that will help you gain insight into your assets and maximize the value of your investment, this is the PRAMS way.
+              At PRAMS we understand that just capturing the data isn't enough. Too often important data and trends are overlooked, having this information transformed into meaningful visualization tools and concise reports helps you gain insight into your assets and maximize your ROI, that is the PRAMS way.
               </p>
           </Grid>
           <Grid item xs={12} sm={12} md={8} lg={4}>
             <h3 className={classes.lowerHeaderText}>Asset Management & Integrations </h3>
               <p className={classes.whiteText}>
-              Today, every well and battery are installed with countless meters and sensors, it is becoming increasingly difficult to manage everything efficiently. The PRAMS platform allows users to freely dynamically export your data, enabling our clients to customize how they choose to see their data, and effortlessly integrate with other software services.          
+              Today, every well and battery are installed with countless meters and sensors, it is becoming increasingly difficult to manage everything efficiently. The PRAMS platform enables both digital data and pumper captured data to come together into a single platform.  A single platform from which all departments can rely upon for accurate information.  Integrations with other departmental workflows become seamless.
               </p>
           </Grid>
         </Grid>

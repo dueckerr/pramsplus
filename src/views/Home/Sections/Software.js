@@ -22,7 +22,8 @@ export default function Software() {
   return (
     <div className={classes.block}>
       <div className={classes.title}>
-        <h3 className={classes.headerTextBlue}>The PRAMS Benefit</h3>
+        <h3 className={classes.headerTextBlue}>PRAMS benefits the entire organization
+</h3>
       </div>
       <Grid className={classes.paperBenefits} container spacing={3}>
 
@@ -30,13 +31,13 @@ export default function Software() {
             <img src={operations} alt="..." className={classes.imageSmall} />
             <p className={classes.lowerHeaderText}>Operations </p>
             <p className={classes.blueText}>
-            Easily review daily production data, pressures, and other well data to help optimize production.
+            Easily review daily production volumes, pressures and other well data to optimize production.
             </p>
             <p className={classes.blueText}>
-            Equipment monitoring allows users to track operational metrics to improve lease operating expenses and reduce unscheduled downtime.
+            Track equipment operational metrics reducing unscheduled downtime and lease operating expenses.
             </p>
             <p className={classes.blueText}>
-            Create and store site inspections to streamline compliance requests.
+            Manage tank capacities improving timing of water hauls and crude sales.
             </p>
         </Grid>
 
@@ -44,9 +45,10 @@ export default function Software() {
             <img src={regulatory} alt="..." className={classes.imageSmall} />
             <p className={classes.lowerHeaderText}>Regulatory</p>
             <p className={classes.blueText}>
-            Utilizing daily data, PRAMS seamlessly guides users through the State and Federal reporting, streamlining the business process, and helps avoid late reporting penalties and errors.           </p>
+            Seamless State and Federal reporting reduces reporting errors and non-compliance notices.
+            </p>
             <p className={classes.blueText}>
-            Audio, Visual, Olfactory (AVO) Inspections filing and logging allows operators to stay within compliance.
+            Log and store inspections (APCE, Facility, AVO, etc) for timely response to compliance requests.
             </p>
         </Grid>
 
@@ -54,7 +56,7 @@ export default function Software() {
             <img src={marketing} alt="..." className={classes.imageSmall} />
             <p className={classes.lowerHeaderText}> Marketing </p>
             <p className={classes.blueText}>
-            Real-time monitoring of tank capacities allows our clients to accelerate revenue and maximize their potential oil sales.
+            Daily management of tank capacities enables timing of crude sales.
             </p>
             <p className={classes.blueText}>
             Monitor daily gas flows to avoid imbalance penalties.
@@ -65,7 +67,8 @@ export default function Software() {
             <img src={moneyJack} alt="..." className={classes.imageSmall} />
             <p className={classes.lowerHeaderText}>Land</p>
             <p className={classes.blueText}>
-            Held By Production clauses and statuses can have a serious impact on your assets and operational plans, using PRAMS to monitor well downtime to ensure you are always compliant with the agreement and avoid unnecessary lease terminations.            </p>
+            Well downtime monitoring avoids unnecessary lease terminations for leases past the primary term.
+            </p>
         </Grid>
      
 
@@ -73,23 +76,24 @@ export default function Software() {
             <img src={regulatory} alt="..." className={classes.imageSmall} />
             <p className={classes.lowerHeaderText}>Reserves </p>
             <p className={classes.blueText}>
-            Import forecasts from any other software, and enjoy a seamless transfer of internal production and operational data to reduce cycle times and reduce costs. 
+            Simplifying transfer of daily and monthly production volumes, pressures and operational data to the reserve engineering package provides more time for evaluating forecasts when timing is compressed.
             </p>
             <p className={classes.blueText}>
-            Combining real-time production data and with the reserves forecast allows operators to focus on the underperforming wells more quickly.            </p>
+            Combining real-time production data and with the reserves forecast allows operators to focus on the underperforming wells quicker.
+            </p>
         </Grid>
 
         <Grid item xs={12} sm={12} md={6} lg={6}>
             <img src={regulatory} alt="..." className={classes.imageSmall} />
             <p className={classes.lowerHeaderText}>Accounting</p>
             <p className={classes.blueText}>
-            Revenue reconciliation from daily field data to monthly purchaser statements can help increase revenue.
+            Reconcile monthly purchaser statements to daily field data for both oil and gas.  Never miss getting paid on a crude oil haul again.
             </p>
             <p className={classes.blueText}>
-            Water handling and load ticket management can help users track their invoices and decrease lease operating expenses.
+            Comparison of water hauling invoices to daily field data improves approval integrity.
             </p>
             <p className={classes.blueText}>
-            Improved estimates from daily data assist the finance team to report timely and accurate information.
+            Daily field data enables the financial team to develop more accurate and timely accruals.
             </p>
         </Grid>
       </Grid>

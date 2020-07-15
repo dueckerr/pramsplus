@@ -2,7 +2,9 @@ import { title } from "assets/jss/material-kit-react.js";
 
 const workStyle = {
   section: {
-    padding: "70px 0"
+    padding: "70px 0",
+    color: "rgb(2, 46, 105)",
+    backgroundColor: "#FFFFF"
   },
   title: {
     ...title,
@@ -10,18 +12,23 @@ const workStyle = {
     marginTop: "30px",
     minHeight: "32px",
     textDecoration: "none",
-    textAlign: "center"
+    textAlign: "center",
+    color: "rgb(2, 46, 105)"
   },
   description: {
     color: "#999",
-    textAlign: "center"
+    textAlign: "center",
+    color: "rgb(2, 46, 105)"
   },
   textCenter: {
-    textAlign: "center"
+    textAlign: "center",
+    color: "rgb(2, 46, 105)"
   },
   textArea: {
     marginRight: "15px",
-    marginLeft: "15px"
+    marginLeft: "15px",
+    color: "rgb(2, 46, 105)"
+
   }
 };
 

@@ -27,7 +27,7 @@ section: {
     textAlign: "center",
     backgroundColor: "white",
     border: 0,
-    borderRadius: 3,
+    borderRadius: 30,
   },
   socials: {
     marginTop: "0",
@@ -54,7 +54,7 @@ section: {
     
   },
   image: {
-    borderRadius: 3,
+    borderRadius: 30,
     height: "auto",
     width: "100%",
     paddingLeft: "10px",

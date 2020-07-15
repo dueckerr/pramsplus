@@ -8,12 +8,12 @@ import {
 const customInputStyle = {
   disabled: {
     "&:before": {
-      borderColor: "transparent !important"
+      borderColor: "rgb(2, 46, 105)"
     }
   },
   underline: {
     "&:hover:not($disabled):before,&:before": {
-      borderColor: "#D2D2D2 !important",
+      borderColor: "rgb(2, 46, 105)",
       borderWidth: "1px !important"
     },
     "&:after": {
@@ -32,15 +32,15 @@ const customInputStyle = {
   },
   whiteUnderline: {
     "&:hover:not($disabled):before,&:before": {
-      borderColor: "#FFFFFF"
+      borderColor: "rgb(2, 46, 105)"
     },
     "&:after": {
-      borderColor: "#FFFFFF"
+      borderColor: "rgb(2, 46, 105)"
     }
   },
   labelRoot: {
     ...defaultFont,
-    color: "#AAAAAA !important",
+    color: "rgb(2, 46, 105)",
     fontWeight: "400",
     fontSize: "14px",
     lineHeight: "1.42857",
@@ -51,10 +51,10 @@ const customInputStyle = {
     }
   },
   labelRootError: {
-    color: dangerColor + " !important"
+    color: dangerColor + "rgb(2, 46, 105)"
   },
   labelRootSuccess: {
-    color: successColor + " !important"
+    color: successColor + "rgb(2, 46, 105)"
   },
   formControl: {
     margin: "0 0 17px 0",
@@ -80,7 +80,7 @@ const customInputStyle = {
   },
   whiteInput: {
     "&,&::placeholder": {
-      color: "#FFFFFF",
+      color: "rgb(2, 46, 105)",
       opacity: "1"
     }
   }

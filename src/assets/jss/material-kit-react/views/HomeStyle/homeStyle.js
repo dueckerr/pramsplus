@@ -32,7 +32,7 @@ const homeStyle = {
         color: "black",
         textAlign: "center",
         border: 0,
-        borderRadius: 3,
+        borderRadius: 30,
       },
       blockPricing: {
         paddingLeft: "25px",
@@ -42,7 +42,7 @@ const homeStyle = {
         color: "black",
         textAlign: "center",
         border: 0,
-        borderRadius: 3,
+        borderRadius: 30,
       },
       blueBlock: {
         paddingLeft: "15px",
@@ -52,7 +52,7 @@ const homeStyle = {
         color: "black",
         textAlign: "center",
         border: 0,
-        borderRadius: 3,
+        borderRadius: 30,
         backgroundColor: "rgb(2, 46, 105)",
         
       },
@@ -87,7 +87,7 @@ const homeStyle = {
         padding: "10px",
         textAlign: "center",
         border: 0,
-        borderRadius: 3,
+        borderRadius: 30,
         fontSize: "16px",
         lineHeight: "25px",
       },
@@ -114,7 +114,7 @@ const homeStyle = {
         fontWeight: 150
       },
       image: {
-        borderRadius: 3,
+        borderRadius: 30,
         height: "auto",
         width: "85%",
         paddingLeft: "10px",
@@ -125,7 +125,7 @@ const homeStyle = {
         border: '5px',
     },
       imagePramsStatement: {
-        borderRadius: 3,
+        borderRadius: 30,
         height: "auto",
         width: "85%",
         paddingLeft: "10px",
