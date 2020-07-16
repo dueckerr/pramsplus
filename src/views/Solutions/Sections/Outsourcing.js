@@ -21,7 +21,7 @@ export default function Outsourcing() {
         <Grid item xs={12} sm={12} md={12}>
             <small className={classes.socials}>Business Process Outsourcing</small>
                   <p className={classes.text}>
-                  Sharing production and operational data internally and with outside partners with automated reporting that is sent via email is easy with PramsX2. This client-driven aspect of PramsX2 consistently and automatically distributes necessary production data to any email address hourly, daily, weekly, monthly, or at a customized time-interval. Analysts and operators no longer need to remember which data report to share internally or with partnered stakeholders, nor do they need to remember when to share it. By eliminating tedious and repetitive reporting, PramsX2 increases operational efficiency by providing the capability to automate countless reporting tasks simultaneously.
+                  PRAMS outsourcing services improves clients  efficiency in the daily business of transactional process and reporting, so they can focus on strategic activity and better profitability. With a skilled, right-sized staff using high-quality technology, PRAMS's buisness process outsourcing lowers costs while maintaining business as usual. In a time when reporting production data and regulatory reports are increasingly frequent, oil & gas outsourcing remains a convenient solution that provides reliability and continuity.
                   </p>
                   </Grid>
                    <div className={classes.block}>
@@ -35,16 +35,18 @@ export default function Outsourcing() {
                   <Grid item xs={12} sm={12} md={6} lg={6}>
 
                   <ul className={classes.featuresText}>
-                    <li>Pinpoint, Extract, and Export Volume Data Automatically</li>
-                    <li>Customizable Report Scheduling (Hourly, Weekly, Monthly, etc.)</li>
-                    <li>Define specific well lists for partner reporting</li>
+                    <li>Predictable budgeting costs</li>
+                    <li>Increased quality of results</li>
+                    <li>Lower costs for IT</li>
+                    <li>Freedom to focus on strategic activities</li>
                   </ul>
                 </Grid>
                 <Grid item xs={12} sm={12} md={6} lg={6}>
                   <ul className={classes.featuresText}>
-                    <li>All reports available in both XLSX and PDF format</li>
-                    <li>Use our email server or yours to simplify setup </li>
-                    <li>Automated E-mail Reporting</li>
+                    <li>Reduced headcount</li>
+                    <li>Access to highly skilled back-office staff</li>
+                    <li>Improved efficiency</li>
+                    <li>Improved profitability</li>
                   </ul>
                   </Grid>
                   </Grid>
