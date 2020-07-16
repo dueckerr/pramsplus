@@ -22,6 +22,8 @@ const solutionsBlueBlack = {
     lineHeight: "35px",
     paddingLeft: "15%",
     paddingRight: "15%",
+    fontWeight: 500
+
   },
   block: {
     padding: "20px",
@@ -54,6 +56,8 @@ const solutionsBlueBlack = {
     fontSize: "16px",
     color: "white",
     textAlign: "left",
+    fontWeight: 500
+
   },
   image: {
     borderRadius: 30,

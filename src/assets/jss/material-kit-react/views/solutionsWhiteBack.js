@@ -22,6 +22,8 @@ section: {
     lineHeight: "35px",
     paddingLeft: "15%",
     paddingRight: "15%",
+    fontWeight: 500
+
   },
   block: {
     padding: "20px",
@@ -36,8 +38,6 @@ section: {
     marginTop: "0",
     width: "100%",
     transform: "none",
-    left: "0",
-    top: "0",
     height: "100%",
     lineHeight: "35px",
     fontSize: "26px",
@@ -47,13 +47,13 @@ section: {
     marginTop: "0",
     width: "100%",
     transform: "none",
-    left: "0",
-    top: "0",
     height: "100%",
     lineHeight: "35px",
     fontSize: "16px",
     color: "rgb(2, 46, 105)",
     textAlign: "left",
+    fontWeight: 500
+
   },
   image: {
     borderRadius: 30,

@@ -41,7 +41,14 @@ const componentsStyle = {
       "0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)"
   },
   link: {
-    textDecoration: "none"
+    padding: "10px",
+    textAlign: "left",
+    fontSize: "16px",
+    lineHeight: "35px",
+    color: "white",
+    backgroundColor: "rgb(2, 46, 105)",
+    border: 0,
+    borderRadius: 30,
   },
   textCenter: {
     textAlign: "center"
