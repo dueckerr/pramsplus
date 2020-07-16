@@ -26,22 +26,31 @@ export default function Outsourcing() {
                   </Grid>
                    <div className={classes.block}>
                     <Grid className={classes.block} container spacing={3}>
-                      <Grid item xs={12} sm={12} md={6} lg={6}>
+                      <Grid item xs={12} sm={12} md={6} lg={5}>
                         <img src={pushReport} alt="..." className={classes.image} />
-                      </Grid>
-                      <Grid item xs={12} sm={12} md={6} lg={6}>
-                    <small className={classes.socials}>Features</small>
-                        <ul className={classes.featuresText}>
-                          <li>Pinpoint, Extract, and Export Volume Data Automatically</li>
-                          <li>Customizable Report Scheduling (Hourly, Weekly, Monthly, etc.)</li>
-                          <li>Define specific well lists for partner reporting</li>
-                          <li>All reports available in both XLSX and PDF format</li>
-                          <li>Use our email server or yours to simplify setup </li>
-                          <li>Automated E-mail Reporting</li>
-                        </ul>
-                      </Grid>
-                     </Grid>
-                  </div>
+                        </Grid>
+                <Grid item xs={12} sm={12} md={6} lg={7}>
+                 <small className={classes.socials}>Features</small>
+                 <Grid className={classes.block} container spacing={3}>
+                  <Grid item xs={12} sm={12} md={6} lg={6}>
+
+                  <ul className={classes.featuresText}>
+                    <li>Pinpoint, Extract, and Export Volume Data Automatically</li>
+                    <li>Customizable Report Scheduling (Hourly, Weekly, Monthly, etc.)</li>
+                    <li>Define specific well lists for partner reporting</li>
+                  </ul>
+                </Grid>
+                <Grid item xs={12} sm={12} md={6} lg={6}>
+                  <ul className={classes.featuresText}>
+                    <li>All reports available in both XLSX and PDF format</li>
+                    <li>Use our email server or yours to simplify setup </li>
+                    <li>Automated E-mail Reporting</li>
+                  </ul>
+                  </Grid>
+                  </Grid>
+                </Grid>
+              </Grid>
+            </div>
         </Grid>
     </div>
   );

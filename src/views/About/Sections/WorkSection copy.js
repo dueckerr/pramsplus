@@ -26,57 +26,69 @@ export default function WorkSection() {
             your live information session, fill out our form or call us today
           </h4>
           <form>
-          <GridContainer>
+            <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
                 <CustomInput
-                  labelText="Your Name"
+                  className="text-input"
                   id="name"
-                  formControlProps={{
-                    fullWidth: true,
-                  }}
+                  name="name"
+                  onChange={handleChange}
+                  placeholder="Your Name"
+                  required
+                  value={feedback}
                 />
               </GridItem>
               <GridItem xs={12} sm={12} md={6}>
                 <CustomInput
-                  labelText="Your Email"
-                  id="email"
-                  formControlProps={{
-                    fullWidth: true,
-                  }}
+                    className="text-input"
+                    id="email"
+                    name="email"
+                    onChange={handleChange}
+                    placeholder="Enter your email"
+                    required
+                    value={feedback}
                 />
               </GridItem>
               <GridItem xs={12} sm={12} md={6}>
                 <CustomInput
                   labelText="Your Company"
-                  id="company"
-                  formControlProps={{
-                    fullWidth: true,
-                  }}
+                  className="text-input"
+                  id="feedback-entry"
+                  name="feedback-entry"
+                  onChange={handleChange}
+                  placeholder="Your Company"
+                  required
+                  value={feedback}
                 />
               </GridItem>
               <GridItem xs={12} sm={12} md={6}>
                 <CustomInput
                   labelText="Your Phone Number"
+                  className="text-input"
                   id="number"
-                  formControlProps={{
-                    fullWidth: true,
-                  }}
+                  name="number"
+                  onChange={handleChange}
+                  placeholder="Enter your number"
+                  required
+                  value={number}
                 />
               </GridItem>
               <CustomInput
                 labelText="Message"
                 id="message"
-                formControlProps={{
-                  fullWidth: true,
-                  className: classes.textArea,
-                }}
+                className="text-input"
+                name="message"
+                onChange={handleChange}
+                placeholder="Enter your feedback here"
+                required
+                value={message}
                 inputProps={{
                   multiline: true,
                   rows: 5,
                 }}
               />
               <GridItem xs={12} sm={12} md={4}>
-                <Button color="success">Contact Us</Button>
+                <Button color="success" onSubmit={handleSubmit} value="Submit">Contact Us</Button>
               </GridItem>
             </GridContainer>
           </form>

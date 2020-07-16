@@ -19,6 +19,7 @@ import RegulatoryReporting from "./Sections/RegulatoryReporting.js";
 import PushReporting from "./Sections/PushReporting.js";
 import Outsourcing from "./Sections/Outsourcing.js";
 import logo from "assets/img/PPlogo.jpg";
+import PropTypes from 'prop-types';
 
 import WorkSection from "../About/Sections/WorkSection";
 
@@ -26,7 +27,7 @@ import styles from "assets/jss/material-kit-react/views/components.js";
 
 const useStyles = makeStyles(styles);
 
-export default function Components(props) {
+export default function Solutions(props) {
   const classes = useStyles();
   const { ...rest } = props;
   return (

@@ -5,6 +5,7 @@ import ReactDOM from "react-dom";
 import { createBrowserHistory } from "history";
 
 import "assets/scss/material-kit-react.scss?v=1.9.0";
+import { env } from './config';
 
 // pages for this product
 import Home from "views/Home/Home.js";

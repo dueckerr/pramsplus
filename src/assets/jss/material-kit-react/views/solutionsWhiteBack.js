@@ -65,6 +65,16 @@ section: {
     paddingBottom: "10px",
     justifyContent: "center",
 },
+  imagePush: {
+    borderRadius: 30,
+    height: "auto",
+    width: "80%",
+    paddingLeft: "10px",
+    paddingRight: "10px",
+    paddingTop: "10px",
+    paddingBottom: "10px",
+    justifyContent: "center",
+},
   margin5: {
     margin: "5px"
   },

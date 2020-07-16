@@ -27,23 +27,32 @@ export default function FieldDataCapture() {
 
             <div className={classes.block}>
               <Grid className={classes.block} container spacing={3}>
-                <Grid item xs={12} sm={12} md={6} lg={7}>
+                <Grid item xs={12} sm={12} md={6} lg={5}>
                   <img src={dataCharts} alt="..." className={classes.image} />
                 </Grid>
-                <Grid item xs={12} sm={12} md={6} lg={5}>
-              <small className={classes.socials}>Features</small>
+                <Grid item xs={12} sm={12} md={6} lg={7}>
+                 <small className={classes.socials}>Features</small>
+                 <Grid className={classes.block} container spacing={3}>
+                  <Grid item xs={12} sm={12} md={6} lg={6}>
+
                   <ul className={classes.featuresText}>
                     <li>Flexible Gas Volume Data Entry</li>
                     <li>Multi-tiered Daily Data Allocation</li>
                     <li>Downtime Production Accounting</li>
                     <li>Pressure Recording (casing, tubing, Bradenhead)</li>
                     <li>Route-Based Data Entry</li>
+                  </ul>
+                </Grid>
+                <Grid item xs={12} sm={12} md={6} lg={6}>
+                  <ul className={classes.featuresText}>
                     <li>3rd Party & SCADA Import</li>
                     <li>Corrected Run Ticket Entry</li>
                     <li>Built-in Audio, Visual, Olfactory (AVO) Inspection</li>
                     <li>Customizable facility and APCE inspections</li>
                     <li>Customizable layouts for every well</li>
                   </ul>
+                  </Grid>
+                  </Grid>
                 </Grid>
               </Grid>
             </div>

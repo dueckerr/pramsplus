@@ -24,32 +24,30 @@ export default function PushReporting() {
         </Grid>
               <div className={classes.block}>
                 <Grid className={classes.block} container spacing={3}>
-                <small className={classes.socials}>Features</small>
-                <Grid item xs={12} sm={12} md={6}>
-                  <img src={pushReport} alt="..." className={classes.image} />
-                </Grid>
-                  <Grid item xs={12} sm={12} md={6} lg={6}>
-                    <ul className={classes.featuresText}>
-                      <li>Pinpoint, Extract, and Export Volume Data Automatically</li>
-                      <li>Customizable Report Scheduling (Hourly, Weekly, Monthly, etc.)</li>
-                      <li>Automated E-mail Reporting</li>
-                      <li>Define specific well lists for partner reporting</li>
-                      <li>All reports available in both XLSX and PDF format</li>
-                      <li>Use our email server or yours to simplify setup </li>
-                    </ul>
+                <Grid item xs={12} sm={12} md={5}>
+                  <img src={pushReport} alt="..." className={classes.imagePush} />
                   </Grid>
+                <Grid item xs={12} sm={12} md={6} lg={7}>
+                 <small className={classes.socials}>Features</small>
+                 <Grid className={classes.block} container spacing={3}>
                   <Grid item xs={12} sm={12} md={6} lg={6}>
-                    <ul className={classes.featuresText}>
-                      <li>Pinpoint, Extract, and Export Volume Data Automatically</li>
-                      <li>Customizable Report Scheduling (Hourly, Weekly, Monthly, etc.)</li>
-                      <li>Automated E-mail Reporting</li>
-                      <li>Define specific well lists for partner reporting</li>
-                      <li>All reports available in both XLSX and PDF format</li>
-                      <li>Use our email server or yours to simplify setup </li>
-                    </ul>
+
+                  <ul className={classes.featuresText}>
+                    <li>Define specific well lists for partner reporting</li>
+                    <li>All reports available in both XLSX and PDF format</li>
+                    <li>Pinpoint, Extract, and Export Volume Data Automatically</li>
+                  </ul>
+                </Grid>
+                <Grid item xs={12} sm={12} md={6} lg={6}>
+                  <ul className={classes.featuresText}>
+                    <li>Customizable Report Scheduling</li>
+                    <li>Automated E-mail Reporting</li>
+                  </ul>
+                  </Grid>
                   </Grid>
                 </Grid>
-              </div>
+              </Grid>
+            </div>
         </Grid>
     </div>
   );
