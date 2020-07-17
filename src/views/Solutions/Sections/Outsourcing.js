@@ -21,7 +21,7 @@ export default function Outsourcing() {
         <Grid item xs={12} sm={12} md={12}>
             <small className={classes.socials}>Business Process Outsourcing</small>
                   <p className={classes.text}>
-                  PRAMS outsourcing services improves clients  efficiency in the daily business of transactional process and reporting, so they can focus on strategic activity and better profitability. With a skilled, right-sized staff using high-quality technology, PRAMS's buisness process outsourcing lowers costs while maintaining business as usual. In a time when reporting production data and regulatory reports are increasingly frequent, oil & gas outsourcing remains a convenient solution that provides reliability and continuity.
+                  Using the PRAMS platform, we can perform and monitor your entire production accounting workflow from Field to Office to Agency.  Our knowledge of the software and the regulatory reporting, immediately accrues to the client.  
                   </p>
                   </Grid>
                    <div className={classes.block}>

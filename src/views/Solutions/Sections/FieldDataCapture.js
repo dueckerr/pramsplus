@@ -22,7 +22,7 @@ export default function FieldDataCapture() {
       <Grid className={classes.block} container spacing={3}>
         <Grid item xs={12} sm={12} md={12}>
           <small className={classes.socials}>Field Data Caputre</small>
-            <p className={classes.text}>With the countless ways operators can capture and record production data, the organization needs to implement a recording process that best fits the operating environment. This is how PumperX2 was designed. It allows for data to be recorded in the field, office or imported from SCADA systems. Consistent and accurate daily information is the foundation for precise monthly reconciliation allocation and reporting. Once-daily information is recorded it is utilized throughout all aspects of PramsX2, eliminating the need for repetitive data entry. Using our Template Manager in AnalystX2, users can customize exactly what they want to capture for each well, as well as in the order that is best suited for each pumper.</p>
+            <p className={classes.text}>With the countless ways operators can capture and record production data, the organization needs to implement a recording process that best fits their operating environment and culture. PRAMS was designed with this in mind. Users customize exactly what they want to capture for each well, as well as in the order that is best suited for each route/pumper.  Daily field data is entered in the field, the office or imported from SCADA and 3rd party systems. Consistent and accurate daily information is the foundation for optimizing production.</p>
         </Grid>
 
             <div className={classes.block}>
@@ -36,20 +36,20 @@ export default function FieldDataCapture() {
                   <Grid item xs={12} sm={12} md={6} lg={6}>
 
                   <ul className={classes.featuresText}>
-                    <li>Flexible Gas Volume Data Entry</li>
-                    <li>Multi-tiered Daily Data Allocation</li>
-                    <li>Downtime Production Accounting</li>
-                    <li>Pressure Recording (casing, tubing, Bradenhead)</li>
                     <li>Route-Based Data Entry</li>
+                    <li>User-defined layouts for every well</li>
+                    <li>Equipment tracking – User configured</li>
+                    <li>Numerous Gas meter types</li>
+                    <li>Downtime tracking</li>
                   </ul>
                 </Grid>
                 <Grid item xs={12} sm={12} md={6} lg={6}>
                   <ul className={classes.featuresText}>
                     <li>3rd Party & SCADA Import</li>
-                    <li>Corrected Run Ticket Entry</li>
-                    <li>Built-in Audio, Visual, Olfactory (AVO) Inspection</li>
-                    <li>Customizable facility and APCE inspections</li>
-                    <li>Customizable layouts for every well</li>
+                    <li>Pressures (casing, tubing, bradenhead, line)</li>
+                    <li>API Corrected Run Ticket Entry</li>
+                    <li>Multi-tiered Daily Data Allocation</li>
+                    <li>Facility, AVO and APCE inspections – User defined</li>
                   </ul>
                   </Grid>
                   </Grid>
