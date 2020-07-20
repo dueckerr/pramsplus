@@ -7,6 +7,9 @@ const homeStyle = {
         // paddingBottom: "15px",
         paddingRight: "20%",
         lineHeight: "41px",
+        backgroundColor: "white",
+        flexGrow: 1,
+
       },
       block: {
         paddingLeft: "5%",
@@ -16,7 +19,31 @@ const homeStyle = {
         color: "black",
         textAlign: "center",
         border: 0,
-        borderRadius: 3,
+        borderRadius: 300,
+      },
+      blockSoftware: {
+        height: "300px",
+        width: "300px",
+        color: "black",
+        display: 'flex',
+        flexWrap: 'wrap',
+        justifyContent: "center",
+        overflow: 'hidden',
+        border: 80,
+        borderRadius: 900,
+        backgroundColor: "rgb(2, 46, 105)",
+        display: "inline-block",
+      },
+      software: {
+        height: "auto",
+        width: "550px",
+        color: "black",
+        textAlign: "center",
+        border: 10,
+        borderRadius: 900,
+      },
+      popover: {
+        pointerEvents: 'none',
       },
       headerTextBlue: {
         lineHeight: "41px",
@@ -29,6 +56,12 @@ const homeStyle = {
         paddingRight: "5px",
         fontWeight: 500
      },
+     headerTextWhite: {
+        fontSize: "40px",
+        color: "white",
+        textAlign: "center",
+        fontWeight: 500
+      },
       title: {
         lineHeight: "41px",
         fontSize: "16px",
@@ -39,30 +72,27 @@ const homeStyle = {
         color: "rgb(2, 46, 105)",
         textAlign: "left",
         fontSize: "16px",
-        lineHeight: "30px",
-        fontWeight: 500
+        lineHeight: "15px",
+        fontWeight: 500,
+        padding: "10px",
       },
-    lowerHeaderText: {
-        color: "rgb(2, 46, 105)",
+      lowerHeaderText: {
+        color: "white",
         fontSize: "28px",
         textAlign: "center",
         fontWeight: 150,
-        display: 'flex',
-        flexWrap: 'wrap',
-        overflow: 'hidden',
         paddingTop: "5px",
-
-    },
-    imageSmall: {
+        justifyContent: "center",
+      },
+      imageSmall: {
         borderRadius: 3,
         height: "auto",
-        width: "15%",
+        width: "200px",
         border: '5px',
-        flexShrink: 10,
-        display: 'flex',
-        flexWrap: 'wrap',
         justifyContent: "center",
         overflow: 'hidden',
+        borderRadius: 900,
+        
     },
 };
 

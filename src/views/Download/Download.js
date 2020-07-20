@@ -35,7 +35,7 @@ export default function Components(props) {
             <h3>
               <small className={classes.socials}>PRAMS Software Downloads</small>
             </h3>
-            <ul className={classes.featuresText}>
+            <ul>
               <li><Button className={classes.link} href="https://update.pramsplus.com/file/download?id=2361">Insight</Button></li>
               <li><Button className={classes.link} href="https://update.pramsplus.com/file/download?id=180">Analyst</Button></li>
               <li><Button className={classes.link} href="https://update.pramsplus.com/file/download?id=183">Pumper</Button></li>
