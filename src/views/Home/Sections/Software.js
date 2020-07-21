@@ -29,7 +29,8 @@ export default function Software() {
   return (
     <div className={classes.block}>
       <div className={classes.title}>
-        <h3 className={classes.headerTextBlue}>PRAMS benefits the entire organization</h3>
+        <h3 className={classes.headerTextBlue}>PRAMS benfits the entire organization</h3>
+        <br></br>
       </div>
       <Grid container spacing={24}>
         <Grid item xs={12} sm={6}>

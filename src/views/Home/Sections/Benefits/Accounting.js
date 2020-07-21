@@ -31,7 +31,7 @@ export default function Accounting() {
         onMouseEnter={handlePopoverOpen}
         onMouseLeave={handlePopoverClose}
       >
-        <br></br>
+                <br></br>
 
             <img src={regulatory} alt="..." className={classes.imageSmall} />
             <p className={classes.lowerHeaderText}>Accounting</p>

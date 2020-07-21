@@ -15,6 +15,7 @@ import HeaderLinks from "components/Header/HeaderLinks.js";
 import PramsStatement from "./Sections/PramsStatement.js";
 import PRAMSMission from "./Sections/PRAMSMission.js";
 import Software from "./Sections/Software.js";
+import Software2 from "./Sections/Software copy";
 import SectionWorked from "./Sections/SectionWorked.js";
 import WorkSection from "../About/Sections/WorkSection";
 import Pricing from "./Sections/Pricing.js";
@@ -45,6 +46,8 @@ export default function Home(props) {
         <PRAMSMission />
         <Pricing />
         <WorkSection />
+        <Software2/>
+
       </div>
       <Footer />
     </div>

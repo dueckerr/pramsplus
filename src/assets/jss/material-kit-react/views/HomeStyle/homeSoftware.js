@@ -34,6 +34,13 @@ const homeStyle = {
         backgroundColor: "rgb(2, 46, 105)",
         display: "inline-block",
       },
+      textBlock: {
+        height: "400px",
+        width: "400px",
+        justifyContent: "center",
+        backgroundColor: "rgb(2, 46, 105)",
+        display: "inline-block",
+      },
       software: {
         height: "auto",
         width: "550px",
@@ -73,6 +80,14 @@ const homeStyle = {
         textAlign: "left",
         fontSize: "16px",
         lineHeight: "15px",
+        fontWeight: 500,
+        padding: "10px",
+      },
+      whiteText: {
+        color: "white",
+        textAlign: "left",
+        fontSize: "16px",
+        lineHeight: "25px",
         fontWeight: 500,
         padding: "10px",
       },
