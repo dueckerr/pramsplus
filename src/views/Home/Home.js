@@ -46,7 +46,7 @@ export default function Home(props) {
         <PRAMSMission />
         <Pricing />
         <WorkSection />
-        <Software2/>
+        {/* <Software2/> */}
 
       </div>
       <Footer />

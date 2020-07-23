@@ -35,8 +35,8 @@ const homeStyle = {
         display: "inline-block",
       },
       textBlock: {
-        height: "400px",
-        width: "400px",
+        height: "300px",
+        width: "300px",
         justifyContent: "center",
         backgroundColor: "rgb(2, 46, 105)",
         display: "inline-block",

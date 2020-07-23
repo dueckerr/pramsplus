@@ -18,7 +18,7 @@ export default function Software() {
   
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState(null);
-  const [text, setText] = useState({});
+  const [text, setText] = useState([]);
     
   const handlePopoverOpenLand = (event) => {
     landText.map(function(item) {

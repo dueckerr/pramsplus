@@ -96,7 +96,7 @@ export default function WorkSection() {
                 }}
                 inputProps={{
                   multiline: true,
-                  rows: 5,
+                  rows: 15,
                 }}
                 required
                 disabled={ submitting }
@@ -104,7 +104,7 @@ export default function WorkSection() {
                 onChange={ () => setMessage() }
               />
               <GridItem xs={12} sm={12} md={4}>
-                <Button disabled={ submitting } htmlType="submit" color="success">Contact Us</Button>
+                <Button disabled={ submitting } color="success">Contact Us</Button>
               </GridItem>
             </GridContainer>
           </form>
