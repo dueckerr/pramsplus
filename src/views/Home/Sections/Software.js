@@ -1,17 +1,26 @@
+  
 import React, { useContext, useEffect, useState } from 'react'
 import Popover from '@material-ui/core/Popover';
 import Grid from '@material-ui/core/Grid';
+import Card from '@material-ui/core/Card';
+import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';// react components for routing our app without refresh
 import { makeStyles } from "@material-ui/core/styles";
-// @material-ui/icons
 
 import operations from "assets/img/operations.jpg"
 import marketing from "assets/img/marketing.jpg"
 import regulatory from "assets/img/regulatory.jpg"
 import moneyJack from "assets/img/moneyJack.jpg"
-
+import Land from "./Benefits/Land"
+import Benefits from "./Benefits/Benefits"
+import Marketing from "./Benefits/Marketing"
+import Operations from "./Benefits/Operations"
+import Accounting from "./Benefits/Accounting"
+import Reserves from "./Benefits/Reserves"
+import Regulatory from "./Benefits/Regulatory"
 import styles from "assets/jss/material-kit-react/views/HomeStyle/homeSoftware.js";
 import { setTextRange } from 'typescript';
+import { func } from 'prop-types';
 
 const useStyles = makeStyles(styles);
 
@@ -20,12 +29,10 @@ export default function Software() {
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [text, setText] = useState([]);
-  // const listItems = text.map((d) => <li key={d.name}>{d.name}</li>);
 
-
-  const handlePopoverOpenLand = (event) => {
+  function handlePopoverOpenLand(event){
     setAnchorEl(event.currentTarget);
-    setText([landText]);
+    setText(landText);
   };
 
   useEffect(() => {
@@ -33,9 +40,9 @@ export default function Software() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [window.location.search,])
 
-  const handlePopoverCloseLand = () => {
+  function handlePopoverCloseLand(){
     setAnchorEl(null);
-    setText(null)
+    setText("PRAMS");
   };
 
 
@@ -66,265 +73,139 @@ export default function Software() {
     "Monitor daily gas flows to avoid imbalance penalties."
   ]
 
-  const handlePopoverOpenOperations = (event) => {
+  function handlePopoverOpenOperations(event){
     setAnchorEl(event.currentTarget);
-    console.log(anchorEl)
     setText([operationsText]);
-    console.log(text)
   };
 
-  const handlePopoverCloseOperations = () => {
+  function handlePopoverCloseOperations(){
     setAnchorEl(null);
     setText("PRAMS")
   };
 
-  const handlePopoverOpenMarketing = (event) => {
+  function handlePopoverOpenMarketing(event){
     setAnchorEl(event.currentTarget);
     setText(marketingText)
   };
 
-  const handlePopoverCloseMarketing = () => {
+  function handlePopoverCloseMarketing(){
     setAnchorEl(null);
     setText("PRAMS")
-
   };
 
-  const handlePopoverOpenAccounting = (event) => {
+  function handlePopoverOpenAccounting (event) {
     setAnchorEl(event.currentTarget);
     setText(accountingText)
   };
 
-  const handlePopoverCloseAccounting = () => {
+  function handlePopoverCloseAccounting(){
     setAnchorEl(null);
     setText("PRAMS")
-
   };
 
-  const handlePopoverOpenReserves = (event) => {
+  function handlePopoverOpenReserves(event) {
     setAnchorEl(event.currentTarget);
     setText(reservesText)
   };
 
-  const handlePopoverCloseReserves = () => {
+  function handlePopoverCloseReserves(){
     setAnchorEl(null);
     setText("PRAMS")
 
   };
 
-  const handlePopoverOpenReg = (event) => {
+  function handlePopoverOpenReg(event){
     setAnchorEl(event.currentTarget);
     setText(regulatoryText)
 
   };
 
-  const handlePopoverCloseReg = () => {
+  function handlePopoverCloseReg(){
     setAnchorEl(null);
     setText("PRAMS")
-
-  };
-  const openLand = Boolean(anchorEl);
-  const openOperations = Boolean(anchorEl);
-  const openReserves = Boolean(anchorEl);
-  const openReg = Boolean(anchorEl);
-  const openMarketing = Boolean(anchorEl);
-  const openAccounting = Boolean(anchorEl);
+  }
 
   return (
-    <div className={classes.block}>
-      <div className={classes.title}>
-        <h3 className={classes.headerTextBlue}>PRAMS benfits the entire organization</h3>
-        <br></br>
-      </div>
-      <Grid container spacing={24}>
+    <Card className={classes.block}>
+      <Typography className={classes.headerTextBlue}>PRAMS benfits the entire organization</Typography>
+      <br></br>
+
+      <Grid container spacing={10}>
         <Grid item xs={12} sm={6}>
-          {/* Land Component */}
-          <div className={classes.blockSoftware}>
+          <Card className={classes.blueCircleLeft}>
             <Typography
-              aria-owns={openLand ? 'mouse-over-popover' : undefined}
-              aria-haspopup="true"
               onMouseEnter={handlePopoverOpenLand}
               onMouseLeave={handlePopoverCloseLand}
             >
-                <br></br>
-                <img src={moneyJack} alt="..." className={classes.imageSmall} />
-                <p className={classes.lowerHeaderText}>Land</p>
-      
+              <Land> </Land>
             </Typography>
-            <Popover
-              id="mouse-over-popover"
-              className={classes.popover}
-              classes={{
-                paper: classes.paper,
-              }}
-              open={openLand}
-              anchorEl={anchorEl}
-              onClose={handlePopoverCloseLand}
-              disableRestoreFocus
-            />
-          </div>
+          </Card>
         </Grid>
 
-        <Grid item xs={12} sm={6}>
-        <div className={classes.blockSoftware}>
-      <Typography
-        aria-owns={openOperations ? 'mouse-over-popover' : undefined}
-        aria-haspopup="true"
-        onMouseEnter={handlePopoverOpenOperations}
-        onMouseLeave={handlePopoverCloseOperations}
-      >
-                <br></br>
-
-    <img src={operations} alt="..." className={classes.imageSmall} />
-      <p className={classes.lowerHeaderText}>Operations </p>
-
-      </Typography>
-      <Popover
-        id="mouse-over-popover"
-        className={classes.popover}
-        classes={{
-          paper: classes.paper,
-        }}
-        open={openOperations}
-        anchorEl={anchorEl}
-        anchorOrigin={{
-          vertical: 'bottom',
-          horizontal: 'left',
-        }}
-        
-        transformOrigin={{
-          vertical: 'top',
-          horizontal: 'left',
-        }}
-        onClose={handlePopoverCloseOperations}
-        disableRestoreFocus
-      />
-    </div>        
+    <Grid item xs={12} sm={6}>
+      <Card className={classes.blueCircleRight}>
+        <Typography
+          onMouseEnter={handlePopoverOpenOperations}
+          onMouseLeave={handlePopoverCloseOperations}
+        >
+          <Operations component="div" />
+        </Typography>
+      </Card>        
     </Grid>  
 
         <Grid item xs={12} md={4}>
-          <div className={classes.blockSoftware}>
+          <Card className={classes.blueCircleLeft}>
             <Typography
-              aria-owns={openReserves ? 'mouse-over-popover' : undefined}
-              aria-haspopup="true"
               onMouseEnter={handlePopoverOpenReserves}
               onMouseLeave={handlePopoverCloseReserves}
             >
-              <br></br>
-          <img src={operations} alt="..." className={classes.imageSmall} />
-            <p className={classes.lowerHeaderText}>Reserves </p>
-
+              <Reserves />
             </Typography>
-            <Popover
-              id="mouse-over-popover"
-              className={classes.popover}
-              classes={{
-                paper: classes.paper,
-              }}
-              open={openReserves}
-              anchorEl={anchorEl}
-              onClose={handlePopoverCloseReserves}
-              disableRestoreFocus
-              setText={reservesText}
-              />
-            </div>
+          </Card>
         </Grid>
-{/* sdfdsfdsf
-sdfsdfdskfasdlkfjasdfkasdlkfjasdklfjasdklfjasdlkfjasdlkfjasdlkfjasdlkfjasdlkf
-sdfsdfdskfasdlkfjasdfkasdlkfjasdklfjasdklfjasdlkfjasdlkfjasdlkfjasdlkfjasdlkf
-sdfsdfdskfasdlkfjasdfkasdlkfjasdklfjasdklfjasdlkfjasdlkfjasdlkfjasdlkfjasdlkf
-sdfsdfdskfasdlkfjasdfkasdlkfjasdklfjasdklfjasdlkfjasdlkfjasdlkfjasdlkfjasdlkf
-sdfsdfdskfasdlkfjasdfkasdlkfjasdklfjasdklfjasdlkfjasdlkfjasdlkfjasdlkfjasdlkf
-*/}
-      <div className={classes.textBlock}>
-            <ul className={classes.whiteText}>
-              {text}
-            </ul>
-      </div>
         
+        <Grid item xs={12} md={4}>
+          <Card className={classes.textBlock}>
+            <CardContent className={classes.whiteText}>
+              {text}
+            </CardContent>
+          </Card>
+        </Grid>
 
         <Grid item xs={12} md={4}>
-          <div className={classes.blockSoftware}>
+          <Card className={classes.blueCircleRight}>
             <Typography
-              aria-owns={openAccounting ? 'mouse-over-popover' : undefined}
-              aria-haspopup="true"
               onMouseEnter={handlePopoverOpenAccounting}
               onMouseLeave={handlePopoverCloseAccounting}
             >
-                      <br></br>
-
-                  <img src={regulatory} alt="..." className={classes.imageSmall} />
-                  <p className={classes.lowerHeaderText}>Accounting</p>
-
+              <Accounting />  
             </Typography>
-            <Popover
-              id="mouse-over-popover"
-              className={classes.popover}
-              classes={{
-                paper: classes.paper,
-              }}
-              open={openAccounting}
-              anchorEl={anchorEl}
-              onClose={handlePopoverCloseAccounting}
-              disableRestoreFocus
-              />
-          </div>
+          </Card>
         </Grid>    
 
         <Grid item xs={12} sm={6}>
-          <div className={classes.blockSoftware}>
+          <Card className={classes.blueCircleLeft}>
             <Typography
-              aria-owns={openReg ? 'mouse-over-popover' : undefined}
               onMouseEnter={handlePopoverOpenReg}
               onMouseLeave={handlePopoverCloseReg}
             >
-                    <br></br>
-                <img src={regulatory} alt="..." className={classes.imageSmall} />
-                <p className={classes.lowerHeaderText}>Regulatory</p>
-      
-              </Typography>
-              <Popover
-                id="mouse-over-popover"
-                className={classes.popover}
-                classes={{
-                  paper: classes.paper,
-                }}
-                open={openReg}
-                anchorEl={anchorEl}
-                onClose={handlePopoverCloseReg}
-                disableRestoreFocus
-              />
-              </div>
-              </Grid>
+              <Regulatory />
+            </Typography>
+          </Card>
+        </Grid>
 
         <Grid item xs={12} sm={6}>
-          <div className={classes.blockSoftware}>
+          <Card className={classes.blueCircleRight}>
             <Typography
-              aria-owns={openMarketing ? 'mouse-over-popover' : undefined}
-              aria-haspopup="true"
               onMouseEnter={handlePopoverOpenMarketing}
               onMouseLeave={handlePopoverCloseMarketing}
             >
-              <br></br>
-              <img src={marketing} alt="..." className={classes.imageSmall} 
-              />
-              <h3 className={classes.lowerHeaderText}> Marketing </h3>
-
+              <Marketing />
             </Typography>
-            <Popover
-              id="mouse-over-popover"
-              className={classes.popover}
-              classes={{
-                paper: classes.paper,
-              }}
-              open={openMarketing}
-              anchorEl={anchorEl}
-              onClose={handlePopoverCloseMarketing}
-              disableRestoreFocus
-              />
-          </div>
+          </Card>
         </Grid> 
       </Grid>        
-    </div>
+    </Card>
   );
 }
 

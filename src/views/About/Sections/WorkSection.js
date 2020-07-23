@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from 'react'
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -15,6 +15,14 @@ import styles from "assets/jss/material-kit-react/views/landingPageSections/work
 const useStyles = makeStyles(styles);
 
 export default function WorkSection() {
+
+  const [ name, setName ] = useState('');
+  const [ company, setCompany ] = useState('');
+  const [ email, setEmail ] = useState('');
+  const [ phone, setPhone ] = useState('');
+  const [ message, setMessage ] = useState('');
+  const [ submitting, setSubmitting ] = useState(false);
+
   const classes = useStyles();
   return (
     <div className={classes.section}>
@@ -34,6 +42,10 @@ export default function WorkSection() {
                   formControlProps={{
                     fullWidth: true,
                   }}
+                  required
+                  disabled={ submitting }
+                  value={ name }
+                  onChange={ () => setName() }
                 />
               </GridItem>
               <GridItem xs={12} sm={12} md={6}>
@@ -43,6 +55,10 @@ export default function WorkSection() {
                   formControlProps={{
                     fullWidth: true,
                   }}
+                  required
+                  disabled={ submitting }
+                  value={ email }
+                  onChange={ () => setEmail() }
                 />
               </GridItem>
               <GridItem xs={12} sm={12} md={6}>
@@ -52,6 +68,10 @@ export default function WorkSection() {
                   formControlProps={{
                     fullWidth: true,
                   }}
+                  required
+                  disabled={ submitting }
+                  value={ company }
+                  onChange={ () => setCompany() }
                 />
               </GridItem>
               <GridItem xs={12} sm={12} md={6}>
@@ -61,6 +81,10 @@ export default function WorkSection() {
                   formControlProps={{
                     fullWidth: true,
                   }}
+                  required
+                  disabled={ submitting }
+                  value={ phone }
+                  onChange={ () => setPhone() }
                 />
               </GridItem>
               <CustomInput
@@ -72,11 +96,15 @@ export default function WorkSection() {
                 }}
                 inputProps={{
                   multiline: true,
-                  rows: 5,
+                  rows: 15,
                 }}
+                required
+                disabled={ submitting }
+                value={ message }
+                onChange={ () => setMessage() }
               />
               <GridItem xs={12} sm={12} md={4}>
-                <Button color="success">Contact Us</Button>
+                <Button disabled={ submitting } color="success">Contact Us</Button>
               </GridItem>
             </GridContainer>
           </form>

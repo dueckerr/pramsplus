@@ -23,14 +23,14 @@ export default function Pricing() {
                 <Grid item xs={12} sm={12} md={6} lg={6}>
                   <ul className={classes.whiteTextBulletPointsLeft}>
                     <li>Hosted or On-premises</li>
-                    <li>Month-to-month contract, we earn your business </li>
                     <li> Unlimited Users </li>
+                    <li> No Yearly Renewal Fees </li>
                   </ul>
                 </Grid>
                 <Grid item xs={12} sm={12} md={6} lg={6}>
                   <ul className={classes.whiteTextBulletPoints}>
                     <li> Access to the entire PRAMS Platform</li>
-                    <li> No Yearly Renewal Fees </li>
+                    <li>Month-to-month contract, we earn your business </li>
                     <li> Free Call Support</li>
                     <li> Personalized Queries </li>
                   </ul>
