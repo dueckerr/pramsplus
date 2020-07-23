@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+ import React, { useContext, useEffect, useState } from 'react'
 import Popover from '@material-ui/core/Popover';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';// react components for routing our app without refresh
@@ -229,14 +229,11 @@ export default function Software() {
             </div>
         </Grid>
 {/* sdfdsfdsf
-
 sdfsdfdskfasdlkfjasdfkasdlkfjasdklfjasdklfjasdlkfjasdlkfjasdlkfjasdlkfjasdlkf
 sdfsdfdskfasdlkfjasdfkasdlkfjasdklfjasdklfjasdlkfjasdlkfjasdlkfjasdlkfjasdlkf
 sdfsdfdskfasdlkfjasdfkasdlkfjasdklfjasdklfjasdlkfjasdlkfjasdlkfjasdlkfjasdlkf
 sdfsdfdskfasdlkfjasdfkasdlkfjasdklfjasdklfjasdlkfjasdlkfjasdlkfjasdlkfjasdlkf
 sdfsdfdskfasdlkfjasdfkasdlkfjasdklfjasdklfjasdlkfjasdlkfjasdlkfjasdlkfjasdlkf
-
-
 */}
       <div className={classes.textBlock}>
             <ul className={classes.whiteText}>
@@ -330,3 +327,4 @@ sdfsdfdskfasdlkfjasdfkasdlkfjasdklfjasdklfjasdlkfjasdlkfjasdlkfjasdlkfjasdlkf
     </div>
   );
 }
+
