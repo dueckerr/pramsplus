@@ -29,12 +29,10 @@ export default function Software() {
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [text, setText] = useState([]);
-  // const listItems = text.map((d) => <li key={d.name}>{d.name}</li>);
-
 
   function handlePopoverOpenLand(event){
     setAnchorEl(event.currentTarget);
-    setText([landText]);
+    setText(landText);
   };
 
   useEffect(() => {
@@ -93,7 +91,6 @@ export default function Software() {
   function handlePopoverCloseMarketing(){
     setAnchorEl(null);
     setText("PRAMS")
-
   };
 
   function handlePopoverOpenAccounting (event) {
@@ -104,7 +101,6 @@ export default function Software() {
   function handlePopoverCloseAccounting(){
     setAnchorEl(null);
     setText("PRAMS")
-
   };
 
   function handlePopoverOpenReserves(event) {
@@ -129,17 +125,14 @@ export default function Software() {
     setText("PRAMS")
   }
 
-
   return (
     <Card className={classes.block}>
-      <Card className={classes.title}>
-        <Typography className={classes.headerTextBlue}>PRAMS benfits the entire organization</Typography>
-        <br></br>
-      </Card>
+      <Typography className={classes.headerTextBlue}>PRAMS benfits the entire organization</Typography>
+      <br></br>
 
       <Grid container spacing={10}>
         <Grid item xs={12} sm={6}>
-          <Card className={classes.blockSoftware}>
+          <Card className={classes.blueCircleLeft}>
             <Typography
               onMouseEnter={handlePopoverOpenLand}
               onMouseLeave={handlePopoverCloseLand}
@@ -150,7 +143,7 @@ export default function Software() {
         </Grid>
 
     <Grid item xs={12} sm={6}>
-      <Card className={classes.blockSoftware}>
+      <Card className={classes.blueCircleRight}>
         <Typography
           onMouseEnter={handlePopoverOpenOperations}
           onMouseLeave={handlePopoverCloseOperations}
@@ -161,7 +154,7 @@ export default function Software() {
     </Grid>  
 
         <Grid item xs={12} md={4}>
-          <Card className={classes.blockSoftware}>
+          <Card className={classes.blueCircleLeft}>
             <Typography
               onMouseEnter={handlePopoverOpenReserves}
               onMouseLeave={handlePopoverCloseReserves}
@@ -180,7 +173,7 @@ export default function Software() {
         </Grid>
 
         <Grid item xs={12} md={4}>
-          <Card className={classes.blockSoftware}>
+          <Card className={classes.blueCircleRight}>
             <Typography
               onMouseEnter={handlePopoverOpenAccounting}
               onMouseLeave={handlePopoverCloseAccounting}
@@ -191,7 +184,7 @@ export default function Software() {
         </Grid>    
 
         <Grid item xs={12} sm={6}>
-          <Card className={classes.blockSoftware}>
+          <Card className={classes.blueCircleLeft}>
             <Typography
               onMouseEnter={handlePopoverOpenReg}
               onMouseLeave={handlePopoverCloseReg}
@@ -202,7 +195,7 @@ export default function Software() {
         </Grid>
 
         <Grid item xs={12} sm={6}>
-          <Card className={classes.blockSoftware}>
+          <Card className={classes.blueCircleRight}>
             <Typography
               onMouseEnter={handlePopoverOpenMarketing}
               onMouseLeave={handlePopoverCloseMarketing}
