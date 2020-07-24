@@ -51,7 +51,7 @@ export default function Software() {
      "Easily review daily production volumes, pressures and other well data to optimize production. \n Track equipment operational metrics reducing unscheduled downtime and lease operating expenses. \n Manage tank capacities improving timing of water hauls and crude sales."
   
   const reservesText = 
-     "Simplifying transfer of daily and monthly production volumes, pressures and operational data to the reserve engineering package provides more time for evaluating forecasts when timing is compressed."+" \nCombining real-time production data and with the reserves forecast allows operators to focus on the underperforming wells quicker."
+     "Simplifying transfer of daily and monthly production volumes, pressures and operational data to the reserve engineering package provides more time for evaluating forecasts when timing is compressed. Combining real-time production data and with the reserves forecast allows operators to focus on the underperforming wells quicker."
   
   const regulatoryText = "Seamless State and Federal reporting reduces reporting errors and non-compliance notices. \n Log and store inspections (APCE, Facility, AVO, etc) for timely response to compliance requests"
   

@@ -22,7 +22,7 @@ export default function RegulatoryReporting() {
             <p className={classes.text}>Over the years our clients have consistently requested a friendly and accurate regulatory reporting interface—a request that is brilliantly delivered within PRAMS. The regulatory reporting setup is swift, and our software development team constantly monitors agencies for regulatory changes and implements timely updates at no additional cost.  We are committed to developing the reports our Operators need.  Don’t see a State or Agency let us know.</p>
             <div className={classes.block}>
               <Grid className={classes.block} container spacing={3}>
-              <small className={classes.socials}>Reports Inlcuded</small>
+              <small className={classes.socials}>Reports Included</small>
                 <Grid item xs={12} sm={12} md={3} lg={3}>
                   <ul className={classes.featuresText}>
                     <li>ONRR (OGOR)</li>
