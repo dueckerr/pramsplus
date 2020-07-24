@@ -7,10 +7,6 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';// react components for routing our app without refresh
 import { makeStyles } from "@material-ui/core/styles";
 
-import operations from "assets/img/operations.jpg"
-import marketing from "assets/img/marketing.jpg"
-import regulatory from "assets/img/regulatory.jpg"
-import moneyJack from "assets/img/moneyJack.jpg"
 import Land from "./Benefits/Land"
 import Benefits from "./Benefits/Benefits"
 import Marketing from "./Benefits/Marketing"
@@ -19,8 +15,6 @@ import Accounting from "./Benefits/Accounting"
 import Reserves from "./Benefits/Reserves"
 import Regulatory from "./Benefits/Regulatory"
 import styles from "assets/jss/material-kit-react/views/HomeStyle/homeSoftware.js";
-import { setTextRange } from 'typescript';
-import { func } from 'prop-types';
 
 const useStyles = makeStyles(styles);
 
@@ -46,36 +40,27 @@ export default function Software() {
   };
 
 
-  const landText = [
-     "Well downtime monitoring avoids unnecessary lease terminations for leases past the primary term.",
-  ]
+  const landText = 
+     "Well downtime monitoring avoids unnecessary lease terminations for leases past the primary term."
+  
 
-  const accountingText = [
-   "Reconcile monthly purchaser statements to daily field data for both oil and gas.  Never miss getting paid on a crude oil haul again.",
-   "Comparison of water hauling invoices to daily field data improves approval integrity.",
-  "Daily field data enables the financial team to develop more accurate and timely accruals."
-  ]
-  const operationsText = [
-     "Easily review daily production volumes, pressures and other well data to optimize production.",
-     "Track equipment operational metrics reducing unscheduled downtime and lease operating expenses.",
-     "Manage tank capacities improving timing of water hauls and crude sales."
-  ]
-  const reservesText = [
-     "Simplifying transfer of daily and monthly production volumes, pressures and operational data to the reserve engineering package provides more time for evaluating forecasts when timing is compressed.",
-    "Combining real-time production data and with the reserves forecast allows operators to focus on the underperforming wells quicker."
-  ]
-  const regulatoryText = [
-     "Seamless State and Federal reporting reduces reporting errors and non-compliance notices",
-    "Log and store inspections (APCE, Facility, AVO, etc) for timely response to compliance requests"
-  ]
-  const marketingText = [
-     "Daily management of tank capacities enables timing of crude sales.",
-    "Monitor daily gas flows to avoid imbalance penalties."
-  ]
+  const accountingText = 
+   "Reconcile monthly purchaser statements to daily field data for both oil and gas.  Never miss getting paid on a crude oil haul again. \n Comparison of water hauling invoices to daily field data improves approval integrity. \n Daily field data enables the financial team to develop more accurate and timely accruals."
+  
+  const operationsText = 
+     "Easily review daily production volumes, pressures and other well data to optimize production. \n Track equipment operational metrics reducing unscheduled downtime and lease operating expenses. \n Manage tank capacities improving timing of water hauls and crude sales."
+  
+  const reservesText = 
+     "Simplifying transfer of daily and monthly production volumes, pressures and operational data to the reserve engineering package provides more time for evaluating forecasts when timing is compressed."+" \nCombining real-time production data and with the reserves forecast allows operators to focus on the underperforming wells quicker."
+  
+  const regulatoryText = "Seamless State and Federal reporting reduces reporting errors and non-compliance notices. \n Log and store inspections (APCE, Facility, AVO, etc) for timely response to compliance requests"
+  
+  const marketingText = "Daily management of tank capacities enables timing of crude sales.\n Monitor daily gas flows to avoid imbalance penalties."
+  
 
   function handlePopoverOpenOperations(event){
     setAnchorEl(event.currentTarget);
-    setText([operationsText]);
+    setText(operationsText);
   };
 
   function handlePopoverCloseOperations(){
@@ -127,11 +112,13 @@ export default function Software() {
 
   return (
     <Card className={classes.block}>
+            <br></br>
+
       <Typography className={classes.headerTextBlue}>PRAMS benfits the entire organization</Typography>
       <br></br>
 
-      <Grid container spacing={10}>
-        <Grid item xs={12} sm={6}>
+      <Grid className={classes.center} container spacing={10}>
+        <Grid className={classes.headerTextBlue}>
           <Card className={classes.blueCircleLeft}>
             <Typography
               onMouseEnter={handlePopoverOpenLand}
@@ -142,18 +129,20 @@ export default function Software() {
           </Card>
         </Grid>
 
-    <Grid item xs={12} sm={6}>
-      <Card className={classes.blueCircleRight}>
-        <Typography
-          onMouseEnter={handlePopoverOpenOperations}
-          onMouseLeave={handlePopoverCloseOperations}
-        >
-          <Operations component="div" />
-        </Typography>
-      </Card>        
-    </Grid>  
+        <Grid>
+          <Card className={classes.blueCircleRight}>
+            <Typography
+              onMouseEnter={handlePopoverOpenOperations}
+              onMouseLeave={handlePopoverCloseOperations}
+              >
+              <Operations component="div" />
+            </Typography>
+          </Card>        
+        </Grid>  
+      </Grid>
 
-        <Grid item xs={12} md={4}>
+      <Grid className={classes.center} container spacing={10}>
+        <Grid>
           <Card className={classes.blueCircleLeft}>
             <Typography
               onMouseEnter={handlePopoverOpenReserves}
@@ -164,7 +153,7 @@ export default function Software() {
           </Card>
         </Grid>
         
-        <Grid item xs={12} md={4}>
+        <Grid>
           <Card className={classes.textBlock}>
             <CardContent className={classes.whiteText}>
               {text}
@@ -172,7 +161,7 @@ export default function Software() {
           </Card>
         </Grid>
 
-        <Grid item xs={12} md={4}>
+        <Grid>
           <Card className={classes.blueCircleRight}>
             <Typography
               onMouseEnter={handlePopoverOpenAccounting}
@@ -182,8 +171,10 @@ export default function Software() {
             </Typography>
           </Card>
         </Grid>    
-
-        <Grid item xs={12} sm={6}>
+      </Grid>
+      
+      <Grid className={classes.center} container spacing={10}>
+        <Grid >
           <Card className={classes.blueCircleLeft}>
             <Typography
               onMouseEnter={handlePopoverOpenReg}
@@ -194,7 +185,7 @@ export default function Software() {
           </Card>
         </Grid>
 
-        <Grid item xs={12} sm={6}>
+        <Grid >
           <Card className={classes.blueCircleRight}>
             <Typography
               onMouseEnter={handlePopoverOpenMarketing}
@@ -204,7 +195,8 @@ export default function Software() {
             </Typography>
           </Card>
         </Grid> 
-      </Grid>        
+      </Grid>     
+      <br></br>   
     </Card>
   );
 }

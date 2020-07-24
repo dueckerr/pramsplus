@@ -3,27 +3,34 @@ const homeStyle = {
       paperBenefits: {
         textAlign: "center",
         paddingLeft: "20%",
-        // paddingTop: "15px",
-        // paddingBottom: "15px",
         paddingRight: "20%",
         lineHeight: "41px",
         backgroundColor: "white",
         flexGrow: 1,
-
       },
+
       block: {
         paddingLeft: "5%",
-        paddingTop: "25px",
-        paddingBottom: "25px",
         paddingRight: "5%",
         color: "black",
         textAlign: "center",
         border: 0,
         borderRadius: 0,
       },
+      center: {
+        paddingLeft: "5%",
+        paddingRight: "5%",
+        paddingBottom: "1.5%",
+        paddingTop: "1.5%",
+        color: "black",
+        textAlign: "center",
+        justifyContent: "center",
+        border: 0,
+        borderRadius: 0,
+      },
       blockSoftware: {
-        height: "250px",
-        width: "250px",
+        height: "360px",
+        width: "360px",
         color: "black",
         display: 'flex',
         flexWrap: 'wrap',
@@ -35,8 +42,8 @@ const homeStyle = {
         display: "inline-block",
       },
       blueCircleLeft: {
-        height: "250px",
-        width: "250px",
+        height: "360px",
+        width: "360px",
         color: "black",
         display: 'flex',
         flexWrap: 'wrap',
@@ -48,24 +55,27 @@ const homeStyle = {
         display: "inline-block",
       },
       blueCircleRight: {
-        height: "250px",
-        width: "250px",
+        height: "360px",
+        width: "360px",
         color: "black",
         display: 'flex',
         flexWrap: 'wrap',
-        justifyContent: "left",
         overflow: 'hidden',
+        justifyContent: "left",
         border: 80,
         borderRadius: 900,
         backgroundColor: "rgb(2, 46, 105)",
         display: "inline-block",
       },
       textBlock: {
-        height: "300px",
-        width: "300px",
+        height: "420px",
+        width: "360px",
         justifyContent: "center",
         backgroundColor: "rgb(2, 46, 105)",
         display: "inline-block",
+        borderRadius: 100,
+        paddding: "13%"
+
       },
       software: {
         height: "auto",
@@ -113,9 +123,10 @@ const homeStyle = {
         color: "white",
         textAlign: "left",
         fontSize: "16px",
-        lineHeight: "25px",
+        lineHeight: "35px",
         fontWeight: 500,
-        padding: "10px",
+        padding: "10%",
+        whiteSpace: 'pre-line',
       },
       lowerHeaderText: {
         color: "white",
@@ -128,12 +139,11 @@ const homeStyle = {
       imageSmall: {
         borderRadius: 3,
         height: "auto",
-        width: "150px",
+        width: "250px",
         border: '5px',
         justifyContent: "center",
         overflow: 'hidden',
         borderRadius: 900,
-        
     },
 };
 
