@@ -37,22 +37,23 @@ export default function Components(props) {
             </h3>
             <Grid item xs={12} sm={12} md={12} lg={12}>
               <p className={classes.blueText}>
-              PramsX2 is an end-to-end oil and gas production management software designed to conquer the complex data-management challenges facing oil and gas operators. The ability to rapidly and accurately capture, analyze, and manage production data is vital to the success of every oil and gas operator. PRAMS enables operators to capture, analyze, and distribute information with confidence and consistency.
-              </p>
+              Below are the links to download installation packages for the different components of the PRAMS platform. While you can download the installers at any time to run them you will need additional information and/or a DKF file. Your company’s PRAMS administrator will provide this to you.</p>
               <p className={classes.blueText}>
-              By simplifying field data capture through single-point data entry, we equip pumpers, foreman, engineers, analysts, and operators with the ability to effectively manage what they measure.
-              </p>
+              InsightX2 is the data presentation software that allows you to look at charts and data, run internal reports and extract data for offline use. This software is usually used by all users at a company who need to view or extract production data. To install this software you must have a valid DKF file available.              </p>
+              Download: <Button className={classes.link} href="https://update.pramsplus.com/file/download?id=2361">Insight</Button>  
               <p className={classes.blueText}>
-              The use of an integrated production system simplifies data acquisition and allows everyone in the organization to utilize the production information they need to do their jobs. Anyone can easily see, review and export daily and historical production data using flexible and customizable processes.          </p>
+              AnalystX2 is the main application used by the Production Analyst to manage the PRAMS system. This software is normally used only by individuals who are responsible for managing the production processes. To install this software you must have a valid DKF file available.</p>
+              Download: <Button className={classes.link} href="https://update.pramsplus.com/file/download?id=180">Analyst</Button>  
+              <p className={classes.blueText}>
+              PumperX2 is the daily data capture tool used by operators to capture daily data. It can be used off line in the field or in direct mode if a network connection is available. In order to use this installer you must have your company ID, pumper ID and password.</p>
+              Download: <Button className={classes.link} href="https://update.pramsplus.com/file/download?id=183">Pumper</Button>  
+              <p className={classes.blueText}>
+              The server installer is used only by the company’s IT administrator to install the necessary server and database components for the PRAMSX2 system. You will need additional information provided by your PRAMS support staff to use this installer.              </p>
+              Download: <Button className={classes.link} href="https://update.pramsplus.com/file/download?id=179">Server</Button>  
             </Grid>
-            <ul>
-              <Button className={classes.link} href="https://update.pramsplus.com/file/download?id=2361">Insight</Button>  
-              <Button className={classes.link} href="https://update.pramsplus.com/file/download?id=180">Analyst</Button>  
-              <Button className={classes.link} href="https://update.pramsplus.com/file/download?id=183">Pumper</Button>  
-              <Button className={classes.link} href="https://update.pramsplus.com/file/download?id=179">Server</Button>  
-            </ul>
           </Grid>
         </div>
+        
       </div>
       <Footer />
     </div>
