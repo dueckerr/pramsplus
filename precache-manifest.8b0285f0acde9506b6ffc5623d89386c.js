@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "74bb7e32110d45cb31337b8d27b9fe61",
+    "revision": "80e692f4c2b8b2c3b1f45e0c71eac404",
     "url": "/pramsplus/index.html"
   },
   {
-    "revision": "c59c6107c9928eac9dfb",
+    "revision": "2fcaf1262c102cd6a370",
     "url": "/pramsplus/static/css/main.c4f6da22.chunk.css"
   },
   {
-    "revision": "ad06984a36e5eb2a49b9",
-    "url": "/pramsplus/static/js/2.c67c3522.chunk.js"
+    "revision": "86755c6b0f9cb5a22454",
+    "url": "/pramsplus/static/js/2.7f13209f.chunk.js"
   },
   {
     "revision": "5e9b6f5c16b720e8a86875f97734673e",
-    "url": "/pramsplus/static/js/2.c67c3522.chunk.js.LICENSE.txt"
+    "url": "/pramsplus/static/js/2.7f13209f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c59c6107c9928eac9dfb",
-    "url": "/pramsplus/static/js/main.f8737e10.chunk.js"
+    "revision": "2fcaf1262c102cd6a370",
+    "url": "/pramsplus/static/js/main.573d1807.chunk.js"
   },
   {
     "revision": "5781477d7fb3c0fdb270",
@@ -52,6 +52,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pramsplus/static/media/grey.88c9dd1d.png"
   },
   {
+    "revision": "2e696515ea4ebfac102127c87a5a0d5c",
+    "url": "/pramsplus/static/media/land.2e696515.jpg"
+  },
+  {
     "revision": "fd81f9178242b54ff63388924a1cb888",
     "url": "/pramsplus/static/media/logo.fd81f917.png"
   },
@@ -60,16 +64,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pramsplus/static/media/marketing2.5194d4e5.png"
   },
   {
-    "revision": "607c784597596f45a7bad81b05006657",
-    "url": "/pramsplus/static/media/moneyJack.607c7845.jpg"
-  },
-  {
     "revision": "5c36f4dc946911da52af4162dcbe7322",
     "url": "/pramsplus/static/media/monthlyProduction.5c36f4dc.jpeg"
   },
   {
-    "revision": "df9d8f54d21402d66c8d98b05e364d18",
-    "url": "/pramsplus/static/media/operations.df9d8f54.jpg"
+    "revision": "1130393eb385d13f741b736ea553f283",
+    "url": "/pramsplus/static/media/operations.1130393e.jpeg"
   },
   {
     "revision": "55972546407c3002e504db1de3ec21bd",
@@ -84,12 +84,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pramsplus/static/media/pushReport.a236156f.png"
   },
   {
+    "revision": "c52a4fba77231e4d71d93e69911daebf",
+    "url": "/pramsplus/static/media/reg.c52a4fba.png"
+  },
+  {
     "revision": "d2635ad92f27f25c20245781bbd11d71",
     "url": "/pramsplus/static/media/regulatory.d2635ad9.jpg"
   },
   {
     "revision": "7dd9857bedf0273ea6815160a84ffc70",
     "url": "/pramsplus/static/media/regulatoryCompliance.7dd9857b.jpg"
+  },
+  {
+    "revision": "5956000c4690d6fd4db795430d47a990",
+    "url": "/pramsplus/static/media/reserves.5956000c.jpeg"
   },
   {
     "revision": "bcd5e4688f24640469aa5365f1c4bbfe",

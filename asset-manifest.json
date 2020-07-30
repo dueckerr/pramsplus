@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/pramsplus/static/css/main.c4f6da22.chunk.css",
-    "main.js": "/pramsplus/static/js/main.f8737e10.chunk.js",
-    "main.js.map": "/pramsplus/static/js/main.f8737e10.chunk.js.map",
+    "main.js": "/pramsplus/static/js/main.573d1807.chunk.js",
+    "main.js.map": "/pramsplus/static/js/main.573d1807.chunk.js.map",
     "runtime-main.js": "/pramsplus/static/js/runtime-main.d363cbd6.js",
     "runtime-main.js.map": "/pramsplus/static/js/runtime-main.d363cbd6.js.map",
-    "static/js/2.c67c3522.chunk.js": "/pramsplus/static/js/2.c67c3522.chunk.js",
-    "static/js/2.c67c3522.chunk.js.map": "/pramsplus/static/js/2.c67c3522.chunk.js.map",
+    "static/js/2.7f13209f.chunk.js": "/pramsplus/static/js/2.7f13209f.chunk.js",
+    "static/js/2.7f13209f.chunk.js.map": "/pramsplus/static/js/2.7f13209f.chunk.js.map",
     "index.html": "/pramsplus/index.html",
-    "precache-manifest.0aa9b0d1eb3c90ff4b0d7c437fb7ac41.js": "/pramsplus/precache-manifest.0aa9b0d1eb3c90ff4b0d7c437fb7ac41.js",
+    "precache-manifest.8b0285f0acde9506b6ffc5623d89386c.js": "/pramsplus/precache-manifest.8b0285f0acde9506b6ffc5623d89386c.js",
     "service-worker.js": "/pramsplus/service-worker.js",
     "static/css/main.c4f6da22.chunk.css.map": "/pramsplus/static/css/main.c4f6da22.chunk.css.map",
-    "static/js/2.c67c3522.chunk.js.LICENSE.txt": "/pramsplus/static/js/2.c67c3522.chunk.js.LICENSE.txt",
+    "static/js/2.7f13209f.chunk.js.LICENSE.txt": "/pramsplus/static/js/2.7f13209f.chunk.js.LICENSE.txt",
     "static/media/PPlogo.jpg": "/pramsplus/static/media/PPlogo.ee988e9a.jpg",
     "static/media/accounting2.png": "/pramsplus/static/media/accounting2.986711da.png",
     "static/media/apple-icon.png": "/pramsplus/static/media/apple-icon.7e768577.png",
@@ -19,22 +19,24 @@
     "static/media/connectedOilField.jpeg": "/pramsplus/static/media/connectedOilField.3241129b.jpeg",
     "static/media/fieldDataCapture.jpeg": "/pramsplus/static/media/fieldDataCapture.432e78b4.jpeg",
     "static/media/grey.png": "/pramsplus/static/media/grey.88c9dd1d.png",
+    "static/media/land.jpg": "/pramsplus/static/media/land.2e696515.jpg",
     "static/media/logo.png": "/pramsplus/static/media/logo.fd81f917.png",
     "static/media/marketing2.png": "/pramsplus/static/media/marketing2.5194d4e5.png",
-    "static/media/moneyJack.jpg": "/pramsplus/static/media/moneyJack.607c7845.jpg",
     "static/media/monthlyProduction.jpeg": "/pramsplus/static/media/monthlyProduction.5c36f4dc.jpeg",
-    "static/media/operations.jpg": "/pramsplus/static/media/operations.df9d8f54.jpg",
+    "static/media/operations.jpeg": "/pramsplus/static/media/operations.1130393e.jpeg",
     "static/media/outsourcing.jpeg": "/pramsplus/static/media/outsourcing.55972546.jpeg",
     "static/media/pumpsCharts.jpg": "/pramsplus/static/media/pumpsCharts.def7b1e9.jpg",
     "static/media/pushReport.png": "/pramsplus/static/media/pushReport.a236156f.png",
+    "static/media/reg.png": "/pramsplus/static/media/reg.c52a4fba.png",
     "static/media/regulatory.jpg": "/pramsplus/static/media/regulatory.d2635ad9.jpg",
     "static/media/regulatoryCompliance.jpg": "/pramsplus/static/media/regulatoryCompliance.7dd9857b.jpg",
+    "static/media/reserves.jpeg": "/pramsplus/static/media/reserves.5956000c.jpeg",
     "static/media/valves.jpeg": "/pramsplus/static/media/valves.bcd5e468.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.d363cbd6.js",
-    "static/js/2.c67c3522.chunk.js",
+    "static/js/2.7f13209f.chunk.js",
     "static/css/main.c4f6da22.chunk.css",
-    "static/js/main.f8737e10.chunk.js"
+    "static/js/main.573d1807.chunk.js"
   ]
 }
