@@ -14,7 +14,7 @@ export default function Logo() {
 
   return (
     <Card className={classes.blockSoftware}>
-    <Typography component="p" className={classes.lowerHeaderText}>Hover over each department to see how the PRAMS platform affects your business.</Typography>\
+    <Typography component="p" className={classes.lowerHeaderText}>Well downtime monitoring avoids unnecessary lease terminations for leases past the primary term.</Typography>\
       <img src={logo} alt="..." className={classes.imageSmall} />
     </Card>
   );

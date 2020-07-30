@@ -13,7 +13,7 @@ export default function Logo() {
   const classes = useStyles();
 
   return (
-    <Card className={classes.blockSoftware}>
+    <Card>
     <Typography component="p" className={classes.lowerHeaderText}>Hover over each department to see how the PRAMS platform affects your business.</Typography>\
       <img src={logo} alt="..." className={classes.imageSmall} />
     </Card>

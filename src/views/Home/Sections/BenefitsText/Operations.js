@@ -14,8 +14,9 @@ export default function Logo() {
 
   return (
     <Card className={classes.blockSoftware}>
-    <Typography component="p" className={classes.lowerHeaderText}>Hover over each department to see how the PRAMS platform affects your business.</Typography>\
-      <img src={logo} alt="..." className={classes.imageSmall} />
+    <Typography component="p" className={classes.lowerHeaderText}>Easily review daily production volumes, pressures and other well data to optimize production.</Typography>
+    <Typography component="p" className={classes.lowerHeaderText}>Track equipment operational metrics reducing unscheduled downtime and lease operating expenses.</Typography>
+    <Typography component="p" className={classes.lowerHeaderText}>Manage tank capacities improving timing of water hauls and crude sales.</Typography>
     </Card>
   );
 }

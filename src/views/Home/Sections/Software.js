@@ -9,14 +9,23 @@ import { makeStyles } from "@material-ui/core/styles";
 import {useImage} from 'react-image'
 
 import Land from "./Benefits/Land"
-import Benefits from "./Benefits/Benefits"
 import Marketing from "./Benefits/Marketing"
 import Operations from "./Benefits/Operations"
 import Accounting from "./Benefits/Accounting"
 import Reserves from "./Benefits/Reserves"
 import Regulatory from "./Benefits/Regulatory"
+import Benefits from "./Benefits/Benefits"
 import styles from "assets/jss/material-kit-react/views/HomeStyle/homeSoftware.js";
-import pic from "assets/img/marketing2.png"
+import Pic from "assets/img/marketing2.png"
+
+// Box Content
+import LogoText from "./BenefitsText/Logo"
+import LandText from "./BenefitsText/Land"
+import MarketingText from "./BenefitsText/Marketing"
+import OperationsText from "./BenefitsText/Operations"
+import AccountingText from "./BenefitsText/Accounting"
+import ReservesText from "./BenefitsText/Reserves"
+import RegulatoryText from "./BenefitsText/Regulatory"
 
 const useStyles = makeStyles(styles);
 
@@ -26,89 +35,74 @@ export default function Software() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [text, setText] = useState();
 
-  let pic = require("assets/img/marketing2.png");
+  
+    useEffect(() => {
+      setText(<LogoText />);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [window.location.search,])
 
   function handlePopoverOpenLand(event){
     setAnchorEl(event.currentTarget);
-    setText(landText);
+    setText(<LandText />);
   };
-
-  useEffect(() => {
-    setText(pic);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [window.location.search,])
 
   function handlePopoverCloseLand(){
     setAnchorEl(null);
-    setText(Prams);
+    setText(<LogoText />);
   };
-  
-  const Prams = (pic)
-
-  const landText = "- Well downtime monitoring avoids unnecessary lease terminations for leases past the primary term."
-
-  const accountingText =  "- Reconcile monthly purchaser statements to daily field data for both oil and gas.  Never miss getting paid on a crude oil haul again. \n - Comparison of water hauling invoices to daily field data improves approval integrity. \n - Daily field data enables the financial team to develop more accurate and timely accruals."
-  
-  const operationsText = "- Easily review daily production volumes, pressures and other well data to optimize production. \n - Track equipment operational metrics reducing unscheduled downtime and lease operating expenses. \n - Manage tank capacities improving timing of water hauls and crude sales."
-  
-  const reservesText = "- Simplifying transfer of daily and monthly production volumes, pressures and operational data to the reserve engineering package provides more time for evaluating forecasts when timing is compressed. \n - Combining real-time production data and with the reserves forecast allows operators to focus on the underperforming wells quicker."
-  
-  const regulatoryText = "- Seamless State and Federal reporting reduces reporting errors and non-compliance notices. \n - Log and store inspections (APCE, Facility, AVO, etc) for timely response to compliance requests"
-  
-  const marketingText = "- Daily management of tank capacities enables timing of crude sales.\n - Monitor daily gas flows to avoid imbalance penalties."
   
 
 
   function handlePopoverOpenOperations(event){
     setAnchorEl(event.currentTarget);
-    setText(operationsText);
+    setText(<OperationsText />);
   };
 
   function handlePopoverCloseOperations(){
     setAnchorEl(null);
-    setText(Prams)
+    setText( <LogoText />);
   };
 
   function handlePopoverOpenMarketing(event){
     setAnchorEl(event.currentTarget);
-    setText(marketingText)
+    setText(<MarketingText />)
   };
 
   function handlePopoverCloseMarketing(){
     setAnchorEl(null);
-    setText(Prams)
+    setText( <LogoText />);
   };
 
   function handlePopoverOpenAccounting (event) {
     setAnchorEl(event.currentTarget);
-    setText(accountingText)
+    setText(<AccountingText />)
   };
 
   function handlePopoverCloseAccounting(){
     setAnchorEl(null);
-    setText(Prams)
+    setText( <LogoText />);
   };
 
   function handlePopoverOpenReserves(event) {
     setAnchorEl(event.currentTarget);
-    setText(reservesText)
+    setText(<ReservesText />)
   };
 
   function handlePopoverCloseReserves(){
     setAnchorEl(null);
-    setText(Prams)
+    setText( <LogoText />);
 
   };
 
   function handlePopoverOpenReg(event){
     setAnchorEl(event.currentTarget);
-    setText(regulatoryText)
+    setText(<RegulatoryText />)
 
   };
 
   function handlePopoverCloseReg(){
     setAnchorEl(null);
-    setText(Prams)
+    setText( <LogoText />);
   }
 
   return (
@@ -156,9 +150,7 @@ export default function Software() {
         
         <Grid>
           <Card className={classes.textBlock}>
-            <CardContent className={classes.whiteText}>
               {text}
-            </CardContent>
           </Card>
         </Grid>
 

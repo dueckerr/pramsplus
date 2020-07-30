@@ -19,9 +19,14 @@ export default function WorkSection() {
   const [ name, setName ] = useState('');
   const [ company, setCompany ] = useState('');
   const [ email, setEmail ] = useState('');
-  const [ phone, setPhone ] = useState('');
+  const [ number, setNumber ] = useState('');
   const [ message, setMessage ] = useState('');
   const [ submitting, setSubmitting ] = useState(false);
+
+  function onSubmit (event){
+    console.log('hi');
+    event.preventDefault();
+  };
 
   const classes = useStyles();
   return (
@@ -45,8 +50,8 @@ export default function WorkSection() {
                   required
                   disabled={ submitting }
                   value={ name }
-                  onChange={ () => setName() }
-                />
+                  onChange={event => setName(event.target.value)}
+                  />
               </GridItem>
               <GridItem xs={12} sm={12} md={6}>
                 <CustomInput
@@ -58,7 +63,7 @@ export default function WorkSection() {
                   required
                   disabled={ submitting }
                   value={ email }
-                  onChange={ () => setEmail() }
+                  onChange={event => setEmail(event.target.value)}
                 />
               </GridItem>
               <GridItem xs={12} sm={12} md={6}>
@@ -71,7 +76,7 @@ export default function WorkSection() {
                   required
                   disabled={ submitting }
                   value={ company }
-                  onChange={ () => setCompany() }
+                  onChange={event => setName(event.target.value)}
                 />
               </GridItem>
               <GridItem xs={12} sm={12} md={6}>
@@ -83,8 +88,8 @@ export default function WorkSection() {
                   }}
                   required
                   disabled={ submitting }
-                  value={ phone }
-                  onChange={ () => setPhone() }
+                  value={ number }
+                  onChange={event => setNumber(event.target.value)}
                 />
               </GridItem>
               <CustomInput
@@ -101,10 +106,10 @@ export default function WorkSection() {
                 required
                 disabled={ submitting }
                 value={ message }
-                onChange={ () => setMessage() }
-              />
+                onChange={event => setMessage(event.target.value)}
+                />
               <GridItem xs={12} sm={12} md={4}>
-                <Button disabled={ submitting } color="success">Contact Us</Button>
+                <Button onSubmit={onSubmit} color="success">Contact Us</Button>
               </GridItem>
             </GridContainer>
           </form>

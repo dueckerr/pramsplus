@@ -14,7 +14,8 @@ export default function Logo() {
 
   return (
     <Card className={classes.blockSoftware}>
-    <Typography component="p" className={classes.lowerHeaderText}>Hover over each department to see how the PRAMS platform affects your business.</Typography>\
+    <Typography component="p" className={classes.lowerHeaderText}>Seamless State and Federal reporting reduces reporting errors and non-compliance notices.</Typography>
+    <Typography component="p" className={classes.lowerHeaderText}>Log and store inspections (APCE, Facility, AVO, etc) for timely response to compliance requests</Typography>
       <img src={logo} alt="..." className={classes.imageSmall} />
     </Card>
   );
