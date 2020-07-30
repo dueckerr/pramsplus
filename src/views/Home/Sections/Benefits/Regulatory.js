@@ -5,7 +5,7 @@ import Typography from '@material-ui/core/Typography';
 // react components for routing our app without refresh
 import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
-import regulatory from "assets/img/regulatory.jpg"
+import reg from "assets/img/reg.png"
 // core components
 
 import styles from "assets/jss/material-kit-react/views/HomeStyle/homeSoftware.js";
@@ -29,7 +29,7 @@ export default function Regulatory() {
     return (
       <div className={classes.blockSoftware}>
         <br></br>
-        <img src={regulatory} alt="..." className={classes.imageSmall} />
+        <img src={reg} alt="..." className={classes.imageSmall} />
         <Typography className={classes.lowerHeaderText}>Regulatory</Typography>
       </div>
     );

@@ -6,6 +6,7 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';// react components for routing our app without refresh
 import { makeStyles } from "@material-ui/core/styles";
+import {useImage} from 'react-image'
 
 import Land from "./Benefits/Land"
 import Benefits from "./Benefits/Benefits"
@@ -23,7 +24,9 @@ export default function Software() {
   
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState(null);
-  const [text, setText] = useState([]);
+  const [text, setText] = useState();
+
+  let pic = require("assets/img/marketing2.png");
 
   function handlePopoverOpenLand(event){
     setAnchorEl(event.currentTarget);
@@ -31,7 +34,7 @@ export default function Software() {
   };
 
   useEffect(() => {
-    setText(Prams);
+    setText(pic);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [window.location.search,])
 
@@ -39,26 +42,22 @@ export default function Software() {
     setAnchorEl(null);
     setText(Prams);
   };
-
-
-  const landText = 
-     "- Well downtime monitoring avoids unnecessary lease terminations for leases past the primary term."
   
+  const Prams = (pic)
 
-  const accountingText = 
-   "- Reconcile monthly purchaser statements to daily field data for both oil and gas.  Never miss getting paid on a crude oil haul again. \n - Comparison of water hauling invoices to daily field data improves approval integrity. \n - Daily field data enables the financial team to develop more accurate and timely accruals."
+  const landText = "- Well downtime monitoring avoids unnecessary lease terminations for leases past the primary term."
+
+  const accountingText =  "- Reconcile monthly purchaser statements to daily field data for both oil and gas.  Never miss getting paid on a crude oil haul again. \n - Comparison of water hauling invoices to daily field data improves approval integrity. \n - Daily field data enables the financial team to develop more accurate and timely accruals."
   
-  const operationsText = 
-     "- Easily review daily production volumes, pressures and other well data to optimize production. \n - Track equipment operational metrics reducing unscheduled downtime and lease operating expenses. \n - Manage tank capacities improving timing of water hauls and crude sales."
+  const operationsText = "- Easily review daily production volumes, pressures and other well data to optimize production. \n - Track equipment operational metrics reducing unscheduled downtime and lease operating expenses. \n - Manage tank capacities improving timing of water hauls and crude sales."
   
-  const reservesText = 
-     "- Simplifying transfer of daily and monthly production volumes, pressures and operational data to the reserve engineering package provides more time for evaluating forecasts when timing is compressed. \n - Combining real-time production data and with the reserves forecast allows operators to focus on the underperforming wells quicker."
+  const reservesText = "- Simplifying transfer of daily and monthly production volumes, pressures and operational data to the reserve engineering package provides more time for evaluating forecasts when timing is compressed. \n - Combining real-time production data and with the reserves forecast allows operators to focus on the underperforming wells quicker."
   
   const regulatoryText = "- Seamless State and Federal reporting reduces reporting errors and non-compliance notices. \n - Log and store inspections (APCE, Facility, AVO, etc) for timely response to compliance requests"
   
   const marketingText = "- Daily management of tank capacities enables timing of crude sales.\n - Monitor daily gas flows to avoid imbalance penalties."
   
-  const Prams = pic
+
 
   function handlePopoverOpenOperations(event){
     setAnchorEl(event.currentTarget);

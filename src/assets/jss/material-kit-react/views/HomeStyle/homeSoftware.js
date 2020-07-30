@@ -69,12 +69,11 @@ const homeStyle = {
       },
       textBlock: {
         height: "420px",
-        width: "360px",
+        width: "700px",
         justifyContent: "center",
         backgroundColor: "rgb(2, 46, 105)",
         display: "inline-block",
         borderRadius: 100,
-        paddding: "13%"
 
       },
       software: {
