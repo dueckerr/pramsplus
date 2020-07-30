@@ -15,6 +15,7 @@ import Accounting from "./Benefits/Accounting"
 import Reserves from "./Benefits/Reserves"
 import Regulatory from "./Benefits/Regulatory"
 import styles from "assets/jss/material-kit-react/views/HomeStyle/homeSoftware.js";
+import pic from "assets/img/marketing2.png"
 
 const useStyles = makeStyles(styles);
 
@@ -30,33 +31,34 @@ export default function Software() {
   };
 
   useEffect(() => {
-    setText("PRAMS");
+    setText(Prams);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [window.location.search,])
 
   function handlePopoverCloseLand(){
     setAnchorEl(null);
-    setText("PRAMS");
+    setText(Prams);
   };
 
 
   const landText = 
-     "Well downtime monitoring avoids unnecessary lease terminations for leases past the primary term."
+     "- Well downtime monitoring avoids unnecessary lease terminations for leases past the primary term."
   
 
   const accountingText = 
-   "Reconcile monthly purchaser statements to daily field data for both oil and gas.  Never miss getting paid on a crude oil haul again. \n Comparison of water hauling invoices to daily field data improves approval integrity. \n Daily field data enables the financial team to develop more accurate and timely accruals."
+   "- Reconcile monthly purchaser statements to daily field data for both oil and gas.  Never miss getting paid on a crude oil haul again. \n - Comparison of water hauling invoices to daily field data improves approval integrity. \n - Daily field data enables the financial team to develop more accurate and timely accruals."
   
   const operationsText = 
-     "Easily review daily production volumes, pressures and other well data to optimize production. \n Track equipment operational metrics reducing unscheduled downtime and lease operating expenses. \n Manage tank capacities improving timing of water hauls and crude sales."
+     "- Easily review daily production volumes, pressures and other well data to optimize production. \n - Track equipment operational metrics reducing unscheduled downtime and lease operating expenses. \n - Manage tank capacities improving timing of water hauls and crude sales."
   
   const reservesText = 
-     "Simplifying transfer of daily and monthly production volumes, pressures and operational data to the reserve engineering package provides more time for evaluating forecasts when timing is compressed. Combining real-time production data and with the reserves forecast allows operators to focus on the underperforming wells quicker."
+     "- Simplifying transfer of daily and monthly production volumes, pressures and operational data to the reserve engineering package provides more time for evaluating forecasts when timing is compressed. \n - Combining real-time production data and with the reserves forecast allows operators to focus on the underperforming wells quicker."
   
-  const regulatoryText = "Seamless State and Federal reporting reduces reporting errors and non-compliance notices. \n Log and store inspections (APCE, Facility, AVO, etc) for timely response to compliance requests"
+  const regulatoryText = "- Seamless State and Federal reporting reduces reporting errors and non-compliance notices. \n - Log and store inspections (APCE, Facility, AVO, etc) for timely response to compliance requests"
   
-  const marketingText = "Daily management of tank capacities enables timing of crude sales.\n Monitor daily gas flows to avoid imbalance penalties."
+  const marketingText = "- Daily management of tank capacities enables timing of crude sales.\n - Monitor daily gas flows to avoid imbalance penalties."
   
+  const Prams = pic
 
   function handlePopoverOpenOperations(event){
     setAnchorEl(event.currentTarget);
@@ -65,7 +67,7 @@ export default function Software() {
 
   function handlePopoverCloseOperations(){
     setAnchorEl(null);
-    setText("PRAMS")
+    setText(Prams)
   };
 
   function handlePopoverOpenMarketing(event){
@@ -75,7 +77,7 @@ export default function Software() {
 
   function handlePopoverCloseMarketing(){
     setAnchorEl(null);
-    setText("PRAMS")
+    setText(Prams)
   };
 
   function handlePopoverOpenAccounting (event) {
@@ -85,7 +87,7 @@ export default function Software() {
 
   function handlePopoverCloseAccounting(){
     setAnchorEl(null);
-    setText("PRAMS")
+    setText(Prams)
   };
 
   function handlePopoverOpenReserves(event) {
@@ -95,7 +97,7 @@ export default function Software() {
 
   function handlePopoverCloseReserves(){
     setAnchorEl(null);
-    setText("PRAMS")
+    setText(Prams)
 
   };
 
@@ -107,7 +109,7 @@ export default function Software() {
 
   function handlePopoverCloseReg(){
     setAnchorEl(null);
-    setText("PRAMS")
+    setText(Prams)
   }
 
   return (
@@ -118,13 +120,13 @@ export default function Software() {
       <br></br>
 
       <Grid className={classes.center} container spacing={10}>
-        <Grid className={classes.headerTextBlue}>
+        <Grid >
           <Card className={classes.blueCircleLeft}>
             <Typography
-              onMouseEnter={handlePopoverOpenLand}
-              onMouseLeave={handlePopoverCloseLand}
+              onMouseEnter={handlePopoverOpenReg}
+              onMouseLeave={handlePopoverCloseReg}
             >
-              <Land> </Land>
+              <Regulatory />
             </Typography>
           </Card>
         </Grid>
@@ -135,7 +137,7 @@ export default function Software() {
               onMouseEnter={handlePopoverOpenOperations}
               onMouseLeave={handlePopoverCloseOperations}
               >
-              <Operations component="div" />
+              <Operations />
             </Typography>
           </Card>        
         </Grid>  
@@ -172,15 +174,15 @@ export default function Software() {
           </Card>
         </Grid>    
       </Grid>
-      
-      <Grid className={classes.center} container spacing={10}>
-        <Grid >
+
+        <Grid className={classes.center} container spacing={10}>
+        <Grid className={classes.headerTextBlue}>
           <Card className={classes.blueCircleLeft}>
             <Typography
-              onMouseEnter={handlePopoverOpenReg}
-              onMouseLeave={handlePopoverCloseReg}
+              onMouseEnter={handlePopoverOpenLand}
+              onMouseLeave={handlePopoverCloseLand}
             >
-              <Regulatory />
+              <Land> </Land>
             </Typography>
           </Card>
         </Grid>

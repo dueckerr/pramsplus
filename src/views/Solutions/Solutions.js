@@ -33,7 +33,6 @@ export default function Solutions(props) {
   return (
     <div>
       <Header
-      brand
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{

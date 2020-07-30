@@ -7,7 +7,7 @@ import classNames from "classnames";
 import CustomTabs from "components/CustomTabs/CustomTabs.js";
 import Grid from "@material-ui/core/Grid";
 
-import pic from "assets/img/fieldDataCapture.jpg";
+import pic from "assets/img/monthlyProduction.jpeg";
 
 const useStyles = makeStyles(styles);
 

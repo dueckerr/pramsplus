@@ -23,7 +23,7 @@ export default function RegulatoryReporting() {
             <div className={classes.block}>
               <Grid className={classes.block} container spacing={3}>
               <small className={classes.socials}>Reports Included</small>
-                <Grid item xs={12} sm={12} md={3} lg={3}>
+                <Grid item xs={6} sm={6} md={3} lg={3}>
                   <ul className={classes.featuresText}>
                     <li>ONRR (OGOR)</li>
                     <li>Colorado</li>
@@ -31,7 +31,7 @@ export default function RegulatoryReporting() {
                     <li>Michigan</li>
                   </ul>
                 </Grid>
-                <Grid item xs={12} sm={12} md={3} lg={3}>
+                <Grid item xs={6} sm={6} md={3} lg={3}>
                   <ul className={classes.featuresText}>
                     <li>Montana</li>
                     <li>Nebraska</li>
@@ -39,7 +39,7 @@ export default function RegulatoryReporting() {
                     <li>North Dakota</li>
                   </ul>
                 </Grid>
-                <Grid item xs={12} sm={12} md={3} lg={3}>
+                <Grid item xs={6} sm={6} md={3} lg={3}>
                   <ul className={classes.featuresText}>
                     <li>South Dakota</li>
                     <li>Texas</li>
@@ -47,7 +47,7 @@ export default function RegulatoryReporting() {
                     <li>Wyoming Dakota</li>
                   </ul>
                 </Grid>
-                <Grid item xs={12} sm={12} md={3} lg={3}>
+                <Grid item xs={6} sm={6} md={3} lg={3}>
                   <ul className={classes.featuresText}>
                     <li>Mississippi</li>
                     <li>North Dakota</li>

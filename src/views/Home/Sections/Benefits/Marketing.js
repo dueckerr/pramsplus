@@ -3,7 +3,7 @@ import Popover from '@material-ui/core/Popover';
 import Card from '@material-ui/core/Card';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
-import marketing from "assets/img/marketing.jpg"
+import marketing from "assets/img/marketing2.png"
 import styles from "assets/jss/material-kit-react/views/HomeStyle/homeSoftware.js";
 
 const useStyles = makeStyles(styles);
