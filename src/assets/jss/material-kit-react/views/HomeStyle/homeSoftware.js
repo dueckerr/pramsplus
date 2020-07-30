@@ -74,7 +74,7 @@ const homeStyle = {
         backgroundColor: "rgb(2, 46, 105)",
         display: "inline-block",
         borderRadius: 100,
-
+        padding: "2.5%"
       },
       software: {
         height: "auto",
@@ -124,7 +124,7 @@ const homeStyle = {
         fontSize: "16px",
         lineHeight: "35px",
         fontWeight: 500,
-        padding: "10%",
+        padding: "2.5%",
         whiteSpace: 'pre-line',
       },
       lowerHeaderText: {

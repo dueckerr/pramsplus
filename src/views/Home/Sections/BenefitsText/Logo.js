@@ -5,6 +5,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import logo from "assets/img/logo.png"
 import styles from "assets/jss/material-kit-react/views/HomeStyle/homeSoftware.js";
+import CardContent from '@material-ui/core/CardContent';
 
 const useStyles = makeStyles(styles);
 
@@ -13,9 +14,11 @@ export default function Logo() {
   const classes = useStyles();
 
   return (
-    <Card>
-    <Typography component="p" className={classes.lowerHeaderText}>Hover over each department to see how the PRAMS platform affects your business.</Typography>\
-      <img src={logo} alt="..." className={classes.imageSmall} />
+    <Card className={classes.textBlock}>
+        <CardContent>
+            <Typography className={classes.whiteText}>Hover over each department to see how the PRAMS platform affects your business.</Typography>
+            <img src={logo} alt="..." className={classes.imageSmall} />
+        </CardContent>
     </Card>
   );
 }

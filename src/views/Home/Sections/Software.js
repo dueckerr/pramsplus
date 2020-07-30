@@ -149,9 +149,7 @@ export default function Software() {
         </Grid>
         
         <Grid>
-          <Card className={classes.textBlock}>
               {text}
-          </Card>
         </Grid>
 
         <Grid>
