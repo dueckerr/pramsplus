@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c1b959316a73d926e96c33a2937b13e4",
+    "revision": "c76517ca87eff8849755812c0da0fbdc",
     "url": "/pramsplus/index.html"
   },
   {
-    "revision": "6be8617e12b23b173eb7",
+    "revision": "6a4029490f9c67b84bb4",
     "url": "/pramsplus/static/css/main.c4f6da22.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pramsplus/static/js/2.41ca3751.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6be8617e12b23b173eb7",
-    "url": "/pramsplus/static/js/main.c49cea24.chunk.js"
+    "revision": "6a4029490f9c67b84bb4",
+    "url": "/pramsplus/static/js/main.e0a56f05.chunk.js"
   },
   {
     "revision": "5781477d7fb3c0fdb270",
