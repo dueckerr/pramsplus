@@ -124,6 +124,15 @@ const homeStyle = {
         overflow: 'hidden',
         borderRadius: 900,
     },
+    PPlogo: {
+      borderRadius: 3,
+      height: "auto",
+      width: "575px",
+      border: '5px',
+      justifyContent: "center",
+      overflow: 'hidden',
+      borderRadius: 50,
+  },
 };
 
 

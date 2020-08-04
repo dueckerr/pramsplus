@@ -3,7 +3,7 @@ import Popover from '@material-ui/core/Popover';
 import Card from '@material-ui/core/Card';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
-import logo from "assets/img/logo.png"
+import logo from "assets/img/PPlogo.jpg";
 import styles from "assets/jss/material-kit-react/views/HomeStyle/homeSoftware.js";
 import CardContent from '@material-ui/core/CardContent';
 
@@ -17,7 +17,7 @@ export default function Logo() {
     <Card className={classes.textBlock}>
         <CardContent>
             <Typography className={classes.whiteText}>Hover over each department to see how the PRAMS platform affects your business.</Typography>
-            <img src={logo} alt="..." className={classes.imageSmall} />
+            <img src={logo} alt="..." className={classes.PPlogo} />
         </CardContent>
     </Card>
   );

@@ -54,8 +54,6 @@ const homeStyle = {
     fontSize: "16px",
     color: "white",
     textAlign: "left",
-    paddingLeft: "45%",
-
   },
   whiteTextBulletPoints: {
     marginTop: "0",
@@ -65,9 +63,7 @@ const homeStyle = {
     lineHeight: "35px",
     fontSize: "16px",
     color: "white",
-    textAlign: "right",
     textAlign: "left",
-    paddingLeft: "25%",
   },
   headerTextWhite: {
     linHeight: "41px",
