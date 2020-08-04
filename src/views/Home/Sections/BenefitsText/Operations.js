@@ -15,6 +15,7 @@ export default function Logo() {
 
   return (
     <Card className={classes.textBlock}>
+            <Typography className={classes.lowerHeaderText}>Operations</Typography>
         <CardContent>
     <Typography component="p" className={classes.whiteText}>Easily review daily production volumes, pressures and other well data to optimize production.</Typography>
     <Typography component="p" className={classes.whiteText}>Track equipment operational metrics reducing unscheduled downtime and lease operating expenses.</Typography>

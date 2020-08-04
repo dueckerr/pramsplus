@@ -15,6 +15,7 @@ export default function Logo() {
 
   return (
     <Card className={classes.textBlock}>
+            <Typography className={classes.lowerHeaderText}>Accounting</Typography>
         <CardContent>
               <Typography component="p" className={classes.whiteText}>Reconcile monthly purchaser statements to daily field data for both oil and gas.  Never miss getting paid on a crude oil haul again.</Typography>
     <Typography component="p" className={classes.whiteText}>Comparison of water hauling invoices to daily field data improves approval integrity.</Typography>

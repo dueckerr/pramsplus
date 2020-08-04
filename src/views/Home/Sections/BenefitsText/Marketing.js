@@ -15,6 +15,7 @@ export default function Logo() {
 
   return (
     <Card className={classes.textBlock}>
+            <Typography className={classes.lowerHeaderText}>Marketing</Typography>
         <CardContent>
             <Typography component="p" className={classes.whiteText}>Daily management of tank capacities enables timing of crude sales.</Typography>
             <Typography component="p" className={classes.whiteText}>Monitor daily gas flows to avoid imbalance penalties.</Typography>

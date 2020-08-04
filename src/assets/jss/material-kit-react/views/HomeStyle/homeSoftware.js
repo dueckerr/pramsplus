@@ -49,7 +49,7 @@ const homeStyle = {
       },
       textBlock: {
         height: "auto",
-        width: "700px",
+        width: "600px",
         justifyContent: "center",
         backgroundColor: "rgb(2, 46, 105)",
         display: "inline-block",
@@ -124,15 +124,15 @@ const homeStyle = {
         overflow: 'hidden',
         borderRadius: 900,
     },
-    PPlogo: {
-      borderRadius: 3,
-      height: "auto",
-      width: "575px",
-      border: '5px',
-      justifyContent: "center",
-      overflow: 'hidden',
-      borderRadius: 50,
-  },
+      PPlogo: {
+        borderRadius: 3,
+        height: "auto",
+        width: "475px",
+        border: '5px',
+        justifyContent: "center",
+        overflow: 'hidden',
+        borderRadius: 50,
+    },
 };
 
 

@@ -79,7 +79,7 @@ export default function Software() {
       <Typography className={classes.headerTextBlue}>PRAMS benfits the entire organization</Typography>
       <br></br>
 
-      <Grid className={classes.center} container spacing={10}>
+      <Grid className={classes.center} container spacing={10} >
         <Grid >
           <Card className={classes.blueCircle}>
             <Typography

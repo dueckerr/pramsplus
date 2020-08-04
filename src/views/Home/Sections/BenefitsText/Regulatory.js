@@ -15,6 +15,7 @@ export default function Logo() {
 
   return (
     <Card className={classes.textBlock}>
+            <Typography className={classes.lowerHeaderText}>Regulatory</Typography>
         <CardContent>
     <Typography component="p" className={classes.whiteText}>Seamless State and Federal reporting reduces reporting errors and non-compliance notices.</Typography>
     <Typography component="p" className={classes.whiteText}>Log and store inspections (APCE, Facility, AVO, etc) for timely response to compliance requests</Typography>

@@ -15,6 +15,7 @@ export default function Logo() {
 
   return (
     <Card className={classes.textBlock}>
+            <Typography className={classes.lowerHeaderText}>Land</Typography>
         <CardContent>
               <Typography component="p" className={classes.whiteText}>Well downtime monitoring avoids unnecessary lease terminations for leases past the primary term.</Typography>
               {/* <img src={logo} alt="..." className={classes.imageSmall} /> */}

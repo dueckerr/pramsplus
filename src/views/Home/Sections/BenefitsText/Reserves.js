@@ -15,6 +15,7 @@ export default function Logo() {
 
   return (
     <Card className={classes.textBlock}>
+            <Typography className={classes.lowerHeaderText}>Reserves</Typography>
         <CardContent>
             <Typography component="p" className={classes.whiteText}>Simplifying transfer of daily and monthly production volumes, pressures and operational data to the reserve engineering package provides more time for evaluating forecasts when timing is compressed.</Typography>
     <Typography component="p" className={classes.whiteText}>Combining real-time production data and with the reserves forecast allows operators to focus on the underperforming wells quicker.</Typography>
