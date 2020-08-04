@@ -46,21 +46,9 @@ export default function Software() {
     setText(<LandText />);
   };
 
-  function handlePopoverCloseLand(){
-    setAnchorEl(null);
-    setText(<LogoText />);
-  };
-  
-
-
   function handlePopoverOpenOperations(event){
     setAnchorEl(event.currentTarget);
     setText(<OperationsText />);
-  };
-
-  function handlePopoverCloseOperations(){
-    setAnchorEl(null);
-    setText( <LogoText />);
   };
 
   function handlePopoverOpenMarketing(event){
@@ -68,19 +56,9 @@ export default function Software() {
     setText(<MarketingText />)
   };
 
-  function handlePopoverCloseMarketing(){
-    setAnchorEl(null);
-    setText( <LogoText />);
-  };
-
   function handlePopoverOpenAccounting (event) {
     setAnchorEl(event.currentTarget);
     setText(<AccountingText />)
-  };
-
-  function handlePopoverCloseAccounting(){
-    setAnchorEl(null);
-    setText( <LogoText />);
   };
 
   function handlePopoverOpenReserves(event) {
@@ -88,22 +66,11 @@ export default function Software() {
     setText(<ReservesText />)
   };
 
-  function handlePopoverCloseReserves(){
-    setAnchorEl(null);
-    setText( <LogoText />);
-
-  };
-
   function handlePopoverOpenReg(event){
     setAnchorEl(event.currentTarget);
     setText(<RegulatoryText />)
 
   };
-
-  function handlePopoverCloseReg(){
-    setAnchorEl(null);
-    setText( <LogoText />);
-  }
 
   return (
     <Card className={classes.block}>
@@ -114,10 +81,9 @@ export default function Software() {
 
       <Grid className={classes.center} container spacing={10}>
         <Grid >
-          <Card className={classes.blueCircleLeft}>
+          <Card className={classes.blueCircle}>
             <Typography
-              onMouseEnter={handlePopoverOpenReg}
-              onMouseLeave={handlePopoverCloseReg}
+              onMouseEnter={handlePopoverOpenReg}    
             >
               <Regulatory />
             </Typography>
@@ -125,10 +91,9 @@ export default function Software() {
         </Grid>
 
         <Grid>
-          <Card className={classes.blueCircleRight}>
+          <Card className={classes.blueCircle}>
             <Typography
-              onMouseEnter={handlePopoverOpenOperations}
-              onMouseLeave={handlePopoverCloseOperations}
+              onMouseEnter={handlePopoverOpenOperations}                
               >
               <Operations />
             </Typography>
@@ -138,10 +103,9 @@ export default function Software() {
 
       <Grid className={classes.center} container spacing={10}>
         <Grid>
-          <Card className={classes.blueCircleLeft}>
+          <Card className={classes.blueCircle}>
             <Typography
-              onMouseEnter={handlePopoverOpenReserves}
-              onMouseLeave={handlePopoverCloseReserves}
+              onMouseEnter={handlePopoverOpenReserves}            
             >
               <Reserves />
             </Typography>
@@ -153,10 +117,9 @@ export default function Software() {
         </Grid>
 
         <Grid>
-          <Card className={classes.blueCircleRight}>
+          <Card className={classes.blueCircle}>
             <Typography
-              onMouseEnter={handlePopoverOpenAccounting}
-              onMouseLeave={handlePopoverCloseAccounting}
+              onMouseEnter={handlePopoverOpenAccounting}                
             >
               <Accounting />  
             </Typography>
@@ -166,21 +129,19 @@ export default function Software() {
 
         <Grid className={classes.center} container spacing={10}>
         <Grid className={classes.headerTextBlue}>
-          <Card className={classes.blueCircleLeft}>
+          <Card className={classes.blueCircle}>
             <Typography
-              onMouseEnter={handlePopoverOpenLand}
-              onMouseLeave={handlePopoverCloseLand}
+              onMouseEnter={handlePopoverOpenLand}    
             >
-              <Land> </Land>
+              <Land />
             </Typography>
           </Card>
         </Grid>
 
         <Grid >
-          <Card className={classes.blueCircleRight}>
+          <Card className={classes.blueCircle}>
             <Typography
-              onMouseEnter={handlePopoverOpenMarketing}
-              onMouseLeave={handlePopoverCloseMarketing}
+              onMouseEnter={handlePopoverOpenMarketing}              
             >
               <Marketing />
             </Typography>

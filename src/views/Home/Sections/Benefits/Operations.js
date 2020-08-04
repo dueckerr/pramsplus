@@ -11,10 +11,10 @@ const useStyles = makeStyles(styles);
 export default function Operations() {
   const classes = useStyles();
   return (
-    <Card className={classes.blockSoftware}>
+    <div className={classes.blockSoftware}>
       <br></br>
       <img src={operations} alt="..." className={classes.imageSmall} />
       <Typography className={classes.lowerHeaderText}>Operations </Typography>
-    </Card>
+    </div>
   );
 }

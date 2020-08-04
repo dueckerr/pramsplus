@@ -12,10 +12,10 @@ export default function Operations() {
   const classes = useStyles();
 
   return (
-    <Card className={classes.blockSoftware}>
+    <div className={classes.blockSoftware}>
       <br></br>
       <img src={reserves} alt="..." className={classes.imageSmall} />
       <Typography className={classes.lowerHeaderText}>Reserves </Typography>
-    </Card>
+    </div>
   );
 }

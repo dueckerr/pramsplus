@@ -14,17 +14,6 @@ const useStyles = makeStyles(styles);
 
 export default function Regulatory() {
     const classes = useStyles();
-    const [anchorEl, setAnchorEl] = React.useState(null);
-  
-    const handlePopoverOpen = (event) => {
-      setAnchorEl(event.currentTarget);
-    };
-  
-    const handlePopoverClose = () => {
-      setAnchorEl(null);
-    };
-  
-    const open = Boolean(anchorEl);
   
     return (
       <div className={classes.blockSoftware}>

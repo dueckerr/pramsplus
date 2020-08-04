@@ -15,11 +15,11 @@ export default function Land() {
     const classes = useStyles();
 
     return (
-      <Card className={classes.blockSoftware}>
+      <div className={classes.blockSoftware}>
         <br></br>
         <img src={land} alt="..." className={classes.imageSmall} />
         <Typography className={classes.lowerHeaderText}>Land</Typography>
-      </Card>
+      </div>
     );
   }
   
