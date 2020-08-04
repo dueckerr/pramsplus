@@ -99,9 +99,6 @@ export default function Software() {
             </Typography>
           </Card>        
         </Grid>  
-      </Grid>
-
-      <Grid className={classes.center} container spacing={10}>
         <Grid>
           <Card className={classes.blueCircle}>
             <Typography
@@ -111,11 +108,16 @@ export default function Software() {
             </Typography>
           </Card>
         </Grid>
+      </Grid>
+
+      <Grid className={classes.center} container spacing={10}>
         
         <Grid>
               {text}
         </Grid>
+      </Grid>
 
+      <Grid className={classes.center} container spacing={10}>
         <Grid>
           <Card className={classes.blueCircle}>
             <Typography
@@ -125,9 +127,7 @@ export default function Software() {
             </Typography>
           </Card>
         </Grid>    
-      </Grid>
 
-        <Grid className={classes.center} container spacing={10}>
         <Grid className={classes.headerTextBlue}>
           <Card className={classes.blueCircle}>
             <Typography
@@ -147,7 +147,7 @@ export default function Software() {
             </Typography>
           </Card>
         </Grid> 
-      </Grid>     
+      </Grid> 
       <br></br>   
     </Card>
   );
