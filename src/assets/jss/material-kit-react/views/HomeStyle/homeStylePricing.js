@@ -26,6 +26,11 @@ const homeStyle = {
     border: 0,
     borderRadius: 30,
   },
+  blueBlockPricing: {
+    color: "white",
+    textAlign: "center",
+
+  },
   block: {
     paddingLeft: "5%",
     paddingTop: "15px",
@@ -45,16 +50,6 @@ const homeStyle = {
     paddingBottom: "5px",
     fontWeight: 300,
   },
-  whiteTextBulletPointsLeft: {
-    marginTop: "0",
-    width: "100%",
-    transform: "none",
-    height: "100%",
-    lineHeight: "35px",
-    fontSize: "16px",
-    color: "white",
-    textAlign: "left",
-  },
   whiteTextBulletPoints: {
     marginTop: "0",
     width: "100%",
@@ -64,6 +59,10 @@ const homeStyle = {
     fontSize: "16px",
     color: "white",
     textAlign: "left",
+    position: "auto",
+    justifyContent: 'center',
+    alignItems: 'center',
+
   },
   headerTextWhite: {
     linHeight: "41px",
@@ -88,6 +87,13 @@ const homeStyle = {
     color: "white",
     fontWeight: 300
   },
+  center: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    textAlign: "center",
+    position: "auto",
+  }
 };
 
 

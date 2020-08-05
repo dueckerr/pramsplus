@@ -3,6 +3,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import Tab from "@material-ui/core/Tab";
+import LeftPricing from "./Pricing/LeftPricing"
+import RightPricing from "./Pricing/RightPricing"
 
 import styles from "assets/jss/material-kit-react/views/HomeStyle/homeStylePricing.js";
 
@@ -20,21 +22,14 @@ export default function Pricing() {
           <div className={classes.blueBlock}>
               <Grid className={classes.blueBlock} container spacing={3}>
               <small className={classes.lowerHeaderText}>Highlights</small>
-                <Grid item xs={12} sm={6} md={6} lg={6}>
-                  <ul className={classes.whiteTextBulletPointsLeft}>
-                    <li>Hosted or On-premises</li>
-                    <li> Unlimited Users </li>
-                    <li> No Yearly Renewal Fees </li>
-                  </ul>
-                </Grid>
-                <Grid item xs={12} sm={6} md={6} lg={6}>
-                  <ul className={classes.whiteTextBulletPoints}>
-                    <li> Access to the entire PRAMS Platform</li>
-                    <li> Month-to-month contract, we earn your business </li>
-                    <li> Free Call Support</li>
-                    <li> Personalized Queries </li>
-                  </ul>
-                </Grid>
+              <Grid item xs={6} sm={6} md={6} lg={6}
+              className={classes.center}>
+                <LeftPricing />
+              </Grid>
+              <Grid item xs={6} sm={6} md={6} lg={6}
+              className={classes.center}>
+                <RightPricing />
+              </Grid>
               </Grid>
             </div>
           </Grid>

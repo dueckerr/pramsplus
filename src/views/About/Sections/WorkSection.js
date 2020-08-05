@@ -9,7 +9,6 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import CustomInput from "components/CustomInput/CustomInput.js";
 import Button from "components/CustomButtons/Button.js";
-
 import styles from "assets/jss/material-kit-react/views/landingPageSections/workStyle.js";
 
 const useStyles = makeStyles(styles);
@@ -22,12 +21,12 @@ export default function WorkSection() {
   const [ number, setNumber ] = useState('');
   const [ message, setMessage ] = useState('');
   const [ submitting, setSubmitting ] = useState(false);
-
-  function onSubmit (event){
-    console.log('hi');
+  
+  function handleSubmit(event) {
     event.preventDefault();
-  };
-
+    console.log( 'Email:', email, 'Password: ', name); 
+   
+}
   const classes = useStyles();
   return (
     <div className={classes.section}>
@@ -38,7 +37,7 @@ export default function WorkSection() {
             Imagine How A Digital Workflow Can Impact Your Business To schedule
             your live information session, fill out our form or call us today
           </h4>
-          <form>
+            <form onSubmit={handleSubmit} >
           <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
                 <CustomInput
@@ -50,7 +49,7 @@ export default function WorkSection() {
                   required
                   disabled={ submitting }
                   value={ name }
-                  onChange={event => setName(event.target.value)}
+                  onChange={ e=>setName(e.target.value)}
                   />
               </GridItem>
               <GridItem xs={12} sm={12} md={6}>
@@ -60,11 +59,10 @@ export default function WorkSection() {
                   formControlProps={{
                     fullWidth: true,
                   }}
-                  required
-                  disabled={ submitting }
-                  value={ email }
-                  onChange={event => setEmail(event.target.value)}
-                />
+                  value={email}
+                  onInput={ e=>setEmail(e.target.value)}
+                  onChange={console.log(email)}                  
+                  />
               </GridItem>
               <GridItem xs={12} sm={12} md={6}>
                 <CustomInput
@@ -76,8 +74,8 @@ export default function WorkSection() {
                   required
                   disabled={ submitting }
                   value={ company }
-                  onChange={event => setName(event.target.value)}
-                />
+                  onInput={ e=>setCompany(e.target.value)}
+                  />
               </GridItem>
               <GridItem xs={12} sm={12} md={6}>
                 <CustomInput
@@ -89,8 +87,8 @@ export default function WorkSection() {
                   required
                   disabled={ submitting }
                   value={ number }
-                  onChange={event => setNumber(event.target.value)}
-                />
+                  onInput={ e=>setNumber(e.target.value)}
+                  />
               </GridItem>
               <CustomInput
                 labelText="Message"
@@ -106,10 +104,15 @@ export default function WorkSection() {
                 required
                 disabled={ submitting }
                 value={ message }
-                onChange={event => setMessage(event.target.value)}
+                onInput={ e=>setMessage(e.target.value)}
                 />
               <GridItem xs={12} sm={12} md={4}>
-                <Button onSubmit={onSubmit} color="success">Contact Us</Button>
+                <Button
+                  type="submit"
+                  variant="contained"
+                  color="success"
+                  >
+                    Contact Us</Button>
               </GridItem>
             </GridContainer>
           </form>
