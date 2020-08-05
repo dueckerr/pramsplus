@@ -21,7 +21,6 @@ export default function LeftPricing() {
             <li> Unlimited Users </li>
             <li> No Yearly Renewal Fees </li>
             <li> Month-to-month contract, we earn your business </li>
-
         </ul>
     </div>
   );
