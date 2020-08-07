@@ -20,7 +20,7 @@ export default function PramsStatement() {
           <Grid item xs={12} sm={12} md={12} lg={4}>
             <h3 className={classes.lowerHeaderText}>Complete Field Solution </h3>
               <p className={classes.whiteText}>
-              Built through years of continuous development, PRAMS is a complete field solution created with the most dynamic gauge-sheet style data capture tool. Unlike our competitors, we feature color-cut tanks, site inspections, unlimited meters, and equipment metrics - all at the pumpers fingertips.              </p>
+              Built through years of continuous development, PRAMS is a complete field solution created with the most dynamic gauge-sheet style data capture tool. Unlike our competitors, we feature color-cut tanks, site inspections, unlimited meters, and equipment metrics - all at the pumpers fingertip's.</p>
           </Grid>
           <Grid item xs={12} sm={12} md={12} lg={4}>
             <h3 className={classes.lowerHeaderText}>Powerful Analytic Capabilities</h3>

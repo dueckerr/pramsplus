@@ -43,7 +43,7 @@ export default function StickyFooter() {
       <footer className={classes.footer}>
         <Container maxWidth="sm">
         <Typography variant="body1">10288 W. Chatfield Ave., Suite 200, Littleton, CO 80127</Typography>
-        <Typography variant="body1">Phone: (303)-819-6304</Typography>
+        <Typography variant="body1">Phone: (303)-904-6855</Typography>
         <Typography variant="body1">Email: sales@pramsplus.com</Typography>
           <Copyright />
         </Container>

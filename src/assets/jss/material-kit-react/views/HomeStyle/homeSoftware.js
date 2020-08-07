@@ -126,12 +126,14 @@ const homeStyle = {
     },
       PPlogo: {
         borderRadius: 3,
-        height: "auto",
-        width: "475px",
+        height: "155px",
+        width: "auto",
         border: '5px',
         justifyContent: "center",
         overflow: 'hidden',
         borderRadius: 50,
+        backgroundColor: "white",
+
     },
 };
 

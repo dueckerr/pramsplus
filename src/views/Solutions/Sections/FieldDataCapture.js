@@ -21,7 +21,7 @@ export default function FieldDataCapture() {
     <div className={classes.block}>
       <Grid className={classes.block} container spacing={3}>
         <Grid item xs={12} sm={12} md={12}>
-          <small className={classes.socials}>Field Data Caputre</small>
+          <small className={classes.socials}>Field Data Capture</small>
             <p className={classes.text}>With the countless ways operators can capture and record production data, the organization needs to implement a recording process that best fits their operating environment and culture. PRAMS was designed with this in mind. Users customize exactly what they want to capture for each well, as well as in the order that is best suited for each route/pumper.  Daily field data is entered in the field, the office or imported from SCADA and 3rd party systems. Consistent and accurate daily information is the foundation for optimizing production.</p>
         </Grid>
 

@@ -10,24 +10,27 @@ const headerLinksStyle = (theme) => ({
     paddingTop: "15px",
     paddingBottom: "5px",
     color: "rgb(2, 46, 105)",
-    fontWeight: 400
+    fontWeight: 400,
+    display: "inline-flex",
+
   },
   link: {
     color: "rgb(2, 46, 105)",
     paddingLeft: "5px",
     paddingRight: "5px",
-    paddingTop: "25px"
+    paddingTop: "5px",
+
   },
 
   listItem: {
     float: "left",
     color: "rgb(2, 46, 105)",
     position: "relative",
-    display: "block",
+    display: "inline-flex",
     width: "auto",
     margin: "0",
-    paddingLeft: "15px",
-    paddingRight: "15px",
+    paddingLeft: "5px",
+    paddingRight: "5px",
     
   },
   navLink: {

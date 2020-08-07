@@ -20,7 +20,7 @@ export default function PushReporting() {
       <Grid className={classes.block} container spacing={3}>
         <Grid item xs={12} sm={12} md={12}>
           <small className={classes.socials}>Production Reporting/Visualization</small>
-            <p className={classes.text}>Sharing production and operational data internally and with outside partners with automated reporting that is sent via email is easy with PRAMS. This client-driven aspect of PRAMS consistently and automatically distributes necessary production data to any email address hourly, daily, weekly, monthly, or at a customized time-interval. Analysts and operators no longer need to remember which data report to share internally or with stakeholders, nor do they need to remember when to share it. By eliminating repetitive reporting, PRAMS increases process efficiency by providing the capability to automate countless reporting tasks.</p>
+            <p className={classes.text}>Sharing production and operational data internally and with outside partners with automated reporting that is easy to use with PRAMS. This client-driven aspect of PRAMS consistently and automatically distributes necessary production data to any email address hourly, daily, weekly, monthly, or at a customized time-interval. Analysts and operators no longer need to remember which data report to share internally or with stakeholders, nor do they need to remember when to share it. By eliminating repetitive reporting, PRAMS increases process efficiency by providing the capability to automate countless reporting tasks.</p>
         </Grid>
               <div className={classes.block}>
                 <Grid className={classes.block} container spacing={3}>

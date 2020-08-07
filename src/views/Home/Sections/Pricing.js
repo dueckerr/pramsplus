@@ -43,7 +43,7 @@ export default function Pricing() {
         </Grid>
         <Grid item xs={12} sm={12} md={4} lg={4}>
           <h3 className={classes.paperPricing}>Data Migrations</h3>
-          <p className={classes.whiteText}>One of the biggest obstacles of implementing a new software platform is migrating old data into the new database. The good news is that so many other company's have grown fed up with their previous software providers and switched to PRAMS that we have imports designed to bring data in the PRAMS platform from every other vendor as well as spreadsheets.</p>
+          <p className={classes.whiteText}>One of the biggest obstacles of implementing a new software platform is migrating old data into the new database. The good news is that so many other companies have grown fed up with their previous software providers and switched to PRAMS that we have imports designed to bring data in the PRAMS platform from every other vendor as well as spreadsheets.</p>
         </Grid>
         <Grid item xs={12} sm={12} md={4} lg={4}>
           <h3 className={classes.paperPricing}>Hosting Option</h3>

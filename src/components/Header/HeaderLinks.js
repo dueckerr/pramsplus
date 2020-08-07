@@ -31,10 +31,10 @@ export default function HeaderLinks(props) {
           <Link className={classes.link} to="/download">Downloads</Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-          <a className={classes.link} href="https://portal.pramsplus.com/Account/Login?ReturnUrl=%2F">Login</a>
+          <a className={classes.link} target="_blank" href="https://portal.pramsplus.com/Account/Login?ReturnUrl=%2F">Portal</a>
       </ListItem>
       <ListItem className={classes.listItem}>
-        < a href="https://www.gotomeeting.com/join" >< img src="https://weblibrary.cdn.getgo.com/embedMN/1.0.0/en/images/Small_120X60.png" width="120" height="60" border="0" /></a >
+        < a href="https://www.gotomeeting.com/join" target="_blank">< img src="https://weblibrary.cdn.getgo.com/embedMN/1.0.0/en/images/Small_120X60.png" width="120" height="60" border="0" /></a >
       </ListItem>
     </List>
   );

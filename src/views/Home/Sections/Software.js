@@ -76,7 +76,7 @@ export default function Software() {
     <Card className={classes.block}>
             <br></br>
 
-      <Typography className={classes.headerTextBlue}>PRAMS benfits the entire organization</Typography>
+      <Typography className={classes.headerTextBlue}>PRAMS benefits the entire organization</Typography>
       <br></br>
 
       <Grid className={classes.center} container spacing={10} >
