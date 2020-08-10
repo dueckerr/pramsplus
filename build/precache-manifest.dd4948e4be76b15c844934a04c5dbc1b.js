@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1ff66fd2ca2c2429c9d1c0b12f198a3e",
+    "revision": "7f3e62d57953cd224a9c783760dd26a1",
     "url": "/pramsplus/index.html"
   },
   {
-    "revision": "d5ef329a4797f456c1f5",
+    "revision": "bb9a6d9dec6e9eb65941",
     "url": "/pramsplus/static/css/main.c4f6da22.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pramsplus/static/js/2.156261da.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d5ef329a4797f456c1f5",
-    "url": "/pramsplus/static/js/main.5a2b1715.chunk.js"
+    "revision": "bb9a6d9dec6e9eb65941",
+    "url": "/pramsplus/static/js/main.6a8b2f05.chunk.js"
   },
   {
     "revision": "5781477d7fb3c0fdb270",
@@ -52,8 +52,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pramsplus/static/media/grey.88c9dd1d.png"
   },
   {
-    "revision": "2e696515ea4ebfac102127c87a5a0d5c",
-    "url": "/pramsplus/static/media/land.2e696515.jpg"
+    "revision": "2fb50ae5202cc475713953cacd2b373c",
+    "url": "/pramsplus/static/media/land.2fb50ae5.jpg"
   },
   {
     "revision": "fd81f9178242b54ff63388924a1cb888",
