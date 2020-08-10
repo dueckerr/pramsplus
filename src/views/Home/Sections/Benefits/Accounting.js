@@ -13,10 +13,10 @@ export default function Accounting() {
   const classes = useStyles();
 
   return (
-    <div className={classes.blockSoftware}>
+    <Card className={classes.blockSoftware}>
       <br></br>
       <img src={accounting} alt="..." className={classes.imageSmall} />
       <Typography className={classes.lowerHeaderText}>Accounting</Typography>
-    </div>
+    </Card>
   );
 }

@@ -17,9 +17,9 @@ export default function Logo() {
     <Card className={classes.textBlock}>
             <Typography className={classes.lowerHeaderText}>Operations</Typography>
         <CardContent>
-    <Typography component="p" className={classes.whiteText}>Easily review daily production volumes, pressures and other well data to optimize production.</Typography>
-    <Typography component="p" className={classes.whiteText}>Track equipment operational metrics reducing unscheduled downtime and lease operating expenses.</Typography>
-    <Typography component="p" className={classes.whiteText}>Manage tank capacities improving timing of water hauls and crude sales.</Typography>
+    <p className={classes.whiteText}>Easily review daily production volumes, pressures and other well data to optimize production.</p>
+    <p className={classes.whiteText}>Track equipment operational metrics reducing unscheduled downtime and lease operating expenses.</p>
+    <p className={classes.whiteText}>Manage tank capacities improving timing of water hauls and crude sales.</p>
     </CardContent>
     </Card>
   );

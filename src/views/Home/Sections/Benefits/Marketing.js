@@ -12,10 +12,10 @@ const useStyles = makeStyles(styles);
 export default function Marketing() {
   const classes = useStyles();
   return (
-    <div className={classes.blockSoftware}>
+    <Card className={classes.blockSoftware}>
       <br></br>
       <img src={marketing} alt="..." className={classes.imageSmall} />
       <Typography className={classes.lowerHeaderText}>Marketing</Typography>
-    </div>
+    </Card>
   );
 }
