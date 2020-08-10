@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/pramsplus/static/css/main.c4f6da22.chunk.css",
-    "main.js": "/pramsplus/static/js/main.4b2e99e3.chunk.js",
-    "main.js.map": "/pramsplus/static/js/main.4b2e99e3.chunk.js.map",
+    "main.js": "/pramsplus/static/js/main.6a8b2f05.chunk.js",
+    "main.js.map": "/pramsplus/static/js/main.6a8b2f05.chunk.js.map",
     "runtime-main.js": "/pramsplus/static/js/runtime-main.d363cbd6.js",
     "runtime-main.js.map": "/pramsplus/static/js/runtime-main.d363cbd6.js.map",
     "static/js/2.156261da.chunk.js": "/pramsplus/static/js/2.156261da.chunk.js",
     "static/js/2.156261da.chunk.js.map": "/pramsplus/static/js/2.156261da.chunk.js.map",
     "index.html": "/pramsplus/index.html",
-    "precache-manifest.c8aac6305810430203899932b53caa58.js": "/pramsplus/precache-manifest.c8aac6305810430203899932b53caa58.js",
+    "precache-manifest.dd4948e4be76b15c844934a04c5dbc1b.js": "/pramsplus/precache-manifest.dd4948e4be76b15c844934a04c5dbc1b.js",
     "service-worker.js": "/pramsplus/service-worker.js",
     "static/css/main.c4f6da22.chunk.css.map": "/pramsplus/static/css/main.c4f6da22.chunk.css.map",
     "static/js/2.156261da.chunk.js.LICENSE.txt": "/pramsplus/static/js/2.156261da.chunk.js.LICENSE.txt",
@@ -38,6 +38,6 @@
     "static/js/runtime-main.d363cbd6.js",
     "static/js/2.156261da.chunk.js",
     "static/css/main.c4f6da22.chunk.css",
-    "static/js/main.4b2e99e3.chunk.js"
+    "static/js/main.6a8b2f05.chunk.js"
   ]
 }
