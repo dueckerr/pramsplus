@@ -38,16 +38,16 @@ export default function Pricing() {
 
       <Grid className={classes.blueBlock} container spacing={2}>
         <Grid item xs={12} sm={12} md={4} lg={4}>
-          <h3 className={classes.paperPricing}>Business Process Outsourcing</h3>
-          <p className={classes.whiteText}>PRAMS can fulfill your monthly allocation and reporting roles. We will review your production at the end of each month and file the appropriate reports to any state. Our goal is to take some of the tedious work off your plate, to allow operators to focus on more vital and revenue-generating work.</p>
+          <h3 className={classes.paperPricing}>PRAMS Vitual Analyst (P.V.A)</h3>
+          <p className={classes.whiteText}>PRAMS Vitual Analyst (P.V.A) is a business process outsourcing services that can fulfill your monthly allocation and reporting roles. We will review your production at the end of each month and file the appropriate reports to any state. Our goal is to take some of the work off your plate, to allow operators to focus on more vital revenue-generating work.</p>
         </Grid>
         <Grid item xs={12} sm={12} md={4} lg={4}>
           <h3 className={classes.paperPricing}>Data Migrations</h3>
-          <p className={classes.whiteText}>One of the biggest obstacles of implementing a new software platform is migrating old data into the new database. The good news is that so many other companies have grown fed up with their previous software providers and switched to PRAMS that we have imports designed to bring data in the PRAMS platform from every other vendor as well as spreadsheets.</p>
+          <p className={classes.whiteText}>One of the biggest obstacles of implementing a new software platform is migrating old data into the new database. The good news is that so many other companies have grown fed up with their previous software providers and switched to PRAMS that we have imports designed to bring data in the PRAMS platform from many vendor as well as spreadsheets.</p>
         </Grid>
         <Grid item xs={12} sm={12} md={4} lg={4}>
           <h3 className={classes.paperPricing}>Hosting Option</h3>
-          <p className={classes.whiteText}>Server infrastructure and IT support can quickly become an expensive overhead for smaller cap companies. To help combat those expenses, PRAMS offers companies the option to host their data on one of PRAMS proprietary servers. With seamless integration capabilities, we can remove the burden and costs of managing your server and data.</p>
+          <p className={classes.whiteText}>Server infrastructure and IT support can quickly become an expensive overhead for smaller cap companies. To help combat those expenses, PRAMS offers companies the option to host their data on one of PRAMS proprietary servers. With seamless integration capabilities, we can remove the burden and costs of managing your servers and databases.</p>
         </Grid>
       </Grid>
       </Grid>

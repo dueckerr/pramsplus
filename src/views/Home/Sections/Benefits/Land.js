@@ -16,8 +16,7 @@ export default function Land() {
 
     return (
       <div className={classes.blockSoftware}>
-        <br></br>
-        <img src={land} alt="..." className={classes.imageSmall} />
+        <img src={land} alt="..." className={classes.imageSmall2} />
         <Typography className={classes.lowerHeaderText}>Land</Typography>
       </div>
     );

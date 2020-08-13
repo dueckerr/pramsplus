@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from 'react'
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -9,12 +9,24 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import CustomInput from "components/CustomInput/CustomInput.js";
 import Button from "components/CustomButtons/Button.js";
-
 import styles from "assets/jss/material-kit-react/views/landingPageSections/workStyle.js";
 
 const useStyles = makeStyles(styles);
 
 export default function WorkSection() {
+
+  const [ name, setName ] = useState('');
+  const [ company, setCompany ] = useState('');
+  const [ email, setEmail ] = useState('');
+  const [ number, setNumber ] = useState('');
+  const [ message, setMessage ] = useState('');
+  const [ submitting, setSubmitting ] = useState(false);
+  
+  function handleSubmit(event) {
+    event.preventDefault();
+    console.log( 'Email:', email, 'Password: ', name); 
+   
+}
   const classes = useStyles();
   return (
     <div className={classes.section}>
@@ -25,70 +37,79 @@ export default function WorkSection() {
             Imagine How A Digital Workflow Can Impact Your Business To schedule
             your live information session, fill out our form or call us today
           </h4>
-          <form>
-            <GridContainer>
+            <form onSubmit={handleSubmit} >
+          <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
                 <CustomInput
-                  className="text-input"
-                  id="name"
-                  name="name"
-                  onChange={handleChange}
-                  placeholder="Your Name"
+                  type={"text"}
+                  name={"firstName"}
+                  value={this.state.formData.firstName}
+                  onChange={this.handleInput}
                   required
-                  value={feedback}
-                />
+                  error={formErrors.firstName}
+                  />
               </GridItem>
               <GridItem xs={12} sm={12} md={6}>
                 <CustomInput
-                    className="text-input"
-                    id="email"
-                    name="email"
-                    onChange={handleChange}
-                    placeholder="Enter your email"
-                    required
-                    value={feedback}
-                />
+                  labelText="Your Email"
+                  id="email"
+                  formControlProps={{
+                    fullWidth: true,
+                  }}
+                  value={email}
+                  onInput={ e=>setEmail(e.target.value)}
+                  onChange={console.log(email)}                  
+                  />
               </GridItem>
               <GridItem xs={12} sm={12} md={6}>
                 <CustomInput
                   labelText="Your Company"
-                  className="text-input"
-                  id="feedback-entry"
-                  name="feedback-entry"
-                  onChange={handleChange}
-                  placeholder="Your Company"
+                  id="company"
+                  formControlProps={{
+                    fullWidth: true,
+                  }}
                   required
-                  value={feedback}
-                />
+                  disabled={ submitting }
+                  value={ company }
+                  onInput={ e=>setCompany(e.target.value)}
+                  />
               </GridItem>
               <GridItem xs={12} sm={12} md={6}>
                 <CustomInput
                   labelText="Your Phone Number"
-                  className="text-input"
                   id="number"
-                  name="number"
-                  onChange={handleChange}
-                  placeholder="Enter your number"
+                  formControlProps={{
+                    fullWidth: true,
+                  }}
                   required
-                  value={number}
-                />
+                  disabled={ submitting }
+                  value={ number }
+                  onInput={ e=>setNumber(e.target.value)}
+                  />
               </GridItem>
               <CustomInput
                 labelText="Message"
                 id="message"
-                className="text-input"
-                name="message"
-                onChange={handleChange}
-                placeholder="Enter your feedback here"
-                required
-                value={message}
+                formControlProps={{
+                  fullWidth: true,
+                  className: classes.textArea,
+                }}
                 inputProps={{
                   multiline: true,
-                  rows: 5,
+                  rows: 15,
                 }}
-              />
+                required
+                disabled={ submitting }
+                value={ message }
+                onInput={ e=>setMessage(e.target.value)}
+                />
               <GridItem xs={12} sm={12} md={4}>
-                <Button color="success" onSubmit={handleSubmit} value="Submit">Contact Us</Button>
+                <Button
+                  type="submit"
+                  variant="contained"
+                  color="success"
+                  >
+                    Contact Us</Button>
               </GridItem>
             </GridContainer>
           </form>

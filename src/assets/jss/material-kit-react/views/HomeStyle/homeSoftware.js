@@ -124,6 +124,16 @@ const homeStyle = {
         overflow: 'hidden',
         borderRadius: 900,
     },
+    imageSmall2: {
+      borderRadius: 3,
+      paddingTop: '15px',
+      height: "auto",
+      width: "125px",
+      border: '5px',
+      justifyContent: "center",
+      overflow: 'hidden',
+      borderRadius: 900,
+  },
       PPlogo: {
         borderRadius: 3,
         height: "155px",
