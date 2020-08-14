@@ -189,7 +189,7 @@ class WorkSection extends Component {
         fetch("https://api.emailjs.com/api/v1.0/email/send", options)
             .then((httpResponse) => {
                 if (httpResponse.ok) {
-                    alert("Your mail was sent!");
+                    alert("Your message was sent!");
                 } else {
                     return httpResponse.text()
                         .then(text => Promise.reject(text));
