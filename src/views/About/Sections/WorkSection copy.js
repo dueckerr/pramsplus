@@ -156,7 +156,7 @@ class WorkSection extends Component {
           } else {
               const subject = "Form data received!";
               const message_html = "First Name: " + this.state.formData.name + "<br>"
-                  + "Last Name: " + this.state.formData.lastName + "<br>"
+                  + "Company Name: " + this.state.formData.companyName + "<br>"
                   + "Mail Address: " + this.state.formData.emailAddress + "<br>"
                   + "Phone Number: " + this.state.formData.phoneNumber;
 
