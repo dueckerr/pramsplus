@@ -44,7 +44,7 @@ export default function RegulatoryReporting() {
                     <li>South Dakota</li>
                     <li>Texas</li>
                     <li>Utah</li>
-                    <li>Wyoming Dakota</li>
+                    <li>Wyoming</li>
                   </ul>
                 </Grid>
                 <Grid item xs={6} sm={6} md={3} lg={3}>
