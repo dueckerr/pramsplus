@@ -211,8 +211,8 @@ class WorkSection extends Component {
               <GridItem cs={11} sm={11} md={8}>
                 <h2 className={classes.title}>Contact Us</h2>
                 <h4 className={classes.description}>
-                  Imagine How A Digital Workflow Can Impact Your Business To schedule
-                  your live information session, fill out our form or call us today
+                  Imagine how a digital workflow can impact your business. To schedule
+                  your live information session, fill out our form or call us today!
                 </h4>
                   <form noValidate onSubmit={this.handleSubmit} >
                 <GridContainer xs={12} sm={12} md={12}>
