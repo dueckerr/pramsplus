@@ -67,6 +67,7 @@ class FormContainer extends Component {
     }
 
     handleInput = e => {
+        console.log('hi')
         e.preventDefault();
         const { value } = e.target;
         const { name } = e.target;

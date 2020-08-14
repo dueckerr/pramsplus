@@ -17,6 +17,7 @@ import PRAMSMission from "./Sections/PRAMSMission.js";
 import Software from "./Sections/Software.js";
 import SectionWorked from "./Sections/SectionWorked.js";
 import WorkSection from "../About/Sections/WorkSection";
+import WorkSectionCopy from "../About/Sections/WorkSection copy";
 import Pricing from "./Sections/Pricing.js";
 import logo from "assets/img/PPlogo.jpg";
 import styles from "assets/jss/material-kit-react/views/components.js";
@@ -45,6 +46,7 @@ export default function Home(props) {
         <PRAMSMission />
         {/* <SectionWorked /> */}
         <WorkSection />
+        <WorkSectionCopy />
 
       </div>
       <Footer />

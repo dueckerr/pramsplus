@@ -1,120 +1,241 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { Component, useContext, useEffect, useState } from 'react'
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
 // @material-ui/icons
+import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
 
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import CustomInput from "components/CustomInput/CustomInput.js";
-import Button from "components/CustomButtons/Button.js";
-import styles from "assets/jss/material-kit-react/views/landingPageSections/workStyle.js";
+// import Button from "components/CustomButtons/Button.js";
+// import styles from "assets/jss/material-kit-react/views/landingPageSections/workStyle.js";
+import { withStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles(styles);
+const styles = theme => ({
+  title: {
+    backgroundColor: "red"
+  }
+});
 
-export default function WorkSection() {
+const regex = {
+  'name': RegExp(/^([A-Za-z]{2,})$/),
+  'email': RegExp(/^([a-zA-Z0-9_.-])+@(([a-zA-Z0-9-])+.)+([a-zA-Z0-9]{2,4})+$/),
+  'phone': RegExp(/^([0-9]{10})$/)
+};
 
-  const [ name, setName ] = useState('');
-  const [ company, setCompany ] = useState('');
-  const [ email, setEmail ] = useState('');
-  const [ number, setNumber ] = useState('');
-  const [ message, setMessage ] = useState('');
-  const [ submitting, setSubmitting ] = useState(false);
-  
-  function handleSubmit(event) {
-    event.preventDefault();
-    console.log( 'Email:', email, 'Password: ', name); 
-   
-}
-  const classes = useStyles();
-  return (
-    <div className={classes.section}>
-      <GridContainer justify="center">
-        <GridItem cs={11} sm={11} md={8}>
-          <h2 className={classes.title}>Work with us</h2>
-          <h4 className={classes.description}>
-            Imagine How A Digital Workflow Can Impact Your Business To schedule
-            your live information session, fill out our form or call us today
-          </h4>
-            <form onSubmit={handleSubmit} >
-          <GridContainer>
-              <GridItem xs={12} sm={12} md={6}>
-                <CustomInput
-                  type={"text"}
-                  name={"firstName"}
-                  value={this.state.formData.firstName}
-                  onChange={this.handleInput}
-                  required
-                  error={formErrors.firstName}
-                  />
-              </GridItem>
-              <GridItem xs={12} sm={12} md={6}>
-                <CustomInput
-                  labelText="Your Email"
-                  id="email"
-                  formControlProps={{
-                    fullWidth: true,
-                  }}
-                  value={email}
-                  onInput={ e=>setEmail(e.target.value)}
-                  onChange={console.log(email)}                  
-                  />
-              </GridItem>
-              <GridItem xs={12} sm={12} md={6}>
-                <CustomInput
-                  labelText="Your Company"
-                  id="company"
-                  formControlProps={{
-                    fullWidth: true,
-                  }}
-                  required
-                  disabled={ submitting }
-                  value={ company }
-                  onInput={ e=>setCompany(e.target.value)}
-                  />
-              </GridItem>
-              <GridItem xs={12} sm={12} md={6}>
-                <CustomInput
-                  labelText="Your Phone Number"
-                  id="number"
-                  formControlProps={{
-                    fullWidth: true,
-                  }}
-                  required
-                  disabled={ submitting }
-                  value={ number }
-                  onInput={ e=>setNumber(e.target.value)}
-                  />
-              </GridItem>
-              <CustomInput
-                labelText="Message"
-                id="message"
-                formControlProps={{
-                  fullWidth: true,
-                  className: classes.textArea,
-                }}
-                inputProps={{
-                  multiline: true,
-                  rows: 15,
-                }}
-                required
-                disabled={ submitting }
-                value={ message }
-                onInput={ e=>setMessage(e.target.value)}
-                />
-              <GridItem xs={12} sm={12} md={4}>
-                <Button
-                  type="submit"
-                  variant="contained"
-                  color="success"
-                  >
-                    Contact Us</Button>
+const initState = () => ({
+  formData: {
+      name: "",
+      companyName: "",
+      emailAddress: "",
+      phoneNumber: "",
+      formErrors: {
+          name: null,
+          companyName: null,
+          emailAddress: null,
+          phoneNumber: null,
+      }
+  },
+  formValidation: "",
+  formValid: 0
+});
+
+class WorkSection extends Component {
+  constructor(props) {
+		super(props);
+
+        this.state = initState();
+    }
+
+  formValid = () => {
+      let valid = true;
+
+      // validate form errors empty
+      Object.values(this.state.formData.formErrors).forEach(val => {
+          val !== null && val.length > 0 && (valid = false);
+      });
+
+      //validate the form was filled out
+      Object.values(this.state.formData).forEach(val => {
+          val === "" && (valid = false);
+      });
+
+      this.setState({ formValidation: valid ? "" : "Form contains errors, please fill all the fields according to the specified rules." });
+
+      return valid;
+  }
+  handleInput = e => {
+    console.log("ji")
+    console.log(this.state.formData)
+        e.preventDefault();
+        const { value } = e.target;
+        const { name } = e.target;
+
+        let formErrors = this.state.formData.formErrors;
+
+        // switch (name) {
+        //     case 'name':
+        //         formErrors.name = !(regex.name.test(value)) ? "At least 2 characters, letters only" : "";
+        //         break;
+        //     case 'companyName':
+        //         formErrors.companyName = !(regex.name.test(value)) ? "At least 2 characters, letters only" : "";
+        //         break;
+        //     case 'emailAddress':
+        //         formErrors.emailAddress = !(regex.email.test(value)) ? "At least 2 characters, only letters allowed" : "";
+        //         break;
+        //     case 'phoneNumber':
+        //         formErrors.phoneNumber = !(regex.phone.test(value)) ? "Exactly 10 characters, only digits allowed" : "";
+        //         break;
+        //     default: break;
+        // }
+
+        this.formValid();
+
+        this.setState(
+            prevState => ({
+                formData: {
+                    ...prevState.formData,
+                    [name]: value
+                }
+            })
+        );
+    }
+
+    handleSubmit = e => {
+      e.preventDefault();
+      if (this.state.formData) {
+        console.log("ji")
+          const env = process.env;
+          if (!env.REACT_APP_EMAILJS_USER || !env.REACT_APP_EMAILJS_TEMPLATE || !env.REACT_APP_EMAILJS_SERVICE) {
+              alert("You must provide User ID, Template ID and Service ID in .env file.");
+          } else {
+              const subject = "Form data received!";
+              const message_html = "First Name: " + this.state.formData.name + "<br>"
+                  + "Last Name: " + this.state.formData.lastName + "<br>"
+                  + "Mail Address: " + this.state.formData.emailAddress + "<br>"
+                  + "Phone Number: " + this.state.formData.phoneNumber;
+
+              const data = {
+                  service_id: env.REACT_APP_EMAILJS_SERVICE,
+                  template_id: env.REACT_APP_EMAILJS_TEMPLATE,
+                  user_id: env.REACT_APP_EMAILJS_USER,
+                  template_params: {
+                      'to': this.state.formData.emailAddress,
+                      "subject": subject,
+                      "message_html": message_html
+                  }
+              };
+              this.sendEmail(data);
+          }
+      }
+  }
+
+    sendEmail = data => {
+        const headers = {
+            "Content-type": "application/json"
+        };
+
+        const options = {
+            method: "POST",
+            headers: headers,
+            body: JSON.stringify(data)
+        };
+
+        fetch("https://api.emailjs.com/api/v1.0/email/send", options)
+            .then((httpResponse) => {
+                if (httpResponse.ok) {
+                    alert("Your mail was sent!");
+                } else {
+                    return httpResponse.text()
+                        .then(text => Promise.reject(text));
+                }
+            })
+            .catch((error) => {
+                console.log("Oops... " + error);
+            });
+    }
+
+    render() {
+
+      const { formErrors } = this.state.formData;
+      const { classes } = this.props;
+
+      return (
+          <div>
+            <GridContainer justify="center">
+              <GridItem cs={11} sm={11} md={8}>
+          <h2 className={classes.title}>Contact Us</h2>
+                <h4>
+                  Imagine How A Digital Workflow Can Impact Your Business To schedule
+                  your live information session, fill out our form or call us today
+                </h4>
+                  <form noValidate onSubmit={this.handleSubmit} >
+                <GridContainer>
+                    <GridItem xs={12} sm={12} md={6}>
+                      <TextField
+                        type={"text"} 
+                        name={"name"}
+                        label={"Name"}
+                        value={this.state.formData.name}
+                        onChange={this.handleInput}
+                        required
+                        error={formErrors.name}
+                        />
+                    </GridItem>
+                    <GridItem xs={12} sm={12} md={6}>
+                      <TextField
+                            type={"text"}
+                            label={"Company Name"}
+                            name={"companyName"}
+                            value={this.state.formData.companyName}
+                            onChange={this.handleInput}
+                            required
+                            error={formErrors.companyName}                
+                        />
+                    </GridItem>
+                    <GridItem xs={12} sm={12} md={6}>
+                      <TextField
+                        type={"email"}
+                        label={"Email Address"}
+                        name={"emailAddress"}
+                        value={this.state.formData.emailAddress}
+                        onChange={this.handleInput}
+                        required
+                        error={formErrors.emailAddress}
+                        />
+                    </GridItem>
+                    <GridItem xs={12} sm={12} md={6}>
+                      <TextField
+                      type={"number"}
+                      label={"Phone Number"}
+                      name={"phoneNumber"}
+                      value={this.state.formData.phoneNumber}
+                      onChange={this.handleInput}
+                      required
+                      error={formErrors.phoneNumber}
+                        />
+                    </GridItem>
+                    
+                    <GridItem xs={12} sm={12} md={4}>
+         
+                      <Button
+                        type="submit"
+                        variant="contained"
+                        color="success"
+                        >
+                          Contact Us</Button>
+                    </GridItem>
+                  </GridContainer>
+                </form>
               </GridItem>
             </GridContainer>
-          </form>
-        </GridItem>
-      </GridContainer>
-    </div>
-  );
-}
+          </div>
+        );
+      }
+  }
+
+  export default withStyles(styles, { withTheme: true }) (WorkSection);
+
