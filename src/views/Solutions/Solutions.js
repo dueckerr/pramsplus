@@ -21,7 +21,7 @@ import Outsourcing from "./Sections/Outsourcing.js";
 import logo from "assets/img/PPlogo.jpg";
 import PropTypes from 'prop-types';
 
-import WorkSection from "../About/Sections/WorkSection";
+import WorkSectionCopy from "../About/Sections/WorkSection copy";
 
 import styles from "assets/jss/material-kit-react/views/components.js";
 
@@ -51,7 +51,7 @@ export default function Solutions(props) {
         <PushReporting />
         <RegulatoryReporting />
         <Outsourcing />
-        <WorkSection />
+        <WorkSectionCopy />
       </div>
       <Footer />
     </div>
