@@ -45,7 +45,7 @@ export default function Home(props) {
         <Pricing />
         <PRAMSMission />
         {/* <SectionWorked /> */}
-        <WorkSection />
+        {/* <WorkSection /> */}
         <WorkSectionCopy />
 
       </div>

@@ -15,8 +15,50 @@ import CustomInput from "components/CustomInput/CustomInput.js";
 import { withStyles } from "@material-ui/core/styles";
 
 const styles = theme => ({
+  section: {
+    padding: "50px 0",
+    color: "rgb(2, 46, 105)",
+    backgroundColor: "#FFFFF"
+  },
   title: {
-    backgroundColor: "red"
+    marginBottom: "30px",
+    marginTop: "30px",
+    minHeight: "32px",
+    textDecoration: "none",
+    textAlign: "center",
+    color: "rgb(2, 46, 105)",
+    fontSize: "4.2rem",
+    fontWeight: "600",
+
+  },
+  button: {
+    marginBottom: "30px",
+    marginTop: "30px",
+    minHeight: "32px",
+    textDecoration: "none",
+    textAlign: "center",
+    backgroundColor: "rgb(2, 46, 105)",
+    color: "white"
+  },
+  description: {
+    color: "#999",
+    textAlign: "center",
+    color: "rgb(2, 46, 105)",
+    fontSize: "1.313rem",
+
+  },
+  textCenter: {
+    textAlign: "center",
+    color: "rgb(2, 46, 105)"
+  },
+  textArea: {
+    color: "rgb(2, 46, 105)",
+    width: '25ch',
+    textAlign: "center",
+    display: 'flex',
+    flexWrap: 'wrap',
+    position: "relative",
+
   }
 });
 
@@ -164,18 +206,20 @@ class WorkSection extends Component {
       const { classes } = this.props;
 
       return (
-          <div>
+          <div className={classes.section}>
             <GridContainer justify="center">
               <GridItem cs={11} sm={11} md={8}>
-          <h2 className={classes.title}>Contact Us</h2>
-                <h4>
+                <h2 className={classes.title}>Contact Us</h2>
+                <h4 className={classes.description}>
                   Imagine How A Digital Workflow Can Impact Your Business To schedule
                   your live information session, fill out our form or call us today
                 </h4>
                   <form noValidate onSubmit={this.handleSubmit} >
-                <GridContainer>
+                <GridContainer xs={12} sm={12} md={12}>
                     <GridItem xs={12} sm={12} md={6}>
                       <TextField
+                        id="standard-full-width"
+                        className={classes.textArea}
                         type={"text"} 
                         name={"name"}
                         label={"Name"}
@@ -187,17 +231,21 @@ class WorkSection extends Component {
                     </GridItem>
                     <GridItem xs={12} sm={12} md={6}>
                       <TextField
-                            type={"text"}
-                            label={"Company Name"}
-                            name={"companyName"}
-                            value={this.state.formData.companyName}
-                            onChange={this.handleInput}
-                            required
-                            error={formErrors.companyName}                
+                        id="standard-full-width"
+                        className={classes.textArea}
+                        type={"text"}
+                        label={"Company Name"}
+                        name={"companyName"}
+                        value={this.state.formData.companyName}
+                        onChange={this.handleInput}
+                        required
+                        error={formErrors.companyName}                
                         />
                     </GridItem>
                     <GridItem xs={12} sm={12} md={6}>
                       <TextField
+                        id="standard-full-width"
+                        className={classes.textArea}
                         type={"email"}
                         label={"Email Address"}
                         name={"emailAddress"}
@@ -209,6 +257,8 @@ class WorkSection extends Component {
                     </GridItem>
                     <GridItem xs={12} sm={12} md={6}>
                       <TextField
+                      id="standard-full-width"
+                      className={classes.textArea}
                       type={"number"}
                       label={"Phone Number"}
                       name={"phoneNumber"}
@@ -219,12 +269,11 @@ class WorkSection extends Component {
                         />
                     </GridItem>
                     
-                    <GridItem xs={12} sm={12} md={4}>
+                    <GridItem xs={12} sm={12} md={6}>
          
                       <Button
                         type="submit"
-                        variant="contained"
-                        color="success"
+                        className={classes.button}
                         >
                           Contact Us</Button>
                     </GridItem>
