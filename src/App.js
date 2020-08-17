@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HashRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch, Redirect, BrowserRouter } from 'react-router-dom';
 
 import ReactDOM from "react-dom";
 import { createBrowserHistory } from "history";
@@ -14,6 +14,7 @@ import Blog from "views/Content/Blog.js";
 import About from "views/About/About.js";
 import Download from "views/Download/Download.js";
 import LoginPage from "views/LoginPage/LoginPage.js";
+import NotFoundPage from './NotFoundPage.js';
 
 const loading = () => <div className="animated fadeIn pt-3 text-center">Loading...</div>;
 
@@ -31,6 +32,8 @@ class App extends Component {
                     <Route path="/login-page" component={LoginPage} />
                     <Route path="/download" component={Download} />
                     <Route path="/" component={Home} />
+                    <Route component={NotFoundPage} />
+
                 </Switch>
             </React.Suspense>
       </HashRouter>    );
