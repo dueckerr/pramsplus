@@ -31,7 +31,7 @@ class App extends Component {
                     <Route path="/content" component={Blog} />
                     <Route path="/login-page" component={LoginPage} />
                     <Route path="/download" component={Download} />
-                    <Route path="/404" component={NotFoundPage} />
+                    <Route path="" component={NotFoundPage} />
                     <Route path="/" component={Home} />
 
                 </Switch>
