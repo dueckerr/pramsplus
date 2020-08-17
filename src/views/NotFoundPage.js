@@ -7,15 +7,12 @@ import { makeStyles } from "@material-ui/core/styles";
 // core components
 import Header from "components/Header/Header.js";
 import Footer from "components/Footer/Footer.js";
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
-import Parallax from "components/Parallax/Parallax.js";
+import Grid from "@material-ui/core/Grid";
+
 // sections for this page
 import HeaderLinks from "components/Header/HeaderLinks.js";
-import { Link } from 'react-router-dom';
-
-import logo from "assets/img/PPlogo.jpg";
 import styles from "assets/jss/material-kit-react/views/components.js";
+import logo from "assets/img/PPlogo.jpg";
 
 const useStyles = makeStyles(styles);
 
@@ -26,22 +23,29 @@ export default function NotFoundPage(props) {
     <div>
       <Header
         brand="PRAMS Plus"
+        link="/"
         rightLinks={<HeaderLinks />}
-        fixed
         {...rest}
       />
-      <Parallax image={require("assets/img/chartsPumpPipeline.jpg")}>
-
-      </Parallax>
-
+      <br></br>
       <div className={classNames(classes.main, classes.mainRaised)}>
+        <div className={classes.container}>
+          <Grid xs={12} sm={12} md={12}>
+            <h3>
+              <small className={classes.socials}>404 - Page Not Found</small>
+            </h3>
+            {/* <Grid item xs={12} sm={12} md={12} lg={12}> */}
 
 
-            <img src={logo}  />
-            <p style={{textAlign:"center", fontSize: "28px",
-}}>
-              <Link to="/">Go to Home </Link>
-            </p>
+              <Grid className={classes.blueBlock} container spacing={2}>
+              <img src={logo} alt="..." className={classes.image} />
+
+              </Grid>
+
+            </Grid>
+          {/* </Grid> */}
+        </div>
+        
       </div>
       <Footer />
     </div>

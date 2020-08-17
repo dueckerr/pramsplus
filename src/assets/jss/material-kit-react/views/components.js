@@ -53,17 +53,15 @@ const componentsStyle = {
   image: {
     borderRadius: 30,
     height: "auto",
-    width: "45%",
+    width: "55%",
     border: '5px',
-    flexShrink: 10,
-    display: 'flex',
-    flexWrap: 'wrap',
-    justifyContent: "center",
-    overflow: 'hidden',
-    top: -265,
-    left: -215,
-    position: "absolute",
-    boxShadow: '5px 8px 7px 8px rgb(2, 46, 105)',
+    // flexShrink: 10,
+    // display: 'flex',
+    // flexWrap: 'wrap',
+    // justifyContent: "center",
+    // // overflow: 'hidden',
+    // position: "absolute",
+    // boxShadow: '5px 8px 7px 8px rgb(2, 46, 105)',
 
   }
 };

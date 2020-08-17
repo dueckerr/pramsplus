@@ -14,7 +14,7 @@ import Blog from "views/Content/Blog.js";
 import About from "views/About/About.js";
 import Download from "views/Download/Download.js";
 import LoginPage from "views/LoginPage/LoginPage.js";
-import NotFoundPage from './NotFoundPage.js';
+import NotFoundPage from "views/NotFoundPage.js";
 
 const loading = () => <div className="animated fadeIn pt-3 text-center">Loading...</div>;
 
@@ -31,8 +31,8 @@ class App extends Component {
                     <Route path="/content" component={Blog} />
                     <Route path="/login-page" component={LoginPage} />
                     <Route path="/download" component={Download} />
+                    <Route path="/404" component={NotFoundPage} />
                     <Route path="/" component={Home} />
-                    <Route component={NotFoundPage} />
 
                 </Switch>
             </React.Suspense>
