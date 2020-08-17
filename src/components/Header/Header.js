@@ -88,9 +88,10 @@ export default function Header(props) {
           variant="temporary"
           anchor={"right"}
           open={mobileOpen}
-          classes={{
-            paper: classes.drawerPaper,
-          }}
+          display="block"
+            // classes={{
+            //   paper: classes.drawerPaper,
+            // }}
           onClose={handleDrawerToggle}
         >
           <div className={classes.appResponsive}>
