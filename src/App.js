@@ -31,9 +31,9 @@ class App extends Component {
                     <Route path="/content" component={Blog} />
                     <Route path="/login-page" component={LoginPage} />
                     <Route path="/download" component={Download} />
-                    <Route path="" component={NotFoundPage} />
-                    <Route path="/" component={Home} />
+                    <Route path="/home" component={Home} />
 
+                    <Route path="*" component={NotFoundPage} />
                 </Switch>
             </React.Suspense>
       </HashRouter>    );

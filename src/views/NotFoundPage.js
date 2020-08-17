@@ -23,7 +23,6 @@ export default function NotFoundPage(props) {
     <div>
       <Header
         brand="PRAMS Plus"
-        link="/"
         rightLinks={<HeaderLinks />}
         {...rest}
       />
