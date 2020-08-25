@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/pramsplus/static/css/main.c4f6da22.chunk.css",
-    "main.js": "/pramsplus/static/js/main.7824615e.chunk.js",
-    "main.js.map": "/pramsplus/static/js/main.7824615e.chunk.js.map",
-    "runtime-main.js": "/pramsplus/static/js/runtime-main.d363cbd6.js",
-    "runtime-main.js.map": "/pramsplus/static/js/runtime-main.d363cbd6.js.map",
-    "static/js/2.93d135e8.chunk.js": "/pramsplus/static/js/2.93d135e8.chunk.js",
-    "static/js/2.93d135e8.chunk.js.map": "/pramsplus/static/js/2.93d135e8.chunk.js.map",
+    "main.css": "/pramsplus/static/css/main.16907e34.chunk.css",
+    "main.js": "/pramsplus/static/js/main.9ab1fb25.chunk.js",
+    "main.js.map": "/pramsplus/static/js/main.9ab1fb25.chunk.js.map",
+    "runtime-main.js": "/pramsplus/static/js/runtime-main.6345ff78.js",
+    "runtime-main.js.map": "/pramsplus/static/js/runtime-main.6345ff78.js.map",
+    "static/js/2.f1c9bd0a.chunk.js": "/pramsplus/static/js/2.f1c9bd0a.chunk.js",
+    "static/js/2.f1c9bd0a.chunk.js.map": "/pramsplus/static/js/2.f1c9bd0a.chunk.js.map",
     "index.html": "/pramsplus/index.html",
-    "precache-manifest.aff4e5b1b9854b4ad23cddd5b4fb82e6.js": "/pramsplus/precache-manifest.aff4e5b1b9854b4ad23cddd5b4fb82e6.js",
+    "precache-manifest.1eb7b3320a54d97791d8ef350d23f214.js": "/pramsplus/precache-manifest.1eb7b3320a54d97791d8ef350d23f214.js",
     "service-worker.js": "/pramsplus/service-worker.js",
-    "static/css/main.c4f6da22.chunk.css.map": "/pramsplus/static/css/main.c4f6da22.chunk.css.map",
-    "static/js/2.93d135e8.chunk.js.LICENSE.txt": "/pramsplus/static/js/2.93d135e8.chunk.js.LICENSE.txt",
+    "static/css/main.16907e34.chunk.css.map": "/pramsplus/static/css/main.16907e34.chunk.css.map",
+    "static/js/2.f1c9bd0a.chunk.js.LICENSE.txt": "/pramsplus/static/js/2.f1c9bd0a.chunk.js.LICENSE.txt",
     "static/media/PPlogo.jpg": "/pramsplus/static/media/PPlogo.ee988e9a.jpg",
     "static/media/accounting2.png": "/pramsplus/static/media/accounting2.986711da.png",
     "static/media/apple-icon.png": "/pramsplus/static/media/apple-icon.7e768577.png",
@@ -35,9 +35,9 @@
     "static/media/valves.jpeg": "/pramsplus/static/media/valves.bcd5e468.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.d363cbd6.js",
-    "static/js/2.93d135e8.chunk.js",
-    "static/css/main.c4f6da22.chunk.css",
-    "static/js/main.7824615e.chunk.js"
+    "static/js/runtime-main.6345ff78.js",
+    "static/js/2.f1c9bd0a.chunk.js",
+    "static/css/main.16907e34.chunk.css",
+    "static/js/main.9ab1fb25.chunk.js"
   ]
 }
