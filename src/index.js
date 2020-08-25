@@ -15,25 +15,23 @@ import About from "views/About/About.js";
 import Download from "views/Download/Download.js";
 import LoginPage from "views/LoginPage/LoginPage.js";
 import NotFoundPage from "views/NotFoundPage.js";
-
-const loading = () => <div className="animated fadeIn pt-3 text-center">Loading...</div>;
-
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-117510737-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 var hist = createBrowserHistory();
 
 ReactDOM.render(
   <Router history={hist}>
     <Switch>
-                    <Route path="/about" component={About} />
-                    <Route path="/solutions" component={Solutions} />
-                    <Route path="/content" component={Blog} />
-                    <Route path="/login-page" component={LoginPage} />
-                    <Route path="/download" component={Download} />
-                    <Route exact path="/" component={Home} />
-
-
-                    <Route component={NotFoundPage} /> 
-                    </Switch>
+        <Route path="/about" component={About} />
+        <Route path="/solutions" component={Solutions} />
+        <Route path="/content" component={Blog} />
+        <Route path="/login-page" component={LoginPage} />
+        <Route path="/download" component={Download} />
+        <Route exact path="/" component={Home} />
+        <Route component={NotFoundPage} /> 
+    </Switch>
   </Router>,
   document.getElementById("root")
 );

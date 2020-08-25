@@ -15,8 +15,11 @@ import About from "views/About/About.js";
 import Download from "views/Download/Download.js";
 import LoginPage from "views/LoginPage/LoginPage.js";
 import NotFoundPage from "views/NotFoundPage.js";
+import ReactGA from 'react-ga';
+
 
 const loading = () => <div className="animated fadeIn pt-3 text-center">Loading...</div>;
+
 
 
 class App extends Component {
