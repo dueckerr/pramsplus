@@ -1,9 +1,9 @@
 import React from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
+import Typography from '@material-ui/core/Typography';
 
 function Copyright() {
   return (
@@ -28,6 +28,7 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: theme.spacing(2),
   },
   footer: {
+    justify: "center",
     padding: theme.spacing(3, 2),
     marginTop: 'auto',
     backgroundColor:
@@ -39,14 +40,11 @@ export default function StickyFooter() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <footer className={classes.footer}>
-        <Container maxWidth="sm">
-        <Typography variant="body1">10288 W. Chatfield Ave., Suite 200, Littleton, CO 80127</Typography>
-        <Typography variant="body1">Phone: (303)-904-6855</Typography>
-        <Typography variant="body1">Email: sales@pramsplus.com</Typography>
-          <Copyright />
-        </Container>
+    <div>
+      <footer>
+        <Typography variant="body1"></Typography>
+        <Typography variant="body1"></Typography>
+        <Typography variant="body1"></Typography>\
       </footer>
     </div>
   );

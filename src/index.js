@@ -29,7 +29,7 @@ ReactDOM.render(
         <Route path="/content" component={Blog} />
         <Route path="/login-page" component={LoginPage} />
         <Route path="/download" component={Download} />
-        <Route exact path="/" component={Home} />
+        <Route path="/" component={Home} />
         <Route component={NotFoundPage} /> 
     </Switch>
   </Router>,
